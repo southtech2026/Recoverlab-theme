@@ -1,0 +1,466 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pb_hero": {
+      "type": "pb-hero",
+      "settings": {
+        "eyebrow": "",
+        "headline": "<p>Din kropp presterar på den nivå du <em>återhämtar dig</em>.</p>",
+        "subheadline": "Vetenskapligt framtagna produkter för optimal återhämtning, bättre sömn och högre prestation.",
+        "bg_video": "",
+        "overlay_top": "0.2",
+        "overlay_mid": "0.45",
+        "overlay_bottom": "0.88",
+        "cta1_label": "Shoppa Nu",
+        "cta1_url": "",
+        "cta2_label": "Utforska Produkterna",
+        "cta2_url": "",
+        "trust1": "Säker betalning",
+        "trust2": "Gratis frakt över 499 kr",
+        "trust3": "30 dagar returrätt"
+      }
+    },
+    "pb_proof_bar": {
+      "type": "pb-proof-bar",
+      "blocks": {
+        "stat1": {
+          "type": "stat",
+          "settings": {
+            "number": "50000",
+            "suffix": "+",
+            "label": "Nöjda kunder"
+          }
+        },
+        "rating1": {
+          "type": "rating",
+          "settings": {
+            "rating": "4.9",
+            "label": "Genomsnittligt betyg"
+          }
+        },
+        "stat2": {
+          "type": "stat",
+          "settings": {
+            "number": "98",
+            "suffix": "%",
+            "label": "Rekommenderar oss"
+          }
+        },
+        "stat3": {
+          "type": "stat",
+          "settings": {
+            "number": "3",
+            "suffix": "år",
+            "label": "Erfarenhet"
+          }
+        }
+      },
+      "block_order": [
+        "stat1",
+        "rating1",
+        "stat2",
+        "stat3"
+      ],
+      "settings": {}
+    },
+    "pb_benefits": {
+      "type": "pb-benefits",
+      "blocks": {
+        "b1": {
+          "type": "benefit",
+          "settings": {
+            "icon": "recovery",
+            "title": "Bättre återhämtning",
+            "text": "Återhämta dig snabbare efter träning med vetenskapligt beprövade ingredienser."
+          }
+        },
+        "b2": {
+          "type": "benefit",
+          "settings": {
+            "icon": "energy",
+            "title": "Ökad energi",
+            "text": "Naturlig och hållbar energi utan krascher – prestera bättre hela dagen."
+          }
+        },
+        "b3": {
+          "type": "benefit",
+          "settings": {
+            "icon": "sleep",
+            "title": "Förbättrad sömn",
+            "text": "Djupare, mer restorativ sömn för optimal kroppslig och mental återhämtning."
+          }
+        },
+        "b4": {
+          "type": "benefit",
+          "settings": {
+            "icon": "stress",
+            "title": "Minskad stress",
+            "text": "Adaptogener som hjälper din kropp hantera stress och balansera kortisolnivåer."
+          }
+        },
+        "b5": {
+          "type": "benefit",
+          "settings": {
+            "icon": "muscle",
+            "title": "Snabbare muskelåterhämtning",
+            "text": "Minska muskelvärk och inflammation – kom tillbaka starkare till nästa pass."
+          }
+        },
+        "b6": {
+          "type": "benefit",
+          "settings": {
+            "icon": "performance",
+            "title": "Högre prestation",
+            "text": "Maximal prestation när det gäller – mentalt och fysiskt."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "label": "Fördelarna",
+        "title": "Optimera Din Kropp Inifrån",
+        "subtitle": "Allt du behöver för att prestera på din högsta nivå – varje dag."
+      }
+    },
+    "pb_storytelling": {
+      "type": "pb-storytelling",
+      "blocks": {
+        "s1": {
+          "type": "stat",
+          "settings": {
+            "number": "40",
+            "suffix": "%",
+            "label": "bättre prestation"
+          }
+        },
+        "s2": {
+          "type": "stat",
+          "settings": {
+            "number": "87",
+            "suffix": "%",
+            "label": "bättre sömn"
+          }
+        },
+        "s3": {
+          "type": "stat",
+          "settings": {
+            "number": "3",
+            "suffix": "x",
+            "label": "snabbare återhämtning"
+          }
+        },
+        "s4": {
+          "type": "stat",
+          "settings": {
+            "number": "10000",
+            "suffix": "+",
+            "label": "nöjda atleter"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "label": "Vår filosofi",
+        "title": "<p>Kroppen klarar <em>mer</em> när den återhämtar sig rätt.</p>",
+        "body": "I en värld av konstant stress, dålig sömn och överträning är återhämtning inte ett val – det är en nödvändighet. Vår forskning visar att de som prioriterar återhämtning presterar upp till 40% bättre på lång sikt. Vi har skapat produkter som gör det möjligt för alla att återhämta sig som proffs.",
+        "badge_stat": "87%",
+        "badge_text": "upplever bättre sömn inom 2 veckor",
+        "cta_label": "Läs mer om oss",
+        "cta_url": ""
+      }
+    },
+    "pb_featured_products": {
+      "type": "pb-featured-products",
+      "settings": {
+        "label": "Produkter",
+        "title": "Utvalda Produkter",
+        "collection": "",
+        "products_count": 4
+      }
+    },
+    "pb_why_us": {
+      "type": "pb-why-us",
+      "blocks": {
+        "w1": {
+          "type": "item",
+          "settings": {
+            "icon": "science",
+            "title": "Vetenskapliga produkter",
+            "text": "Alla produkter är baserade på klinisk forskning och välstuderade ingredienser."
+          }
+        },
+        "w2": {
+          "type": "item",
+          "settings": {
+            "icon": "quality",
+            "title": "Premium kvalitet",
+            "text": "Tredjepartstestad för renhet, potens och säkerhet – alltid."
+          }
+        },
+        "w3": {
+          "type": "item",
+          "settings": {
+            "icon": "shipping",
+            "title": "Snabb leverans",
+            "text": "Skickas inom 24h på vardagar. Fri frakt på order över 499 kr."
+          }
+        },
+        "w4": {
+          "type": "item",
+          "settings": {
+            "icon": "payment",
+            "title": "Säker betalning",
+            "text": "Klarna, Swish, kort – alltid 100% säkra transaktioner."
+          }
+        },
+        "w5": {
+          "type": "item",
+          "settings": {
+            "icon": "support",
+            "title": "Svensk kundtjänst",
+            "text": "Vi svarar inom 24h. Proffs på hälsa, redo att hjälpa dig."
+          }
+        },
+        "w6": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Nöjd-kund-garanti",
+            "text": "Inte nöjd? Pengarna tillbaka inom 30 dagar – inga frågor."
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6"
+      ],
+      "settings": {
+        "label": "Varför oss",
+        "title": "Varför Välja Oss?",
+        "subtitle": "Vi kombinerar vetenskap, kvalitet och service för din bästa upplevelse."
+      }
+    },
+    "pb_testimonials": {
+      "type": "pb-testimonials",
+      "blocks": {
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Jag har provat massor av återhämtningsprodukter men ingenting har fungerat lika bra som det här. Sover djupare och vaknar utvilad varje dag.",
+            "name": "Emma Lindström",
+            "role": "Löpare & personlig tränare"
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Som elitidrottsman är återhämtning A och O. Den här produkten har bokstavligen förändrat hur fort jag återhämtar mig mellan träningspassen.",
+            "name": "Marcus Björk",
+            "role": "Triatlet"
+          }
+        },
+        "t3": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Stressade dagar och lite sömn var min vardag. Nu känner jag mig lugn, fokuserad och full av energi. Kan varmt rekommendera!",
+            "name": "Sofia Andersson",
+            "role": "Företagare & yogi"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "settings": {
+        "label": "Kundrecensioner",
+        "title": "Det Säger Våra Kunder",
+        "overall_rating": "4.9",
+        "review_count": "1 247"
+      }
+    },
+    "pb_transformation": {
+      "type": "pb-transformation",
+      "blocks": {
+        "bf1": {
+          "type": "before",
+          "settings": {
+            "text": "Kronisk trötthet och låg energi"
+          }
+        },
+        "bf2": {
+          "type": "before",
+          "settings": {
+            "text": "Dålig sömnkvalitet och stress"
+          }
+        },
+        "bf3": {
+          "type": "before",
+          "settings": {
+            "text": "Lång återhämtningstid efter träning"
+          }
+        },
+        "bf4": {
+          "type": "before",
+          "settings": {
+            "text": "Svårt att fokusera under dagen"
+          }
+        },
+        "bf5": {
+          "type": "before",
+          "settings": {
+            "text": "Hög kortisolnivå och inflammation"
+          }
+        },
+        "af1": {
+          "type": "after",
+          "settings": {
+            "text": "Hög naturlig energi hela dagen"
+          }
+        },
+        "af2": {
+          "type": "after",
+          "settings": {
+            "text": "Djup restorativ sömn varje natt"
+          }
+        },
+        "af3": {
+          "type": "after",
+          "settings": {
+            "text": "Snabb återhämtning – redo på 24h"
+          }
+        },
+        "af4": {
+          "type": "after",
+          "settings": {
+            "text": "Skarp mental fokus och klarhet"
+          }
+        },
+        "af5": {
+          "type": "after",
+          "settings": {
+            "text": "Balanserat stressystem och minskad inflammation"
+          }
+        }
+      },
+      "block_order": [
+        "bf1",
+        "bf2",
+        "bf3",
+        "bf4",
+        "bf5",
+        "af1",
+        "af2",
+        "af3",
+        "af4",
+        "af5"
+      ],
+      "settings": {
+        "title": "Din Transformation Börjar Här",
+        "subtitle": "Från utmattad och stressad till energifull och fokuserad.",
+        "cta_label": "Starta Din Transformation",
+        "cta_url": ""
+      }
+    },
+    "pb_email_capture": {
+      "type": "pb-email-capture",
+      "settings": {
+        "offer": "10% rabatt på din första order",
+        "title": "Gå Med i Recovery Movement",
+        "subtitle": "Prenumerera och få exklusiva erbjudanden, tips om återhämtning och tidig tillgång till nya produkter.",
+        "placeholder": "Din e-postadress",
+        "button": "Prenumerera",
+        "disclaimer": "Vi skickar aldrig spam. Avsluta prenumerationen när som helst."
+      }
+    },
+    "pb_faq": {
+      "type": "pb-faq",
+      "blocks": {
+        "f1": {
+          "type": "item",
+          "settings": {
+            "question": "Hur snabbt ser jag resultat?",
+            "answer": "<p>De flesta kunder märker förbättringar inom 2–4 veckor med regelbunden användning.</p>"
+          }
+        },
+        "f2": {
+          "type": "item",
+          "settings": {
+            "question": "Är produkterna säkra att använda?",
+            "answer": "<p>Ja, absolut. Alla våra produkter är tredjepartstestad för renhet och potens.</p>"
+          }
+        },
+        "f3": {
+          "type": "item",
+          "settings": {
+            "question": "Hur länge räcker en förpackning?",
+            "answer": "<p>En standardförpackning räcker i 30 dagar vid rekommenderad dosering.</p>"
+          }
+        },
+        "f4": {
+          "type": "item",
+          "settings": {
+            "question": "Vad är er returpolicy?",
+            "answer": "<p>Vi erbjuder 30 dagars nöjd-kund-garanti med full återbetalning.</p>"
+          }
+        },
+        "f5": {
+          "type": "item",
+          "settings": {
+            "question": "Hur lång är leveranstiden?",
+            "answer": "<p>Vi skickar alla order inom 24 timmar på vardagar. Standard leveranstid är 1–3 arbetsdagar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "settings": {
+        "label": "FAQ",
+        "title": "Vanliga Frågor",
+        "subtitle": "Har du fler frågor? Kontakta oss gärna."
+      }
+    }
+  },
+  "order": [
+    "pb_hero",
+    "pb_proof_bar",
+    "pb_benefits",
+    "pb_storytelling",
+    "pb_featured_products",
+    "pb_why_us",
+    "pb_testimonials",
+    "pb_transformation",
+    "pb_email_capture",
+    "pb_faq"
+  ]
+}

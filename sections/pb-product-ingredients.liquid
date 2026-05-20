@@ -1,0 +1,56 @@
+<section class="pb-ingredients">
+  <div class="pb-container">
+    <div class="pb-ingredients__header">
+      <p class="pb-label pb-label--white pb-fade-in">{{ section.settings.label | default: 'Ingredienser' }}</p>
+      <h2 class="pb-heading-lg pb-fade-in pb-fade-in--d1" style="color:var(--pb-white);margin-bottom:16px;">{{ section.settings.title | default: 'Vetenskapligt Beprövade Ingredienser' }}</h2>
+      {%- if section.settings.subtitle != blank -%}
+        <p class="pb-fade-in pb-fade-in--d2" style="font-size:17px;color:rgba(255,255,255,0.55);line-height:1.6;">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+    </div>
+    <div class="pb-ingredients__grid">
+      {%- for block in section.blocks -%}
+        <div class="pb-ingredient-card pb-fade-in pb-fade-in--d{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <span class="pb-ingredient-card__emoji">{{ block.settings.emoji | default: '🌿' }}</span>
+          <div class="pb-ingredient-card__name">{{ block.settings.name }}</div>
+          <div class="pb-ingredient-card__amount">{{ block.settings.amount }}</div>
+          <div class="pb-ingredient-card__text">{{ block.settings.text }}</div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB — Ingredients",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "Ingredienser" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Vetenskapligt Beprövade Ingredienser" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Varje ingrediens är noggrant vald baserat på klinisk forskning och deras synergistiska effekter." }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        { "type": "text", "id": "emoji", "label": "Emoji", "default": "🌿" },
+        { "type": "text", "id": "name", "label": "Name" },
+        { "type": "text", "id": "amount", "label": "Amount / Dose" },
+        { "type": "text", "id": "text", "label": "Description" }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "PB — Ingredients",
+    "blocks": [
+      { "type": "ingredient", "settings": { "emoji": "🌙", "name": "Magnesium Bisglycinate", "amount": "300 mg", "text": "Den mest biotillgängliga formen av magnesium. Stödjer muskelrelaxation, djup sömn och nervsystemets funktion." } },
+      { "type": "ingredient", "settings": { "emoji": "🌿", "name": "Ashwagandha KSM-66", "amount": "600 mg", "text": "Kliniskt studerat adaptogen som sänker kortisolnivåer med upp till 28% och förbättrar stresstålighet." } },
+      { "type": "ingredient", "settings": { "emoji": "💊", "name": "L-Glycin", "amount": "3 000 mg", "text": "Aminosyra som förbättrar sömnkvalitet, stödjer kollagenproduktion och minskar muskelvärk." } },
+      { "type": "ingredient", "settings": { "emoji": "🧪", "name": "Vitamin D3 + K2", "amount": "2 000 IE / 100 mcg", "text": "Synergistisk kombination för optimal absorption. Stödjer muskelfunktion, immunsystem och benhälsa." } },
+      { "type": "ingredient", "settings": { "emoji": "🌱", "name": "Zink Bisglycinate", "amount": "15 mg", "text": "Essentiellt spårämne för testosteronproduktion, immunfunktion och proteinsyntes." } },
+      { "type": "ingredient", "settings": { "emoji": "⚡", "name": "CoQ10 Ubiquinol", "amount": "100 mg", "text": "Kraftfull antioxidant som stödjer mitokondriell energiproduktion och minskar oxidativ stress." } }
+    ]
+  }]
+}
+{% endschema %}

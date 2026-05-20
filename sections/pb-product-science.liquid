@@ -1,0 +1,75 @@
+﻿<section class="pb-science">
+  <div class="pb-container">
+    <div class="pb-science__grid">
+      <div class="pb-science__stats pb-fade-in">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'stat' -%}
+            <div class="pb-science__stat" {{ block.shopify_attributes }}>
+              <div class="pb-science__stat-number">
+                <span class="pb-counter" data-target="{{ block.settings.number }}" data-suffix="{{ block.settings.suffix }}">{{ block.settings.number }}{{ block.settings.suffix }}</span>
+              </div>
+              <div class="pb-science__stat-label">{{ block.settings.label }}</div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <div class="pb-science__content">
+        <p class="pb-label pb-fade-in">{{ section.settings.label | default: 'Vetenskapen bakom' }}</p>
+        <h2 class="pb-science__title pb-fade-in pb-fade-in--d1">{{ section.settings.title | default: 'Grundad i Forskning' }}</h2>
+        <p class="pb-science__text pb-fade-in pb-fade-in--d2">{{ section.settings.text | default: 'Varje produkt Ã¤r formulerad baserat pÃ¥ peer-reviewed forskning. Vi refererar till kliniska studier och arbetar med experter inom idrottsmedicin, nutritionsvetenskap och sÃ¶mnforskning.' }}</p>
+        <div class="pb-science__badges pb-fade-in pb-fade-in--d3">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'badge' -%}
+              <div class="pb-science__badge" {{ block.shopify_attributes }}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                {{ block.settings.text }}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB â€” Science",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "Vetenskapen bakom" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Grundad i Forskning" },
+    { "type": "textarea", "id": "text", "label": "Body text", "default": "Varje produkt Ã¤r formulerad baserat pÃ¥ peer-reviewed forskning och kliniska studier." }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistic",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number", "default": "87" },
+        { "type": "text", "id": "suffix", "label": "Suffix", "default": "%" },
+        { "type": "text", "id": "label", "label": "Label", "default": "upplever fÃ¶rbÃ¤ttrad sÃ¶mn" }
+      ]
+    },
+    {
+      "type": "badge",
+      "name": "Badge",
+      "settings": [{ "type": "text", "id": "text", "label": "Text" }]
+    }
+  ],
+  "presets": [{
+    "name": "PB â€” Science",
+    "blocks": [
+      { "type": "stat", "settings": { "number": "87", "suffix": "%", "label": "upplever fÃ¶rbÃ¤ttrad sÃ¶mn" } },
+      { "type": "stat", "settings": { "number": "60", "suffix": "%", "label": "mindre muskelvÃ¤rk" } },
+      { "type": "stat", "settings": { "number": "28", "suffix": "%", "label": "lÃ¤gre kortisolnivÃ¥er" } },
+      { "type": "stat", "settings": { "number": "40", "suffix": "%", "label": "bÃ¤ttre Ã¥terhÃ¤mtning" } },
+      { "type": "badge", "settings": { "text": "Kliniskt testad" } },
+      { "type": "badge", "settings": { "text": "Tredjepartstestad" } },
+      { "type": "badge", "settings": { "text": "GMP-certifierad" } },
+      { "type": "badge", "settings": { "text": "Inga konstgjorda tillsatser" } }
+    ]
+  }]
+}
+{% endschema %}
+

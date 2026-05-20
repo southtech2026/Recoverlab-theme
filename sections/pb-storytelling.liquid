@@ -1,0 +1,86 @@
+﻿<section class="pb-storytelling pb-section">
+  <div class="pb-container">
+    <div class="pb-storytelling__grid">
+      <div class="pb-storytelling__media pb-fade-in">
+        {%- if section.settings.image != blank -%}
+          <img
+            src="{{ section.settings.image | image_url: width: 800 }}"
+            srcset="{{ section.settings.image | image_url: width: 400 }} 400w, {{ section.settings.image | image_url: width: 800 }} 800w"
+            sizes="(max-width:768px) 100vw, 50vw"
+            alt="{{ section.settings.title | strip_html | escape }}"
+            loading="lazy"
+          >
+        {%- else -%}
+          <div style="background:linear-gradient(135deg,#1a3a2a,#2d6a4a);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          </div>
+        {%- endif -%}
+        <div class="pb-storytelling__media-badge">
+          <div class="pb-storytelling__badge-stat">{{ section.settings.badge_stat | default: '87%' }}</div>
+          <div class="pb-storytelling__badge-text">{{ section.settings.badge_text | default: 'upplever bÃ¤ttre sÃ¶mn inom 2 veckor' }}</div>
+        </div>
+      </div>
+      <div class="pb-storytelling__content">
+        <p class="pb-label pb-label--white pb-fade-in">{{ section.settings.label | default: 'VÃ¥r historia' }}</p>
+        <h2 class="pb-storytelling__title pb-fade-in pb-fade-in--d1">{{ section.settings.title | default: 'Kroppen klarar <em>mer</em> nÃ¤r den Ã¥terhÃ¤mtar sig rÃ¤tt.' }}</h2>
+        <p class="pb-storytelling__body pb-fade-in pb-fade-in--d2">{{ section.settings.body }}</p>
+        <div class="pb-storytelling__stats pb-fade-in pb-fade-in--d3">
+          {%- for block in section.blocks -%}
+            <div class="pb-storytelling__stat" {{ block.shopify_attributes }}>
+              <div class="pb-storytelling__stat-number">
+                <span class="pb-counter" data-target="{{ block.settings.number }}" data-suffix="{{ block.settings.suffix }}">{{ block.settings.number }}{{ block.settings.suffix }}</span>
+              </div>
+              <div class="pb-storytelling__stat-label">{{ block.settings.label }}</div>
+            </div>
+          {%- endfor -%}
+        </div>
+        {%- if section.settings.cta_label != blank -%}
+          <div class="pb-fade-in pb-fade-in--d4">
+            <a href="{{ section.settings.cta_url }}" class="pb-btn pb-btn--green pb-btn--lg">
+              {{ section.settings.cta_label }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB â€” Storytelling",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "VÃ¥r historia" },
+    { "type": "richtext", "id": "title", "label": "Title", "default": "<p>Kroppen klarar <em>mer</em> nÃ¤r den Ã¥terhÃ¤mtar sig rÃ¤tt.</p>" },
+    { "type": "textarea", "id": "body", "label": "Body text", "default": "I en vÃ¤rld av konstant stress, dÃ¥lig sÃ¶mn och Ã¶vertrÃ¤ning Ã¤r Ã¥terhÃ¤mtning inte ett val â€“ det Ã¤r en nÃ¶dvÃ¤ndighet. VÃ¥r forskning visar att de som prioriterar Ã¥terhÃ¤mtning presterar upp till 40% bÃ¤ttre pÃ¥ lÃ¥ng sikt. Vi har skapat produkter som gÃ¶r det mÃ¶jligt fÃ¶r alla att Ã¥terhÃ¤mta sig som proffs." },
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "text", "id": "badge_stat", "label": "Badge statistic", "default": "87%" },
+    { "type": "text", "id": "badge_text", "label": "Badge text", "default": "upplever bÃ¤ttre sÃ¶mn inom 2 veckor" },
+    { "type": "text", "id": "cta_label", "label": "CTA label", "default": "LÃ¤s mer om oss" },
+    { "type": "url", "id": "cta_url", "label": "CTA URL" }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistic",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number", "default": "40" },
+        { "type": "text", "id": "suffix", "label": "Suffix", "default": "%" },
+        { "type": "text", "id": "label", "label": "Label", "default": "bÃ¤ttre prestation" }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "PB â€” Storytelling",
+    "blocks": [
+      { "type": "stat", "settings": { "number": "40", "suffix": "%", "label": "bÃ¤ttre prestation" } },
+      { "type": "stat", "settings": { "number": "87", "suffix": "%", "label": "bÃ¤ttre sÃ¶mn" } },
+      { "type": "stat", "settings": { "number": "3", "suffix": "x", "label": "snabbare Ã¥terhÃ¤mtning" } },
+      { "type": "stat", "settings": { "number": "10000", "suffix": "+", "label": "nÃ¶jda atleter" } }
+    ]
+  }]
+}
+{% endschema %}
+

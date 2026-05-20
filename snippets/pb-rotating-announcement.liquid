@@ -1,0 +1,155 @@
+<style>
+  .pb-ann {
+    background: #000000;
+    color: #FFFFFF;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 200;
+  }
+
+  .pb-ann__track {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .pb-ann__item {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .pb-ann__item.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .pb-ann__item.is-leaving {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  .pb-ann__dot {
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* Progress dots */
+  .pb-ann__dots {
+    position: absolute;
+    right: clamp(16px, 3vw, 48px);
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .pb-ann__dot-nav {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  .pb-ann__dot-nav.is-active {
+    background: #FFFFFF;
+    transform: scale(1.3);
+  }
+</style>
+
+<div class="pb-ann" id="pb-ann" role="region" aria-label="Meddelanden">
+  <div class="pb-ann__track">
+    <div class="pb-ann__item is-active" data-ann-item>
+      <span class="pb-ann__dot"></span>
+      VÅR REA
+      <span class="pb-ann__dot"></span>
+    </div>
+    <div class="pb-ann__item" data-ann-item>
+      <span class="pb-ann__dot"></span>
+      FRI FRAKT
+      <span class="pb-ann__dot"></span>
+    </div>
+    <div class="pb-ann__item" data-ann-item>
+      <span class="pb-ann__dot"></span>
+      SÄKER BETALNING
+      <span class="pb-ann__dot"></span>
+    </div>
+  </div>
+  <div class="pb-ann__dots" aria-hidden="true">
+    <button class="pb-ann__dot-nav is-active" data-ann-nav="0"></button>
+    <button class="pb-ann__dot-nav" data-ann-nav="1"></button>
+    <button class="pb-ann__dot-nav" data-ann-nav="2"></button>
+  </div>
+</div>
+
+<script>
+(function () {
+  var items = document.querySelectorAll('[data-ann-item]');
+  var navDots = document.querySelectorAll('[data-ann-nav]');
+  var current = 0;
+  var total = items.length;
+  var timer;
+
+  function goTo(next) {
+    items[current].classList.remove('is-active');
+    items[current].classList.add('is-leaving');
+    navDots[current].classList.remove('is-active');
+
+    var leaving = current;
+    setTimeout(function () {
+      items[leaving].classList.remove('is-leaving');
+    }, 500);
+
+    current = next % total;
+    items[current].classList.add('is-active');
+    navDots[current].classList.add('is-active');
+  }
+
+  function startTimer() {
+    timer = setInterval(function () {
+      goTo(current + 1);
+    }, 3000);
+  }
+
+  navDots.forEach(function (dot) {
+    dot.addEventListener('click', function () {
+      clearInterval(timer);
+      goTo(parseInt(dot.dataset.annNav));
+      startTimer();
+    });
+  });
+
+  startTimer();
+})();
+</script>

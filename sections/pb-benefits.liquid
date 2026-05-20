@@ -1,0 +1,75 @@
+<section class="pb-benefits pb-section">
+  <div class="pb-container">
+    <div class="pb-benefits__header">
+      <p class="pb-label pb-fade-in">{{ section.settings.label | default: 'Fördelarna' }}</p>
+      <h2 class="pb-heading-lg pb-fade-in pb-fade-in--d1" style="margin-bottom:14px;">{{ section.settings.title | default: 'Optimera Din Kropp Inifrån' }}</h2>
+      {%- if section.settings.subtitle != blank -%}
+        <p class="pb-body-lg pb-fade-in pb-fade-in--d2">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+    </div>
+    <div class="pb-benefits__grid">
+      {%- for block in section.blocks -%}
+        <div class="pb-benefit-card pb-fade-in pb-fade-in--d{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="pb-benefit-card__icon">
+            {%- if block.settings.icon == 'recovery' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            {%- elsif block.settings.icon == 'energy' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            {%- elsif block.settings.icon == 'sleep' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            {%- elsif block.settings.icon == 'stress' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            {%- elsif block.settings.icon == 'muscle' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5c-.69.69-1 1.59-1 2.5 0 2.21 1.79 4 4 4h4.37c.79 0 1.59.29 2.19.88l2.94 2.94"/><path d="M18 2l4 4-8.5 8.5-4-4z"/><path d="M2 18l4 4 2-2-4-4z"/></svg>
+            {%- else -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            {%- endif -%}
+          </div>
+          <h3 class="pb-benefit-card__title">{{ block.settings.title }}</h3>
+          <p class="pb-benefit-card__text">{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB - Benefits",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "Fordelarna" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Optimera Din Kropp" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Allt du behover for att prestera pa din hogsta niva varje dag." }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        { "type": "select", "id": "icon", "label": "Icon", "options": [
+          { "value": "recovery", "label": "Recovery" },
+          { "value": "energy", "label": "Energy" },
+          { "value": "sleep", "label": "Sleep" },
+          { "value": "stress", "label": "Stress" },
+          { "value": "muscle", "label": "Muscle" },
+          { "value": "performance", "label": "Performance" }
+        ], "default": "recovery" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Battre aterhamt" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Aterhamt dig snabbare efter traning med vetenskapligt beprovade ingredienser." }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "PB - Benefits",
+    "blocks": [
+      { "type": "benefit", "settings": { "icon": "recovery", "title": "Battre aterhamtning", "text": "Aterhamta dig snabbare efter traning med vetenskapligt beprovade ingredienser." } },
+      { "type": "benefit", "settings": { "icon": "energy", "title": "Okad energi", "text": "Naturlig och hallbar energi utan krascher – prestera battre hela dagen." } },
+      { "type": "benefit", "settings": { "icon": "sleep", "title": "Forbattrad somn", "text": "Djupare, mer restorativ somn for optimal kroppslig och mental aterhamtning." } },
+      { "type": "benefit", "settings": { "icon": "stress", "title": "Minskad stress", "text": "Adaptogener som hjalper din kropp hantera stress och balansera kortisolnivaer." } },
+      { "type": "benefit", "settings": { "icon": "muscle", "title": "Snabbare muskelaterhamtning", "text": "Minska muskelvark och inflammation – kom tillbaka starkare till nasta pass." } },
+      { "type": "benefit", "settings": { "icon": "performance", "title": "Hogre prestation", "text": "Maximal prestation nar det galler – mentalt och fysiskt." } }
+    ]
+  }]
+}
+{% endschema %}

@@ -1,0 +1,52 @@
+﻿<section class="pb-how-it-works">
+  <div class="pb-container">
+    <div class="pb-how-it-works__header">
+      <p class="pb-label pb-fade-in">{{ section.settings.label | default: 'SÃ¥ hÃ¤r fungerar det' }}</p>
+      <h2 class="pb-heading-lg pb-fade-in pb-fade-in--d1" style="color:var(--pb-text);margin-bottom:16px;">{{ section.settings.title | default: 'Enkelt Som 1â€“2â€“3â€“4' }}</h2>
+      {%- if section.settings.subtitle != blank -%}
+        <p class="pb-body-lg pb-fade-in pb-fade-in--d2" style="color:var(--pb-gray-500);">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+    </div>
+    <div class="pb-how-it-works__steps">
+      {%- for block in section.blocks -%}
+        <div class="pb-step pb-fade-in pb-fade-in--d{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="pb-step__number">{{ forloop.index }}</div>
+          <div class="pb-step__title">{{ block.settings.title }}</div>
+          <div class="pb-step__text">{{ block.settings.text }}</div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB â€” How It Works",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "SÃ¥ hÃ¤r fungerar det" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Enkelt Som 1â€“2â€“3â€“4" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Fyra enkla steg till bÃ¤ttre Ã¥terhÃ¤mtning och prestation." }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "text", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "PB â€” How It Works",
+    "blocks": [
+      { "type": "step", "settings": { "title": "Ta din dagliga dos", "text": "Ta rekommenderad dos med vatten, helst 30 minuter efter trÃ¤ning eller pÃ¥ kvÃ¤llen." } },
+      { "type": "step", "settings": { "title": "Ingredienserna aktiveras", "text": "Bioaktiva fÃ¶reningar absorberas snabbt och bÃ¶rjar arbeta synergistiskt i kroppen." } },
+      { "type": "step", "settings": { "title": "Kroppen Ã¥terhÃ¤mtar sig", "text": "Under sÃ¶mn sker den optimala reparationen av muskler och vÃ¤vnader." } },
+      { "type": "step", "settings": { "title": "MÃ¤rk skillnaden", "text": "Vakna utvilad, Ã¥terhÃ¤mtad och redo att prestera pÃ¥ din toppnivÃ¥." } }
+    ]
+  }]
+}
+{% endschema %}
+

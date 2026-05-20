@@ -1,0 +1,627 @@
+/* Recoverlabs — Green + Orange — Horizon Full Overrides */
+/* Primary brand: #2d5a3d · CTA orange: #ff6b35 · Montserrat + Inter */
+
+/* ================================================
+   GLOBAL
+   ================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: #FFFFFF !important;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif !important;
+  color: #555555 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection { background: rgba(45,90,61,0.12); color: #2d5a3d; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #F7F7F7; }
+::-webkit-scrollbar-thumb { background: #E5E5E5; }
+::-webkit-scrollbar-thumb:hover { background: #2d5a3d; }
+
+/* ================================================
+   TYPOGRAPHY
+   ================================================ */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4,
+[class*="heading"]:not([class*="pb-"]),
+[class*="title"]:not([class*="pb-"]) {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif !important;
+  color: #000000 !important;
+  letter-spacing: -0.02em;
+}
+p, span, a, li, label, input, button, select, textarea {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ================================================
+   ANNOUNCEMENT BAR — pure black
+   ================================================ */
+.announcement-bar, [class*="announcement"], announcement-bar {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important; font-weight: 600 !important; letter-spacing: 0.5px;
+}
+.announcement-bar a, [class*="announcement"] a { color: rgba(255,255,255,0.8) !important; }
+.announcement-bar a:hover { color: #FFFFFF !important; text-decoration: underline !important; }
+
+/* ================================================
+   HEADER — clean white, sticky
+   ================================================ */
+header-component, .header, .site-header {
+  background-color: #FFFFFF !important;
+  backdrop-filter: none !important;
+  border-bottom: 1px solid #E5E5E5 !important;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+}
+/* Neutralise any border/shadow on inner header sub-elements */
+.header__inner, .header__logo, .header__heading,
+.header__heading-logo, .header nav, .header__row,
+[class*="header__logo"], [class*="header__heading"],
+[class*="header__inner"], [class*="header__row"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* ================================================
+   HEADER LOGO — image upload support + text fallback
+   ================================================ */
+.header__logo img,
+[class*="header__logo"] img,
+[class*="header__heading"] img,
+.header__heading-logo img {
+  filter: none !important;
+  max-height: 80px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.header__logo-text,
+.site-header__logo,
+.header__heading,
+[class*="header__heading"],
+[class*="header__logo"] span,
+[class*="header__logo"] a,
+.header__heading-logo {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+.header__logo img ~ .header__logo-text,
+.header__logo img ~ span { display: none !important; }
+
+/* Nav links — force black */
+.header a, .header__nav a, nav a,
+.header__nav .list-menu__item,
+[class*="header-nav"] a,
+[class*="nav__item"] a,
+header-component a {
+  color: #000000 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: color 180ms ease !important;
+  letter-spacing: 0.2px;
+}
+.header a:hover, header-component a:hover { color: #2d5a3d !important; }
+
+header *, header-component * {
+  --color-foreground: 0, 0, 0 !important;
+  --color-link: 0, 0, 0 !important;
+}
+
+.header__menu-button svg, .header__icons svg,
+[class*="header__icon"] svg { color: #000000 !important; }
+
+/* ================================================
+   HIDE SEARCH & ACCOUNT ICONS — keep cart only
+   ================================================ */
+[class*="header__search"],
+[class*="header-search"],
+.header__search-button,
+button[aria-label*="Search"],
+button[aria-label*="Sök"],
+button[aria-label*="search"],
+details[id*="search"],
+[data-modal="search-modal"],
+[class*="search-modal-toggle"],
+[class*="header__icon--search"],
+.js-search-toggle,
+header-component [href*="search"],
+header .search { display: none !important; visibility: hidden !important; }
+
+[class*="header__account"],
+[class*="header-account"],
+[class*="header__icon--account"],
+a[href="/account"],
+a[href*="/account"],
+header a[href="/account"],
+header-component a[href="/account"],
+button[aria-label*="Account"],
+button[aria-label*="Konto"],
+button[aria-label*="account"],
+button[aria-label*="Log in"],
+[class*="customer-account"],
+.header__account,
+header [href="/account"] { display: none !important; visibility: hidden !important; }
+
+[class*="header__cart"],
+[class*="header-cart"],
+[class*="cart-icon"],
+a[href="/cart"],
+header a[href="/cart"],
+header-component a[href="/cart"],
+button[aria-label*="Cart"],
+button[aria-label*="Varukorg"],
+.cart-count-bubble,
+[class*="cart-count"] {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+[class*="cart-count"], .cart__count, [class*="cart-icon__bubble"] {
+  background: #ff6b35 !important; color: #FFFFFF !important;
+  border-radius: 0 !important; font-weight: 700 !important; font-size: 10px !important;
+}
+
+/* ================================================
+   MEGA MENU / DROPDOWN
+   ================================================ */
+.mega-menu, .dropdown-menu, [class*="dropdown"], [class*="mega-menu"] {
+  background: #FFFFFF !important;
+  border: 1px solid #E5E5E5 !important;
+  border-top: 2px solid #000000 !important;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.10) !important;
+  border-radius: 0 !important;
+}
+.mega-menu a, .dropdown-menu a {
+  color: #000000 !important; font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important; font-weight: 600 !important;
+}
+.mega-menu a:hover, .dropdown-menu a:hover { color: #2d5a3d !important; }
+
+/* ================================================
+   NATIVE HORIZON BUTTONS
+   ================================================ */
+.button, .btn, button[type="submit"],
+[class*="button--primary"], .product-form__submit, .cart__checkout-button {
+  background: #ff6b35 !important; color: #FFFFFF !important;
+  border: none !important; border-radius: 6px !important;
+  font-family: 'Inter', sans-serif !important; font-size: 12px !important;
+  font-weight: 700 !important; letter-spacing: 1px !important;
+  text-transform: uppercase !important; transition: all 200ms ease !important;
+  padding: 14px 26px !important;
+}
+.button:hover, [class*="button--primary"]:hover, .product-form__submit:hover {
+  background: #e05a25 !important; transform: translateY(-1px) !important;
+  box-shadow: 0 6px 24px rgba(255,107,53,0.30) !important;
+}
+[class*="button--secondary"], .button--secondary {
+  background: #FFFFFF !important; color: #2d5a3d !important;
+  border: 2px solid #2d5a3d !important; border-radius: 6px !important;
+}
+[class*="button--secondary"]:hover { background: #2d5a3d !important; color: #FFFFFF !important; }
+
+/* ================================================
+   PRODUCT CARDS
+   ================================================ */
+.card, .product-card, [class*="card--product"], .card-wrapper {
+  background: #FFFFFF !important; border: none !important; border-radius: 0 !important;
+  box-shadow: none !important; transition: all 340ms cubic-bezier(0.4,0,0.2,1) !important;
+  overflow: hidden !important;
+}
+.card:hover, .product-card:hover, .card-wrapper:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08) !important;
+}
+.card__media, [class*="card__media"] { background: #F7F7F7 !important; overflow: hidden !important; }
+.card__media img, [class*="card__media"] img {
+  filter: grayscale(8%); transition: transform 540ms cubic-bezier(0.4,0,0.2,1) !important, filter 400ms ease !important;
+}
+.card:hover .card__media img, .card-wrapper:hover [class*="card__media"] img { transform: scale(1.05) !important; filter: grayscale(0%) !important; }
+.card__heading, .card__title, .card__heading a {
+  font-family: 'Inter', sans-serif !important; font-size: 14px !important;
+  font-weight: 500 !important; color: #000000 !important;
+}
+.price, [class*="price__regular"], .price--large {
+  font-family: 'Montserrat', sans-serif !important; color: #2d5a3d !important; font-weight: 700 !important;
+}
+.price--sale { color: #2d5a3d !important; }
+.price--compare { color: #AAAAAA !important; text-decoration: line-through; }
+.badge, [class*="badge"] {
+  background: #ff6b35 !important; color: #FFFFFF !important; border-radius: 0 !important;
+  font-family: 'Inter', sans-serif !important; font-size: 10px !important;
+  font-weight: 700 !important; letter-spacing: 1px !important; text-transform: uppercase !important;
+}
+.badge--sale { background: #000000 !important; }
+
+/* ================================================
+   COLLECTION PAGE
+   ================================================ */
+.collection, .collection-hero, [class*="collection__header"] { background: #000000 !important; }
+.collection__title, [class*="collection__title"] {
+  font-family: 'Montserrat', sans-serif !important; color: #FFFFFF !important;
+  font-weight: 900 !important; letter-spacing: -0.03em !important; text-transform: uppercase !important;
+}
+[class*="collection__description"] { color: rgba(255,255,255,0.55) !important; font-family: 'Inter', sans-serif !important; }
+.facets__summary, [class*="facets__summary"] {
+  color: #000000 !important; border-color: #E5E5E5 !important; border-radius: 0 !important;
+  font-family: 'Inter', sans-serif !important; font-size: 12px !important;
+  font-weight: 700 !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;
+  background: #FFFFFF !important;
+}
+.active-filters [class*="badge"] { background: #2d5a3d !important; }
+
+/* ================================================
+   PRODUCT PAGE
+   ================================================ */
+.product, [class*="product__info"] { background: #FFFFFF !important; }
+.product__title, [class*="product__title"] {
+  font-family: 'Montserrat', sans-serif !important; font-weight: 900 !important;
+  color: #000000 !important; letter-spacing: -0.025em !important; text-transform: uppercase !important;
+}
+.product__description, [class*="product__description"] {
+  font-family: 'Inter', sans-serif !important; font-size: 15px !important;
+  line-height: 1.78 !important; color: #555555 !important;
+}
+[class*="variant-input"]:checked + label,
+[class*="variant-input"]:checked ~ label, .swatch--active {
+  border-color: #ff6b35 !important; background: #ff6b35 !important; color: #FFFFFF !important;
+}
+[class*="variant-input"] + label {
+  border-radius: 0 !important; font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important; font-size: 12px !important;
+  text-transform: uppercase !important; letter-spacing: 0.5px !important;
+  border-color: #E5E5E5 !important;
+}
+quantity-selector, [class*="quantity"] {
+  border-radius: 0 !important; border-color: #E5E5E5 !important; background: #FFFFFF !important;
+}
+[class*="product__media"], [class*="product-gallery"] {
+  border-radius: 0 !important; overflow: hidden !important;
+  background: #F7F7F7 !important; box-shadow: none !important;
+}
+[class*="thumbnail"], .product__thumbnail {
+  border-radius: 0 !important; border: 2px solid transparent !important;
+  transition: border-color 200ms ease !important;
+}
+[class*="thumbnail"]:hover, [class*="thumbnail--active"] { border-color: #000000 !important; }
+.product-form__submit { letter-spacing: 1.5px !important; text-transform: uppercase !important; }
+
+/* ================================================
+   CART DRAWER
+   ================================================ */
+.cart-drawer, [class*="cart-drawer"], cart-drawer {
+  background: #FFFFFF !important;
+  box-shadow: -8px 0 60px rgba(0,0,0,0.14) !important;
+}
+[class*="cart-drawer__header"], .cart-drawer__header {
+  background: #000000 !important; border-bottom: none !important; padding: 20px 24px !important;
+}
+[class*="cart-drawer__title"], .cart-drawer__title {
+  font-family: 'Montserrat', sans-serif !important; color: #FFFFFF !important;
+  font-weight: 800 !important; font-size: 16px !important;
+  letter-spacing: -0.01em !important; text-transform: uppercase !important;
+}
+.cart-item, [class*="cart-item"] { border-bottom: 1px solid #F0F0F0 !important; padding: 16px 0 !important; }
+.cart-item__name, [class*="cart-item__name"] {
+  font-family: 'Inter', sans-serif !important; font-weight: 600 !important; color: #000000 !important; font-size: 14px !important;
+}
+.cart-item__price, [class*="cart-item__price"] {
+  font-family: 'Montserrat', sans-serif !important; font-weight: 700 !important; color: #2d5a3d !important;
+}
+[class*="cart__subtotal"], .cart-subtotal {
+  font-family: 'Montserrat', sans-serif !important; color: #000000 !important; font-weight: 700 !important;
+}
+[class*="cart__checkout"], .cart__checkout-button {
+  background: #ff6b35 !important; border-radius: 0 !important;
+  font-size: 12px !important; font-weight: 700 !important;
+  letter-spacing: 1.5px !important; text-transform: uppercase !important;
+}
+.cart__checkout-button:hover { background: #e05a25 !important; }
+[class*="cart__shipping"] { color: #2d5a3d !important; font-family: 'Inter', sans-serif !important; }
+[class*="cart__shipping-bar"] { background: #2d5a3d !important; height: 2px !important; }
+
+/* ================================================
+   FORMS & INPUTS
+   ================================================ */
+.field__input, input[type="text"], input[type="email"],
+input[type="password"], input[type="search"],
+input[type="tel"], select, textarea {
+  background: #FFFFFF !important; border: 1.5px solid #E5E5E5 !important;
+  border-radius: 0 !important; color: #000000 !important;
+  font-family: 'Inter', sans-serif !important; font-size: 14px !important;
+  padding: 13px 16px !important; transition: border-color 200ms ease !important;
+}
+.field__input:focus, input:focus, select:focus, textarea:focus {
+  border-color: #2d5a3d !important; box-shadow: 0 0 0 3px rgba(45,90,61,0.08) !important; outline: none !important;
+}
+.field__label, label {
+  font-family: 'Inter', sans-serif !important; font-size: 11px !important;
+  font-weight: 700 !important; color: #000000 !important;
+  text-transform: uppercase !important; letter-spacing: 0.8px !important;
+}
+
+/* ================================================
+   FOOTER — full black
+   ================================================ */
+footer, .footer, site-footer,
+[class*="footer"], [class*="footer-section"],
+.shopify-section--footer, .footer-section,
+footer.section, .footer.section,
+[class*="shopify-section-group-footer"],
+[id*="shopify-section-footer"],
+.section[class*="footer"] {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  color: rgba(255,255,255,0.55) !important;
+}
+
+/* All text inside footer */
+footer *, .footer *, [class*="footer"] * {
+  color: rgba(255,255,255,0.55) !important;
+  border-color: rgba(255,255,255,0.08) !important;
+}
+
+/* Headings in footer — white */
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
+.footer h1, .footer h2, .footer h3, .footer h4,
+[class*="footer"] h1, [class*="footer"] h2, [class*="footer"] h3, [class*="footer"] h4,
+[class*="footer__title"], [class*="footer__heading"] {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #FFFFFF !important;
+  font-size: 11px !important; font-weight: 700 !important;
+  text-transform: uppercase !important; letter-spacing: 1.5px !important;
+}
+
+/* Links in footer */
+footer a, .footer a, [class*="footer"] a {
+  color: rgba(255,255,255,0.45) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important; text-decoration: none !important;
+  transition: color 160ms ease !important;
+}
+footer a:hover, .footer a:hover, [class*="footer"] a:hover {
+  color: #FFFFFF !important;
+}
+
+/* Newsletter / email section */
+[class*="footer__newsletter"], [class*="newsletter"],
+footer form, .footer form {
+  background: transparent !important;
+}
+[class*="footer__newsletter"] input,
+[class*="newsletter"] input,
+footer input[type="email"], footer input[type="text"] {
+  background: rgba(255,255,255,0.07) !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  border-radius: 4px !important;
+  color: #FFFFFF !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  padding: 13px 16px !important;
+}
+[class*="footer__newsletter"] input::placeholder,
+footer input::placeholder { color: rgba(255,255,255,0.3) !important; }
+[class*="footer__newsletter"] input:focus,
+footer input:focus {
+  border-color: #ff6b35 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+[class*="footer__newsletter"] button,
+[class*="newsletter"] button,
+footer button[type="submit"], footer .button {
+  background: #ff6b35 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important; font-weight: 700 !important;
+  letter-spacing: 1px !important; text-transform: uppercase !important;
+}
+[class*="footer__newsletter"] button:hover,
+footer button[type="submit"]:hover { background: #e05a25 !important; }
+
+/* Bottom bar — copyright */
+.footer__copyright, [class*="footer__copyright"],
+[class*="footer-bottom"], [class*="footer__bottom"] {
+  color: rgba(255,255,255,0.65) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  border-top: 1px solid rgba(255,255,255,0.08) !important;
+  background: #000000 !important;
+  padding: 16px 0 !important;
+}
+.footer__copyright *, [class*="footer__copyright"] *,
+[class*="footer-bottom"] *, [class*="footer__bottom"] * {
+  color: rgba(255,255,255,0.65) !important;
+  background: transparent !important;
+}
+.footer__copyright a, [class*="footer__copyright"] a,
+[class*="footer-bottom"] a, [class*="footer__bottom"] a {
+  color: rgba(255,255,255,0.65) !important;
+}
+.footer__copyright a:hover, [class*="footer-bottom"] a:hover {
+  color: #FFFFFF !important;
+}
+
+/* Social icons */
+footer svg, .footer svg, [class*="footer"] svg {
+  fill: rgba(255,255,255,0.5) !important;
+  color: rgba(255,255,255,0.5) !important;
+}
+footer svg:hover, .footer svg:hover { fill: #FFFFFF !important; color: #FFFFFF !important; }
+
+/* Logo in footer */
+.footer [class*="logo"], [class*="footer__logo"] {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important; font-size: 20px !important; letter-spacing: -0.02em !important;
+}
+
+/* Powered by Shopify */
+[class*="powered-by"], [class*="powered_by"] {
+  color: rgba(255,255,255,0.2) !important;
+}
+[class*="powered-by"] a, [class*="powered_by"] a {
+  color: rgba(255,255,255,0.2) !important;
+}
+
+/* Kill Horizon's color-scheme background inside footer */
+footer .section-background,
+footer .section,
+footer .color-scheme-1,
+footer .color-scheme-2,
+footer .color-scheme-3,
+footer .color-scheme-4,
+footer .color-scheme-5,
+footer [class*="color-scheme"],
+footer [class*="color-"],
+footer .section--full-width,
+footer .section--wide,
+footer .section--narrow,
+footer .footer-content,
+footer .utilities,
+footer .utilities--blocks-1,
+footer .utilities--blocks-2,
+footer .utilities--blocks-3 {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  --color-background: 0 0 0 !important;
+  --color-foreground: 255 255 255 !important;
+  --color-foreground-muted: 153 153 153 !important;
+}
+
+/* Also target by Shopify section IDs for footer-group */
+[id*="shopify-section"][id*="footer"] .section-background,
+[id*="shopify-section"][id*="footer"] .section,
+[id*="shopify-section"][id*="footer"] [class*="color-scheme"],
+.shopify-section-group-footer-group .section-background,
+.shopify-section-group-footer-group .section,
+.shopify-section-group-footer-group [class*="color-scheme"] {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  --color-background: 0 0 0 !important;
+}
+
+/* ================================================
+   MOBILE MENU DRAWER
+   ================================================ */
+[class*="menu-drawer"], menu-drawer { background: #FFFFFF !important; }
+[class*="menu-drawer__header"] { background: #000000 !important; }
+[class*="menu-drawer__heading"] { color: #FFFFFF !important; font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important; font-size: 16px !important; text-transform: uppercase !important; }
+[class*="menu-drawer"] a {
+  color: #000000 !important; font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important; font-size: 15px !important;
+}
+[class*="menu-drawer"] a:hover { color: #2d5a3d !important; }
+[class*="menu-drawer__submenu"] { background: #F7F7F7 !important; border-top: 2px solid #000000 !important; }
+
+/* ================================================
+   BREADCRUMBS
+   ================================================ */
+.breadcrumb, [class*="breadcrumb"] {
+  font-family: 'Inter', sans-serif !important; font-size: 11px !important;
+  color: #AAAAAA !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;
+}
+.breadcrumb a { color: #555555 !important; }
+.breadcrumb a:hover { color: #2d5a3d !important; }
+
+/* ================================================
+   SEARCH
+   ================================================ */
+[class*="search__modal"], .search-modal {
+  background: rgba(255,255,255,0.99) !important; backdrop-filter: blur(16px) !important;
+}
+[class*="search__input"], .search-modal input {
+  background: #FFFFFF !important; border-color: #E5E5E5 !important;
+  border-radius: 0 !important; font-family: 'Inter', sans-serif !important; color: #000000 !important;
+}
+[class*="predictive-search"], predictive-search {
+  background: #FFFFFF !important; border: 1px solid #E5E5E5 !important;
+  border-top: 2px solid #000000 !important; border-radius: 0 !important;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.1) !important;
+}
+[class*="predictive-search__item"]:hover { background: #F7F7F7 !important; }
+
+/* ================================================
+   PAGINATION
+   ================================================ */
+.pagination a, .pagination__item {
+  border-radius: 0 !important; border-color: #E5E5E5 !important;
+  color: #000000 !important; font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important; font-weight: 600 !important;
+  background: #FFFFFF !important;
+}
+.pagination__item--current, .pagination__item:hover {
+  background: #2d5a3d !important; color: #FFFFFF !important; border-color: #2d5a3d !important;
+}
+
+/* ================================================
+   RATINGS
+   ================================================ */
+[class*="rating"] svg, [class*="star"] svg { color: #F59E0B !important; fill: #F59E0B !important; }
+
+/* ================================================
+   MODALS
+   ================================================ */
+[class*="modal__content"], .modal-content {
+  background: #FFFFFF !important; border-radius: 0 !important;
+  border: none !important; box-shadow: 0 20px 80px rgba(0,0,0,0.18) !important;
+}
+
+/* ================================================
+   ACCORDION / TABS
+   ================================================ */
+[class*="accordion__summary"], details summary {
+  font-family: 'Inter', sans-serif !important; font-weight: 700 !important;
+  color: #000000 !important; border-color: #E5E5E5 !important;
+  font-size: 12px !important; text-transform: uppercase !important; letter-spacing: 0.8px !important;
+}
+[class*="tab"] {
+  font-family: 'Inter', sans-serif !important; color: #555555 !important;
+  text-transform: uppercase !important; letter-spacing: 0.5px !important;
+  font-size: 12px !important; font-weight: 600 !important;
+}
+[class*="tab--active"] { color: #2d5a3d !important; border-color: #2d5a3d !important; }
+
+/* ================================================
+   BLOG / ARTICLES
+   ================================================ */
+.article-card, [class*="article"] .card { background: #FFFFFF !important; border: none !important; }
+.article-card__title, [class*="article-card__title"] {
+  font-family: 'Montserrat', sans-serif !important; color: #000000 !important;
+  font-weight: 700 !important; text-transform: uppercase !important;
+}
+
+/* ================================================
+   SECTIONS — white background only on non-footer sections
+   ================================================ */
+.section:not(footer):not([class*="footer"]) { background: #FFFFFF !important; }
+
+/* ================================================
+   HORIZON CSS VARIABLES
+   ================================================ */
+:root {
+  --color-background:          247 247 247 !important;
+  --color-foreground:          0 0 0 !important;
+  --color-foreground-heading:  0 0 0 !important;
+  --color-border:              229 229 229 !important;
+  --color-button:              255 107 53 !important;
+  --color-button-text:         255 255 255 !important;
+  --color-link:                45 90 61 !important;
+  --font-heading--family:      'Montserrat', 'Helvetica Neue', Arial, sans-serif !important;
+  --font-body--family:         'Inter', 'Helvetica Neue', Arial, sans-serif !important;
+}

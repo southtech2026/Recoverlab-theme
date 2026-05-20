@@ -1,0 +1,55 @@
+﻿<section class="pb-faq pb-section" style="background:var(--pb-cream);">
+  <div class="pb-container">
+    <div class="pb-faq__header">
+      <p class="pb-label pb-fade-in">{{ section.settings.label | default: 'ProduktfrÃ¥gor' }}</p>
+      <h2 class="pb-heading-lg pb-fade-in pb-fade-in--d1" style="color:var(--pb-text);margin-bottom:16px;">{{ section.settings.title | default: 'Produktspecifika FrÃ¥gor' }}</h2>
+    </div>
+    <div class="pb-faq__list pb-fade-in pb-fade-in--d2">
+      {%- for block in section.blocks -%}
+        <div class="pb-faq__item" {{ block.shopify_attributes }}>
+          <button class="pb-faq__question" type="button" aria-expanded="false">
+            {{ block.settings.question }}
+            <span class="pb-faq__question-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="pb-faq__answer">
+            <div class="pb-faq__answer-inner">{{ block.settings.answer }}</div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB â€” Product FAQ",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "ProduktfrÃ¥gor" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Produktspecifika FrÃ¥gor" }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "FAQ Item",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "richtext", "id": "answer", "label": "Answer" }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "PB â€” Product FAQ",
+    "blocks": [
+      { "type": "item", "settings": { "question": "Hur tar jag produkten?", "answer": "<p>Ta rekommenderad dos med ett glas vatten. BÃ¤st effekt uppnÃ¥s vid konsekvent daglig anvÃ¤ndning, gÃ¤rna pÃ¥ kvÃ¤llen 30â€“60 minuter innan lÃ¤ggdags.</p>" } },
+      { "type": "item", "settings": { "question": "Kan jag ta den varje dag?", "answer": "<p>Ja, produkten Ã¤r designad fÃ¶r daglig anvÃ¤ndning. De flesta ser bÃ¤st resultat efter 4â€“8 veckors kontinuerlig anvÃ¤ndning.</p>" } },
+      { "type": "item", "settings": { "question": "Finns det nÃ¥gra biverkningar?", "answer": "<p>Produkten tolereras vÃ¤l av de flesta. Vid hÃ¶ga magnesiumdoser kan lÃ¶s avfÃ¶ring fÃ¶rekomma â€“ minska dosen om detta sker. Konsultera lÃ¤kare om du tar mediciner eller Ã¤r gravid.</p>" } },
+      { "type": "item", "settings": { "question": "Ã„r den vegansk?", "answer": "<p>Ja, produkten Ã¤r 100% vegansk och fri frÃ¥n gluten, mjÃ¶lk och soja. Kapslarna Ã¤r tillverkade av vÃ¤xtbaserad cellulosa.</p>" } },
+      { "type": "item", "settings": { "question": "Kan jag kombinera med andra tillskott?", "answer": "<p>Generellt ja. Undvik dock dubbeldosering av liknande ingredienser. Kontakta vÃ¥r kundtjÃ¤nst fÃ¶r personlig rÃ¥dgivning om din specifika stack.</p>" } }
+    ]
+  }]
+}
+{% endschema %}
+

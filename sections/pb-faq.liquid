@@ -1,0 +1,60 @@
+﻿<section class="pb-faq pb-section">
+  <div class="pb-container">
+    <div class="pb-faq__header">
+      <p class="pb-label pb-fade-in">{{ section.settings.label | default: 'FAQ' }}</p>
+      <h2 class="pb-heading-lg pb-fade-in pb-fade-in--d1" style="color:var(--pb-text);margin-bottom:16px;">{{ section.settings.title | default: 'Vanliga FrÃ¥gor' }}</h2>
+      {%- if section.settings.subtitle != blank -%}
+        <p class="pb-body-lg pb-fade-in pb-fade-in--d2" style="color:var(--pb-gray-500);">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+    </div>
+    <div class="pb-faq__list pb-fade-in pb-fade-in--d2">
+      {%- for block in section.blocks -%}
+        <div class="pb-faq__item" {{ block.shopify_attributes }}>
+          <button class="pb-faq__question" type="button" aria-expanded="false">
+            {{ block.settings.question }}
+            <span class="pb-faq__question-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </span>
+          </button>
+          <div class="pb-faq__answer">
+            <div class="pb-faq__answer-inner">{{ block.settings.answer }}</div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB â€” FAQ",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "FAQ" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Vanliga FrÃ¥gor" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Har du fler frÃ¥gor? Kontakta oss gÃ¤rna." }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "FAQ Item",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "richtext", "id": "answer", "label": "Answer" }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "PB â€” FAQ",
+    "blocks": [
+      { "type": "item", "settings": { "question": "Hur snabbt ser jag resultat?", "answer": "<p>De flesta kunder mÃ¤rker fÃ¶rbÃ¤ttringar inom 2â€“4 veckor med regelbunden anvÃ¤ndning. SÃ¶mnkvalitet och energinivÃ¥er brukar fÃ¶rbÃ¤ttras snabbast, medan muskelÃ¥terhÃ¤mtning och stressreduktion tar lite lÃ¤ngre tid.</p>" } },
+      { "type": "item", "settings": { "question": "Ã„r produkterna sÃ¤kra att anvÃ¤nda?", "answer": "<p>Ja, absolut. Alla vÃ¥ra produkter Ã¤r tredjepartstestad fÃ¶r renhet och potens. Vi anvÃ¤nder inga konstgjorda tillsatser, fyllnadsmedel eller fÃ¶rbjudna substanser. LÃ¤s alltid ingredienslistan och konsultera din lÃ¤kare om du har underliggande hÃ¤lsotillstÃ¥nd.</p>" } },
+      { "type": "item", "settings": { "question": "Hur lÃ¤nge rÃ¤cker en fÃ¶rpackning?", "answer": "<p>En standardfÃ¶rpackning rÃ¤cker i 30 dagar vid rekommenderad dosering. Vi erbjuder prenumeration med 15% rabatt fÃ¶r de som vill sÃ¤kerstÃ¤lla att de aldrig tar slut.</p>" } },
+      { "type": "item", "settings": { "question": "Kan jag kombinera produkterna?", "answer": "<p>Ja, vÃ¥ra produkter Ã¤r designade fÃ¶r att fungera synergistiskt. Vi rekommenderar att bÃ¶rja med en produkt och sedan lÃ¤gga till fler efter hand. Kontakta vÃ¥r kundtjÃ¤nst fÃ¶r personlig rÃ¥dgivning.</p>" } },
+      { "type": "item", "settings": { "question": "Vad Ã¤r er returpolicy?", "answer": "<p>Vi erbjuder 30 dagars nÃ¶jd-kund-garanti. Om du av nÃ¥gon anledning inte Ã¤r nÃ¶jd, kontaktar du oss och vi Ã¥terbetalar hela kÃ¶pesumman â€“ inga frÃ¥gor stÃ¤llda.</p>" } },
+      { "type": "item", "settings": { "question": "Hur lÃ¥ng Ã¤r leveranstiden?", "answer": "<p>Vi skickar alla order inom 24 timmar pÃ¥ vardagar. Standard leveranstid Ã¤r 1â€“3 arbetsdagar inom Sverige. Fri frakt pÃ¥ alla order Ã¶ver 499 kr.</p>" } }
+    ]
+  }]
+}
+{% endschema %}
+

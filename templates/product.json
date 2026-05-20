@@ -1,0 +1,857 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "none",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "open_in_new_tab": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "price_tVjtKg"
+              ]
+            },
+            "divider_VJhene": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": false,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "divider_VJhene",
+            "variant_picker_R3rGDr",
+            "buy_buttons_eYQEYi",
+            "text_aEtTtq"
+          ]
+        }
+      },
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "pb_product_benefits": {
+      "type": "pb-product-benefits",
+      "blocks": {
+        "pb1": {
+          "type": "benefit",
+          "settings": {
+            "emoji": "💪",
+            "title": "Snabbare återhämtning",
+            "text": "Kliniskt bevisad minskning av muskelvärk"
+          }
+        },
+        "pb2": {
+          "type": "benefit",
+          "settings": {
+            "emoji": "😴",
+            "title": "Djupare sömn",
+            "text": "Förbättrar sömnkvalitet med 40%"
+          }
+        },
+        "pb3": {
+          "type": "benefit",
+          "settings": {
+            "emoji": "⚡",
+            "title": "Mer energi",
+            "text": "Naturlig energi utan krascher"
+          }
+        },
+        "pb4": {
+          "type": "benefit",
+          "settings": {
+            "emoji": "🧠",
+            "title": "Mental klarhet",
+            "text": "Skärper fokus och koncentration"
+          }
+        }
+      },
+      "block_order": [
+        "pb1",
+        "pb2",
+        "pb3",
+        "pb4"
+      ],
+      "settings": {}
+    },
+    "pb_problem_solution": {
+      "type": "pb-product-problem-solution",
+      "blocks": {
+        "prob1": {
+          "type": "problem",
+          "settings": {
+            "text": "Muskelvärk i 3–5 dagar efter träning"
+          }
+        },
+        "prob2": {
+          "type": "problem",
+          "settings": {
+            "text": "Dålig sömnkvalitet och orolig sömn"
+          }
+        },
+        "prob3": {
+          "type": "problem",
+          "settings": {
+            "text": "Låg energi och trötthet under dagen"
+          }
+        },
+        "sol1": {
+          "type": "solution",
+          "settings": {
+            "text": "Minskar muskelvärk med upp till 60%"
+          }
+        },
+        "sol2": {
+          "type": "solution",
+          "settings": {
+            "text": "Djupare REM-sömn varje natt"
+          }
+        },
+        "sol3": {
+          "type": "solution",
+          "settings": {
+            "text": "Redo för nästa träningspass på 24h"
+          }
+        }
+      },
+      "block_order": [
+        "prob1",
+        "prob2",
+        "prob3",
+        "sol1",
+        "sol2",
+        "sol3"
+      ],
+      "settings": {
+        "label": "Problemet & lösningen",
+        "title": "Vi Förstår Problemet"
+      }
+    },
+    "pb_how_it_works": {
+      "type": "pb-product-how-it-works",
+      "blocks": {
+        "step1": {
+          "type": "step",
+          "settings": {
+            "title": "Ta din dagliga dos",
+            "text": "Ta rekommenderad dos med vatten, gärna 30 minuter efter träning eller på kvällen."
+          }
+        },
+        "step2": {
+          "type": "step",
+          "settings": {
+            "title": "Ingredienserna aktiveras",
+            "text": "Bioaktiva föreningar absorberas snabbt och börjar arbeta synergistiskt."
+          }
+        },
+        "step3": {
+          "type": "step",
+          "settings": {
+            "title": "Kroppen återhämtar sig",
+            "text": "Under sömn sker optimal reparation av muskler och vävnader."
+          }
+        },
+        "step4": {
+          "type": "step",
+          "settings": {
+            "title": "Märk skillnaden",
+            "text": "Vakna utvilad, återhämtad och redo att prestera på toppnivå."
+          }
+        }
+      },
+      "block_order": [
+        "step1",
+        "step2",
+        "step3",
+        "step4"
+      ],
+      "settings": {
+        "label": "Så här fungerar det",
+        "title": "Enkelt Som 1–2–3–4"
+      }
+    },
+    "pb_ingredients": {
+      "type": "pb-product-ingredients",
+      "blocks": {
+        "ing1": {
+          "type": "ingredient",
+          "settings": {
+            "emoji": "🌙",
+            "name": "Magnesium Bisglycinate",
+            "amount": "300 mg",
+            "text": "Den mest biotillgängliga formen av magnesium. Stödjer muskelrelaxation och djup sömn."
+          }
+        },
+        "ing2": {
+          "type": "ingredient",
+          "settings": {
+            "emoji": "🌿",
+            "name": "Ashwagandha KSM-66",
+            "amount": "600 mg",
+            "text": "Sänker kortisolnivåer med upp till 28% och förbättrar stresstålighet."
+          }
+        },
+        "ing3": {
+          "type": "ingredient",
+          "settings": {
+            "emoji": "💊",
+            "name": "L-Glycin",
+            "amount": "3 000 mg",
+            "text": "Förbättrar sömnkvalitet, stödjer kollagenproduktion och minskar muskelvärk."
+          }
+        },
+        "ing4": {
+          "type": "ingredient",
+          "settings": {
+            "emoji": "🧪",
+            "name": "Vitamin D3 + K2",
+            "amount": "2 000 IE / 100 mcg",
+            "text": "Stödjer muskelfunktion, immunsystem och benhälsa."
+          }
+        },
+        "ing5": {
+          "type": "ingredient",
+          "settings": {
+            "emoji": "🌱",
+            "name": "Zink Bisglycinate",
+            "amount": "15 mg",
+            "text": "Essentiellt för testosteronproduktion, immunfunktion och proteinsyntes."
+          }
+        },
+        "ing6": {
+          "type": "ingredient",
+          "settings": {
+            "emoji": "⚡",
+            "name": "CoQ10 Ubiquinol",
+            "amount": "100 mg",
+            "text": "Stödjer mitokondriell energiproduktion och minskar oxidativ stress."
+          }
+        }
+      },
+      "block_order": [
+        "ing1",
+        "ing2",
+        "ing3",
+        "ing4",
+        "ing5",
+        "ing6"
+      ],
+      "settings": {
+        "label": "Ingredienser",
+        "title": "Vetenskapligt Beprövade Ingredienser",
+        "subtitle": "Varje ingrediens är noggrant vald baserat på klinisk forskning."
+      }
+    },
+    "pb_product_science": {
+      "type": "pb-product-science",
+      "blocks": {
+        "sc1": {
+          "type": "stat",
+          "settings": {
+            "number": "87",
+            "suffix": "%",
+            "label": "upplever förbättrad sömn"
+          }
+        },
+        "sc2": {
+          "type": "stat",
+          "settings": {
+            "number": "60",
+            "suffix": "%",
+            "label": "mindre muskelvärk"
+          }
+        },
+        "sc3": {
+          "type": "stat",
+          "settings": {
+            "number": "28",
+            "suffix": "%",
+            "label": "lägre kortisolnivåer"
+          }
+        },
+        "sc4": {
+          "type": "stat",
+          "settings": {
+            "number": "40",
+            "suffix": "%",
+            "label": "bättre återhämtning"
+          }
+        },
+        "bd1": {
+          "type": "badge",
+          "settings": {
+            "text": "Kliniskt testad"
+          }
+        },
+        "bd2": {
+          "type": "badge",
+          "settings": {
+            "text": "Tredjepartstestad"
+          }
+        },
+        "bd3": {
+          "type": "badge",
+          "settings": {
+            "text": "GMP-certifierad"
+          }
+        },
+        "bd4": {
+          "type": "badge",
+          "settings": {
+            "text": "Inga konstgjorda tillsatser"
+          }
+        }
+      },
+      "block_order": [
+        "sc1",
+        "sc2",
+        "sc3",
+        "sc4",
+        "bd1",
+        "bd2",
+        "bd3",
+        "bd4"
+      ],
+      "settings": {
+        "label": "Vetenskapen bakom",
+        "title": "Grundad i Forskning",
+        "text": "Varje produkt är formulerad baserat på peer-reviewed forskning och kliniska studier."
+      }
+    },
+    "pb_product_comparison": {
+      "type": "pb-product-comparison",
+      "blocks": {
+        "cr1": {
+          "type": "row",
+          "settings": {
+            "feature": "Kliniskt beprövade ingredienser",
+            "ours": "yes",
+            "comp1": "no",
+            "comp2": "no"
+          }
+        },
+        "cr2": {
+          "type": "row",
+          "settings": {
+            "feature": "Tredjepartstestad",
+            "ours": "yes",
+            "comp1": "no",
+            "comp2": "yes"
+          }
+        },
+        "cr3": {
+          "type": "row",
+          "settings": {
+            "feature": "Inga konstgjorda tillsatser",
+            "ours": "yes",
+            "comp1": "no",
+            "comp2": "no"
+          }
+        },
+        "cr4": {
+          "type": "row",
+          "settings": {
+            "feature": "30 dagars garanti",
+            "ours": "yes",
+            "comp1": "no",
+            "comp2": "yes"
+          }
+        },
+        "cr5": {
+          "type": "row",
+          "settings": {
+            "feature": "Pris per dos",
+            "ours": "29 kr",
+            "comp1": "45 kr",
+            "comp2": "38 kr"
+          }
+        }
+      },
+      "block_order": [
+        "cr1",
+        "cr2",
+        "cr3",
+        "cr4",
+        "cr5"
+      ],
+      "settings": {
+        "label": "Jämförelse",
+        "title": "Varför Vi Är Bäst",
+        "our_name": "Vår Produkt",
+        "comp1_name": "Konkurrent A",
+        "comp2_name": "Konkurrent B"
+      }
+    },
+    "pb_product_testimonials": {
+      "type": "pb-testimonials",
+      "blocks": {
+        "rt1": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Den bästa återhämtningsprodukten jag provat. Sover som ett barn och vaknar utvilad.",
+            "name": "Emma L.",
+            "role": "Löpare"
+          }
+        },
+        "rt2": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Halverat min återhämtningstid mellan träningspassen. Otroliga resultat!",
+            "name": "Marcus B.",
+            "role": "Triatlet"
+          }
+        },
+        "rt3": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Äntligen ett tillskott som faktiskt gör skillnad. Mer energi och bättre fokus.",
+            "name": "Sofia A.",
+            "role": "Yogi & företagare"
+          }
+        }
+      },
+      "block_order": [
+        "rt1",
+        "rt2",
+        "rt3"
+      ],
+      "settings": {
+        "label": "Kundrecensioner",
+        "title": "Vad Våra Kunder Säger",
+        "overall_rating": "4.9",
+        "review_count": "1 247"
+      }
+    },
+    "pb_product_faq": {
+      "type": "pb-product-faq",
+      "blocks": {
+        "pf1": {
+          "type": "item",
+          "settings": {
+            "question": "Hur tar jag produkten?",
+            "answer": "<p>Ta rekommenderad dos med ett glas vatten, gärna på kvällen 30–60 minuter innan läggdags.</p>"
+          }
+        },
+        "pf2": {
+          "type": "item",
+          "settings": {
+            "question": "Kan jag ta den varje dag?",
+            "answer": "<p>Ja, produkten är designad för daglig användning. Bäst resultat efter 4–8 veckors kontinuerlig användning.</p>"
+          }
+        },
+        "pf3": {
+          "type": "item",
+          "settings": {
+            "question": "Är den vegansk?",
+            "answer": "<p>Ja, produkten är 100% vegansk och fri från gluten, mjölk och soja.</p>"
+          }
+        },
+        "pf4": {
+          "type": "item",
+          "settings": {
+            "question": "Finns det biverkningar?",
+            "answer": "<p>Tolereras väl av de flesta. Konsultera läkare om du tar mediciner eller är gravid.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pf1",
+        "pf2",
+        "pf3",
+        "pf4"
+      ],
+      "settings": {
+        "label": "Produktfrågor",
+        "title": "Produktspecifika Frågor"
+      }
+    },
+    "product_recommendations_qggXJq": {
+      "type": "product-recommendations",
+      "blocks": {
+        "text_cbcgyb": {
+          "type": "text",
+          "name": "t:names.header",
+          "settings": {
+            "text": "<h3>Du kanske också gillar</h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 8,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_DNizbJ": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_M7MJkb": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_gLWgA6": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_DNizbJ",
+            "product_title_M7MJkb",
+            "price_gLWgA6"
+          ]
+        }
+      },
+      "block_order": [
+        "text_cbcgyb"
+      ],
+      "name": "t:names.product_recommendations",
+      "settings": {
+        "product": "{{ closest.product }}",
+        "recommendation_type": "related",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 12,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    }
+  },
+  "order": [
+    "main",
+    "pb_product_benefits",
+    "pb_problem_solution",
+    "pb_how_it_works",
+    "pb_ingredients",
+    "pb_product_science",
+    "pb_product_comparison",
+    "pb_product_testimonials",
+    "pb_product_faq",
+    "product_recommendations_qggXJq"
+  ]
+}

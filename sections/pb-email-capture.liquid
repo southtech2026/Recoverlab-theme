@@ -1,0 +1,57 @@
+<section class="pb-email-capture pb-section">
+  <div class="pb-container">
+    <div class="pb-email-capture__inner">
+      <div class="pb-email-capture__offer pb-fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        {{ section.settings.offer | default: '10% rabatt på din första order' }}
+      </div>
+      <h2 class="pb-email-capture__title pb-fade-in pb-fade-in--d1">{{ section.settings.title | default: 'Gå Med i Recovery Movement' }}</h2>
+      <p class="pb-email-capture__subtitle pb-fade-in pb-fade-in--d2">{{ section.settings.subtitle | default: 'Prenumerera och få exklusiva erbjudanden, tips om återhämtning och tidig tillgång till nya produkter.' }}</p>
+      <div class="pb-fade-in pb-fade-in--d3">
+        {%- form 'customer', class: 'pb-email-capture__form' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <input
+            type="email"
+            name="contact[email]"
+            class="pb-email-capture__input"
+            placeholder="{{ section.settings.placeholder | default: 'Din e-postadress' }}"
+            required
+            autocomplete="email"
+          >
+          <button type="submit" class="pb-email-capture__submit">{{ section.settings.button | default: 'Prenumerera' }}</button>
+        {%- endform -%}
+      </div>
+      <p class="pb-email-capture__disclaimer pb-fade-in pb-fade-in--d4">{{ section.settings.disclaimer | default: 'Vi skickar aldrig spam. Avsluta prenumerationen när som helst.' }}</p>
+      <div class="pb-email-capture__features pb-fade-in pb-fade-in--d5">
+        <div class="pb-email-capture__feature">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Exklusiva erbjudanden
+        </div>
+        <div class="pb-email-capture__feature">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Återhämtningstips från experter
+        </div>
+        <div class="pb-email-capture__feature">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Tidig tillgång till nyheter
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB — Email Capture",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "offer", "label": "Offer badge", "default": "10% rabatt på din första order" },
+    { "type": "text", "id": "title", "label": "Title", "default": "Gå Med i Recovery Movement" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Prenumerera och få exklusiva erbjudanden, tips om återhämtning och tidig tillgång till nya produkter." },
+    { "type": "text", "id": "placeholder", "label": "Input placeholder", "default": "Din e-postadress" },
+    { "type": "text", "id": "button", "label": "Button label", "default": "Prenumerera" },
+    { "type": "text", "id": "disclaimer", "label": "Disclaimer", "default": "Vi skickar aldrig spam. Avsluta prenumerationen när som helst." }
+  ],
+  "presets": [{ "name": "PB — Email Capture" }]
+}
+{% endschema %}

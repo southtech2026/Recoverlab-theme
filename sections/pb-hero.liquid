@@ -1,0 +1,172 @@
+{{ 'premium-brand.css' | asset_url | stylesheet_tag }}
+
+<style>
+  /* Desktop video visible, mobile hidden by default */
+  #pb-hero-{{ section.id }} .pb-hero__video--desktop { display: block; }
+  #pb-hero-{{ section.id }} .pb-hero__video--mobile  { display: none;  }
+
+  @media (max-width: 767px) {
+    #pb-hero-{{ section.id }} .pb-hero__video--desktop { display: none;  }
+    #pb-hero-{{ section.id }} .pb-hero__video--mobile  { display: block; }
+  }
+</style>
+
+<section class="pb-hero" id="pb-hero-{{ section.id }}">
+  <div class="pb-hero__media">
+
+    {%- comment -%} Desktop video (16:9) — hidden on mobile {%- endcomment -%}
+    <video
+      class="pb-hero__video--desktop"
+      autoplay muted loop playsinline preload="metadata" disablepictureinpicture
+      {%- if section.settings.bg_image != blank -%}
+        poster="{{ section.settings.bg_image | image_url: width: 1920 }}"
+      {%- endif -%}
+    >
+      <source data-src="https://cdn.shopify.com/videos/c/o/v/5b5c78e0f4c24e72b192f2823f3575f8.mp4" type="video/mp4">
+    </video>
+
+    {%- comment -%} Mobile video (9:16) — hidden on desktop {%- endcomment -%}
+    <video
+      class="pb-hero__video--mobile"
+      autoplay muted loop playsinline preload="metadata" disablepictureinpicture
+      {%- if section.settings.bg_image_mobile != blank -%}
+        poster="{{ section.settings.bg_image_mobile | image_url: width: 768 }}"
+      {%- elsif section.settings.bg_image != blank -%}
+        poster="{{ section.settings.bg_image | image_url: width: 768 }}"
+      {%- endif -%}
+    >
+      {%- if section.settings.bg_video_mobile != blank -%}
+        <source data-src="{{ section.settings.bg_video_mobile }}" type="video/mp4">
+      {%- else -%}
+        <source data-src="https://cdn.shopify.com/videos/c/o/v/5b5c78e0f4c24e72b192f2823f3575f8.mp4" type="video/mp4">
+      {%- endif -%}
+    </video>
+
+  </div>
+
+  <div class="pb-hero__overlay" style="background:linear-gradient(to top,
+    rgba(0,0,0,{{ section.settings.ov_bottom }}) 0%,
+    rgba(0,0,0,{{ section.settings.ov_mid }}) 45%,
+    rgba(0,0,0,{{ section.settings.ov_top }}) 100%
+  );"></div>
+
+  <div class="pb-hero__content">
+    <div class="pb-hero__inner">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="pb-hero__eyebrow pb-fade-in">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      {%- if section.settings.headline != blank -%}
+        <h1 class="pb-hero__headline pb-fade-in pb-fade-in--d1">{{ section.settings.headline }}</h1>
+      {%- endif -%}
+      {%- if section.settings.subheadline != blank -%}
+        <p class="pb-hero__subheadline pb-fade-in pb-fade-in--d2">{{ section.settings.subheadline }}</p>
+      {%- endif -%}
+      <div class="pb-hero__ctas pb-fade-in pb-fade-in--d3">
+        {%- if section.settings.cta1_label != blank -%}
+          <a href="{{ section.settings.cta1_url }}" class="pb-btn pb-btn--primary pb-btn--lg">
+            {{ section.settings.cta1_label }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        {%- endif -%}
+        {%- if section.settings.cta2_label != blank -%}
+          <a href="{{ section.settings.cta2_url }}" class="pb-btn pb-btn--ghost-white pb-btn--lg">{{ section.settings.cta2_label }}</a>
+        {%- endif -%}
+      </div>
+      <div class="pb-hero__trust pb-fade-in pb-fade-in--d4">
+        {%- if section.settings.trust1 != blank -%}
+          <div class="pb-hero__trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            {{ section.settings.trust1 }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.trust2 != blank -%}
+          <div class="pb-hero__trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            {{ section.settings.trust2 }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.trust3 != blank -%}
+          <div class="pb-hero__trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            {{ section.settings.trust3 }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-hero__scroll-hint">
+    <div class="pb-hero__scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<script>
+(function () {
+  var hero       = document.getElementById('pb-hero-{{ section.id }}');
+  if (!hero) return;
+
+  var isMobile   = window.innerWidth < 768;
+  var desktop    = hero.querySelector('.pb-hero__video--desktop');
+  var mobile     = hero.querySelector('.pb-hero__video--mobile');
+
+  function activateVideo(vid) {
+    /* Move data-src → src so the browser starts loading */
+    vid.querySelectorAll('source[data-src]').forEach(function (s) {
+      s.src = s.dataset.src;
+      s.removeAttribute('data-src');
+    });
+    vid.load();
+    vid.play().catch(function () {});
+  }
+
+  function deactivateVideo(vid) {
+    /* Remove sources so browser stops any pending load */
+    vid.querySelectorAll('source').forEach(function (s) { s.removeAttribute('src'); });
+    vid.load();
+    vid.pause();
+  }
+
+  if (isMobile) {
+    deactivateVideo(desktop);
+    activateVideo(mobile);
+  } else {
+    deactivateVideo(mobile);
+    activateVideo(desktop);
+  }
+})();
+</script>
+
+<script src="{{ 'premium-brand.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "PB - Hero",
+  "tag": "section",
+  "class": "pb-section-hero",
+  "settings": [
+    { "type": "text",         "id": "eyebrow",      "label": "Eyebrow",             "default": "Recoverlabs — Performance & Recovery" },
+    { "type": "richtext",     "id": "headline",     "label": "Headline",            "default": "<p>PRESTERA.<br><em>ÅTERHÄMTA DIG.</em></p>" },
+    { "type": "text",         "id": "subheadline",  "label": "Subheadline",         "default": "Premium produkter för atleter som tar sin träning och återhämtning på allvar." },
+    { "type": "header",       "content": "Video" },
+    { "type": "text",         "id": "bg_video_mobile", "label": "Mobil video URL (.mp4)", "info": "Vertikal 9:16 video för telefon. Lämna tomt för att använda desktop-videon." },
+    { "type": "header",       "content": "Poster-bilder (visas medan video laddar)" },
+    { "type": "image_picker", "id": "bg_image",        "label": "Poster desktop" },
+    { "type": "image_picker", "id": "bg_image_mobile", "label": "Poster mobil" },
+    { "type": "header",       "content": "Overlay (0 = transparent, 1 = helt svart)" },
+    { "type": "text", "id": "ov_bottom", "label": "Nerifrån", "default": "0.90" },
+    { "type": "text", "id": "ov_mid",    "label": "Mitten",   "default": "0.50" },
+    { "type": "text", "id": "ov_top",    "label": "Uppifrån", "default": "0.14" },
+    { "type": "header", "content": "Knappar" },
+    { "type": "text", "id": "cta1_label", "label": "Knapp 1 text", "default": "Shoppa Nu" },
+    { "type": "url",  "id": "cta1_url",   "label": "Knapp 1 länk" },
+    { "type": "text", "id": "cta2_label", "label": "Knapp 2 text", "default": "Se Kollektion" },
+    { "type": "url",  "id": "cta2_url",   "label": "Knapp 2 länk" },
+    { "type": "header", "content": "Förtroendemärken" },
+    { "type": "text", "id": "trust1", "label": "Märke 1", "default": "Säker betalning" },
+    { "type": "text", "id": "trust2", "label": "Märke 2", "default": "Fri frakt 499 kr+" },
+    { "type": "text", "id": "trust3", "label": "Märke 3", "default": "30 dagars retur" }
+  ],
+  "presets": [{ "name": "PB - Hero" }]
+}
+{% endschema %}

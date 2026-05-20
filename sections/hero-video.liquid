@@ -1,0 +1,343 @@
+{% comment %}
+  ============================================================
+  HERO VIDEO — Recoverlab
+  ============================================================
+  Aktivera sektionen:
+  1. Gå till Shopify Admin → Onlinebutik → Teman
+  2. Klicka "Anpassa" på ditt aktiva tema
+  3. Klicka "Lägg till sektion" på startsidan
+  4. Sök efter "Hero Video" och lägg till den
+  5. Fyll i video-URL:er, poster-bilder och texter i sidopanelen
+  ============================================================
+{% endcomment %}
+
+<style>
+  /* ── Wrapper ── */
+  .rv-hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    min-height: 500px;
+    overflow: hidden;
+    background: #000;
+  }
+
+  /* ── Video elements ── */
+  .rv-hero__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  /* Desktop video: visible by default, hidden on mobile */
+  .rv-hero__video--desktop { display: block; }
+  .rv-hero__video--mobile  { display: none;  }
+
+  /* ── Overlay ── */
+  .rv-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, {{ section.settings.overlay_opacity }});
+    z-index: 1;
+  }
+
+  /* ── Content ── */
+  .rv-hero__content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 clamp(24px, 6vw, 80px);
+  }
+
+  .rv-hero__title {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    font-size: clamp(36px, 7vw, 88px);
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin: 0 0 20px;
+    max-width: 900px;
+    text-transform: uppercase;
+  }
+
+  .rv-hero__subtitle {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.80);
+    margin: 0 0 40px;
+    max-width: 560px;
+  }
+
+  /* ── CTA button ── */
+  .rv-hero__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFFFFF;
+    color: #000000;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 36px;
+    border: 2px solid #FFFFFF;
+    transition: background 220ms ease, color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+  }
+  .rv-hero__btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  }
+  .rv-hero__btn svg {
+    transition: transform 220ms ease;
+  }
+  .rv-hero__btn:hover svg {
+    transform: translateX(3px);
+  }
+
+  /* ── Scroll hint ── */
+  .rv-hero__scroll {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, 0.35);
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: rv-bob 2.4s ease-in-out infinite;
+  }
+  .rv-hero__scroll-line {
+    width: 1px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.25);
+  }
+  @keyframes rv-bob {
+    0%, 100% { opacity: 0.35; transform: translateX(-50%) translateY(0); }
+    50%       { opacity: 0.70; transform: translateX(-50%) translateY(5px); }
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 767px) {
+    .rv-hero {
+      height: 80vh;
+      min-height: 420px;
+    }
+    .rv-hero__video--desktop { display: none;  }
+    .rv-hero__video--mobile  { display: block; }
+    .rv-hero__title { letter-spacing: -0.015em; }
+  }
+</style>
+
+<section class="rv-hero" aria-label="{{ section.settings.title | escape }}">
+
+  {% comment %} ── Desktop video (hidden on mobile via CSS) ── {% endcomment %}
+  <video
+    class="rv-hero__video rv-hero__video--desktop"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    disablepictureinpicture
+    {% if section.settings.poster_desktop != blank %}
+      poster="{{ section.settings.poster_desktop | image_url: width: 1920 }}"
+    {% endif %}
+  >
+    {% if section.settings.video_desktop != blank %}
+      <source src="{{ section.settings.video_desktop }}" type="video/mp4">
+    {% endif %}
+  </video>
+
+  {% comment %} ── Mobile video (hidden on desktop via CSS) ── {% endcomment %}
+  <video
+    class="rv-hero__video rv-hero__video--mobile"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    disablepictureinpicture
+    {% if section.settings.poster_mobile != blank %}
+      poster="{{ section.settings.poster_mobile | image_url: width: 768 }}"
+    {% endif %}
+  >
+    {% if section.settings.video_mobile != blank %}
+      <source src="{{ section.settings.video_mobile }}" type="video/mp4">
+    {% elsif section.settings.video_desktop != blank %}
+      {% comment %} Fallback to desktop video if no mobile video is set {% endcomment %}
+      <source src="{{ section.settings.video_desktop }}" type="video/mp4">
+    {% endif %}
+  </video>
+
+  {% comment %} ── Dark overlay ── {% endcomment %}
+  <div class="rv-hero__overlay"></div>
+
+  {% comment %} ── Text content ── {% endcomment %}
+  <div class="rv-hero__content">
+    {% if section.settings.title != blank %}
+      <h1 class="rv-hero__title">{{ section.settings.title }}</h1>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <p class="rv-hero__subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+    {% if section.settings.btn_label != blank %}
+      <a
+        href="{{ section.settings.btn_url | default: '/collections/all' }}"
+        class="rv-hero__btn"
+      >
+        {{ section.settings.btn_label }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+        </svg>
+      </a>
+    {% endif %}
+  </div>
+
+  {% comment %} ── Scroll indicator ── {% endcomment %}
+  <div class="rv-hero__scroll" aria-hidden="true">
+    <div class="rv-hero__scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+
+</section>
+
+{% comment %}
+  ── Lazy-load the correct video on mobile to save bandwidth ──
+  On mobile devices, pause and unload the desktop video source
+  so only the mobile video loads. Runs once after DOM is ready.
+{% endcomment %}
+<script>
+(function () {
+  var isMobile = window.innerWidth < 768;
+  var desktopVid = document.querySelector('.rv-hero__video--desktop');
+  var mobileVid  = document.querySelector('.rv-hero__video--mobile');
+
+  if (!desktopVid || !mobileVid) return;
+
+  if (isMobile) {
+    /* Prevent desktop video from loading on mobile */
+    desktopVid.querySelectorAll('source').forEach(function (s) { s.removeAttribute('src'); });
+    desktopVid.load();
+    /* Ensure mobile video plays */
+    mobileVid.play().catch(function () {});
+  } else {
+    /* Prevent mobile video from loading on desktop */
+    mobileVid.querySelectorAll('source').forEach(function (s) { s.removeAttribute('src'); });
+    mobileVid.load();
+    /* Ensure desktop video plays */
+    desktopVid.play().catch(function () {});
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Hero Video",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Videor"
+    },
+    {
+      "type": "text",
+      "id": "video_desktop",
+      "label": "Desktop video URL (.mp4)",
+      "info": "Klistra in URL till din horisontella video (16:9). Rekommenderas: 1920×1080px."
+    },
+    {
+      "type": "text",
+      "id": "video_mobile",
+      "label": "Mobil video URL (.mp4)",
+      "info": "Klistra in URL till din vertikala video (9:16). Rekommenderas: 1080×1920px. Lämna tomt för att använda desktop-videon."
+    },
+    {
+      "type": "header",
+      "content": "Poster-bilder (visas medan videon laddar)"
+    },
+    {
+      "type": "image_picker",
+      "id": "poster_desktop",
+      "label": "Poster-bild desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "poster_mobile",
+      "label": "Poster-bild mobil"
+    },
+    {
+      "type": "header",
+      "content": "Innehåll"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Rubrik",
+      "default": "Move. Recover. Repeat."
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Undertext",
+      "default": "Premiumprodukter för hälsa, träning och återhämtning."
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Knapp-text",
+      "default": "Utforska sortimentet"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Knapp-länk"
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay-styrka",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.4,
+      "info": "0 = helt genomskinlig, 1 = helt svart"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Video",
+      "settings": {
+        "title": "Move. Recover. Repeat.",
+        "subtitle": "Premiumprodukter för hälsa, träning och återhämtning.",
+        "btn_label": "Utforska sortimentet",
+        "overlay_opacity": 0.4
+      }
+    }
+  ]
+}
+{% endschema %}

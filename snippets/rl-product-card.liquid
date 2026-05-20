@@ -1,0 +1,67 @@
+{% comment %}
+  Recoverlab product card — reusable snippet
+  Usage: {% render 'rl-product-card', product: product %}
+{% endcomment %}
+
+<a href="{{ product.url }}" class="rl-pcard" aria-label="{{ product.title | escape }}">
+
+  <div class="rl-pcard__media">
+    {%- if product.featured_image != blank -%}
+      <img
+        class="rl-pcard__img"
+        src="{{ product.featured_image | image_url: width: 600 }}"
+        srcset="
+          {{ product.featured_image | image_url: width: 400 }} 400w,
+          {{ product.featured_image | image_url: width: 600 }} 600w,
+          {{ product.featured_image | image_url: width: 800 }} 800w
+        "
+        sizes="(max-width: 767px) 90vw, (max-width: 1199px) 45vw, 23vw"
+        alt="{{ product.featured_image.alt | default: product.title | escape }}"
+        loading="lazy"
+        width="600"
+        height="600"
+      >
+    {%- else -%}
+      <div class="rl-pcard__img-placeholder"></div>
+    {%- endif -%}
+
+    {%- if product.compare_at_price > product.price -%}
+      {%- assign savings_pct = product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price -%}
+      <span class="rl-pcard__badge">-{{ savings_pct }}%</span>
+    {%- endif -%}
+  </div>
+
+  <div class="rl-pcard__body">
+    <h3 class="rl-pcard__name">{{ product.title }}</h3>
+
+    <div class="rl-pcard__price-row">
+      <span class="rl-pcard__price">{{ product.price | money }}</span>
+      {%- if product.compare_at_price > product.price -%}
+        <span class="rl-pcard__price-orig">{{ product.compare_at_price | money }}</span>
+      {%- endif -%}
+    </div>
+
+    <div class="rl-pcard__rating">
+      <span class="rl-pcard__stars" aria-hidden="true">★★★★★</span>
+      <span class="rl-pcard__rating-score">4.8</span>
+      <span class="rl-pcard__rating-count">({{ product.metafields.reviews.rating_count | default: 145 }})</span>
+    </div>
+
+    <button
+      class="rl-pcard__atc"
+      onclick="
+        event.preventDefault();
+        event.stopPropagation();
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({id: {{ product.variants.first.id }}, quantity: 1})
+        }).then(function() { window.location.href = '/cart'; });
+      "
+      aria-label="Lägg {{ product.title | escape }} i kundvagn"
+    >
+      Lägg i kundvagn
+    </button>
+  </div>
+
+</a>

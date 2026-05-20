@@ -1,0 +1,97 @@
+﻿<section class="pb-comparison">
+  <div class="pb-container">
+    <div class="pb-comparison__header">
+      <p class="pb-label pb-fade-in">{{ section.settings.label | default: 'JÃ¤mfÃ¶relse' }}</p>
+      <h2 class="pb-heading-lg pb-fade-in pb-fade-in--d1" style="color:var(--pb-text);margin-bottom:16px;">{{ section.settings.title | default: 'VarfÃ¶r Vi Ã„r BÃ¤st' }}</h2>
+      {%- if section.settings.subtitle != blank -%}
+        <p class="pb-body-lg pb-fade-in pb-fade-in--d2" style="color:var(--pb-gray-500);">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+    </div>
+    <div class="pb-fade-in pb-fade-in--d3" style="overflow-x:auto;">
+      <table class="pb-comparison__table">
+        <thead>
+          <tr>
+            <th>Funktion</th>
+            <th>{{ section.settings.our_name | default: 'VÃ¥r Produkt' }}</th>
+            <th>{{ section.settings.comp1_name | default: 'Konkurrent A' }}</th>
+            <th>{{ section.settings.comp2_name | default: 'Konkurrent B' }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr {{ block.shopify_attributes }}>
+              <td>{{ block.settings.feature }}</td>
+              <td>
+                {%- if block.settings.ours == 'yes' -%}
+                  <span class="pb-comparison__check">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                {%- elsif block.settings.ours == 'no' -%}
+                  <span class="pb-comparison__x">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                  </span>
+                {%- else -%}
+                  {{ block.settings.ours }}
+                {%- endif -%}
+              </td>
+              <td>
+                {%- if block.settings.comp1 == 'yes' -%}
+                  <span class="pb-comparison__check"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                {%- elsif block.settings.comp1 == 'no' -%}
+                  <span class="pb-comparison__x"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+                {%- else -%}{{ block.settings.comp1 }}{%- endif -%}
+              </td>
+              <td>
+                {%- if block.settings.comp2 == 'yes' -%}
+                  <span class="pb-comparison__check"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                {%- elsif block.settings.comp2 == 'no' -%}
+                  <span class="pb-comparison__x"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+                {%- else -%}{{ block.settings.comp2 }}{%- endif -%}
+              </td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB â€” Comparison Table",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "JÃ¤mfÃ¶relse" },
+    { "type": "text", "id": "title", "label": "Title", "default": "VarfÃ¶r Vi Ã„r BÃ¤st" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle" },
+    { "type": "text", "id": "our_name", "label": "Our product name", "default": "VÃ¥r Produkt" },
+    { "type": "text", "id": "comp1_name", "label": "Competitor 1 name", "default": "Konkurrent A" },
+    { "type": "text", "id": "comp2_name", "label": "Competitor 2 name", "default": "Konkurrent B" }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        { "type": "text", "id": "feature", "label": "Feature" },
+        { "type": "text", "id": "ours", "label": "Our value (yes/no/text)", "default": "yes" },
+        { "type": "text", "id": "comp1", "label": "Competitor 1 value", "default": "no" },
+        { "type": "text", "id": "comp2", "label": "Competitor 2 value", "default": "no" }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "PB â€” Comparison Table",
+    "blocks": [
+      { "type": "row", "settings": { "feature": "Kliniskt beprÃ¶vade ingredienser", "ours": "yes", "comp1": "no", "comp2": "no" } },
+      { "type": "row", "settings": { "feature": "Tredjepartstestad renhet", "ours": "yes", "comp1": "no", "comp2": "yes" } },
+      { "type": "row", "settings": { "feature": "Inga konstgjorda tillsatser", "ours": "yes", "comp1": "no", "comp2": "no" } },
+      { "type": "row", "settings": { "feature": "Optimal dosering per ingrediens", "ours": "yes", "comp1": "no", "comp2": "no" } },
+      { "type": "row", "settings": { "feature": "Svensk kundtjÃ¤nst", "ours": "yes", "comp1": "no", "comp2": "no" } },
+      { "type": "row", "settings": { "feature": "30 dagars garanti", "ours": "yes", "comp1": "no", "comp2": "yes" } },
+      { "type": "row", "settings": { "feature": "Pris per dos", "ours": "29 kr", "comp1": "45 kr", "comp2": "38 kr" } }
+    ]
+  }]
+}
+{% endschema %}
+

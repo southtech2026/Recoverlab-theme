@@ -1,0 +1,87 @@
+<section class="pb-transformation pb-section">
+  <div class="pb-container pb-transformation__inner">
+    <div class="pb-transformation__header">
+      <h2 class="pb-transformation__title pb-fade-in">{{ section.settings.title | default: 'Din Transformation Börjar Här' }}</h2>
+      <p class="pb-transformation__subtitle pb-fade-in pb-fade-in--d1">{{ section.settings.subtitle | default: 'Från utmattad och stressad till energifull och fokuserad.' }}</p>
+    </div>
+    <div class="pb-transformation__grid pb-fade-in pb-fade-in--d2">
+      <div class="pb-transformation__side pb-transformation__side--before">
+        <div class="pb-transformation__side-label">— Utan oss</div>
+        <div class="pb-transformation__items">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'before' -%}
+              <div class="pb-transformation__item" {{ block.shopify_attributes }}>
+                <svg class="pb-transformation__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <span>{{ block.settings.text }}</span>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="pb-transformation__arrow">
+        <div class="pb-transformation__arrow-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+      </div>
+      <div class="pb-transformation__side pb-transformation__side--after">
+        <div class="pb-transformation__side-label">— Med oss</div>
+        <div class="pb-transformation__items">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'after' -%}
+              <div class="pb-transformation__item" {{ block.shopify_attributes }}>
+                <svg class="pb-transformation__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>{{ block.settings.text }}</span>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+    <div class="pb-transformation__cta pb-fade-in pb-fade-in--d3">
+      <a href="{{ section.settings.cta_url }}" class="pb-btn pb-btn--primary pb-btn--lg" style="background:var(--pb-white);color:var(--pb-dark-green);">
+        {{ section.settings.cta_label | default: 'Starta Din Transformation' }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB — Transformation",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Din Transformation Börjar Här" },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Från utmattad och stressad till energifull och fokuserad." },
+    { "type": "text", "id": "cta_label", "label": "CTA label", "default": "Starta Din Transformation" },
+    { "type": "url", "id": "cta_url", "label": "CTA URL" }
+  ],
+  "blocks": [
+    {
+      "type": "before",
+      "name": "Before item",
+      "settings": [{ "type": "text", "id": "text", "label": "Text" }]
+    },
+    {
+      "type": "after",
+      "name": "After item",
+      "settings": [{ "type": "text", "id": "text", "label": "Text" }]
+    }
+  ],
+  "presets": [{
+    "name": "PB — Transformation",
+    "blocks": [
+      { "type": "before", "settings": { "text": "Kronisk trötthet och låg energi" } },
+      { "type": "before", "settings": { "text": "Dålig sömnkvalitet och stress" } },
+      { "type": "before", "settings": { "text": "Lång återhämtningstid efter träning" } },
+      { "type": "before", "settings": { "text": "Svårt att fokusera under dagen" } },
+      { "type": "before", "settings": { "text": "Hög kortisolnivå och inflammation" } },
+      { "type": "after", "settings": { "text": "Hög naturlig energi hela dagen" } },
+      { "type": "after", "settings": { "text": "Djup restorativ sömn varje natt" } },
+      { "type": "after", "settings": { "text": "Snabb återhämtning – redo på 24h" } },
+      { "type": "after", "settings": { "text": "Skarp mental fokus och klarhet" } },
+      { "type": "after", "settings": { "text": "Balanserat stressystem och minskad inflammation" } }
+    ]
+  }]
+}
+{% endschema %}
