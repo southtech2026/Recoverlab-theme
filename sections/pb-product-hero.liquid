@@ -1,4 +1,237 @@
-{{ 'premium-brand.css' | asset_url | stylesheet_tag }}
+<style>
+  /* ── Buybox overrides for the reference layout ── */
+  .pb-product-buybox__title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: clamp(22px, 3vw, 32px) !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    text-transform: none !important;
+    letter-spacing: -0.01em !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
+  }
+  .pb-buybox-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .pb-buybox-price--compare {
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaaaaa;
+    text-decoration: line-through;
+    margin-left: 8px;
+  }
+
+  /* Klarna */
+  .pb-buybox-klarna {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #555555;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .pb-buybox-klarna__brand {
+    font-weight: 700;
+    color: #17120e;
+    background: #ffb3c7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+  .pb-buybox-klarna a {
+    color: #2d5a3d;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  /* Trustpilot row */
+  .pb-buybox-trust-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+  }
+  .pb-buybox-tp-stars {
+    display: flex;
+    gap: 2px;
+  }
+  .pb-buybox-tp-stars svg {
+    width: 18px;
+    height: 18px;
+    fill: #00b67a;
+  }
+  .pb-buybox-tp-count {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #2d5a3d;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(45,90,61,0.3);
+  }
+  .pb-buybox-tp-count:hover { border-color: #2d5a3d; }
+
+  /* Feature checkmarks */
+  .pb-buybox-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .pb-buybox-features li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #2d5a3d;
+    font-weight: 500;
+  }
+  .pb-buybox-features li svg {
+    width: 15px;
+    height: 15px;
+    color: #2d5a3d;
+    flex-shrink: 0;
+  }
+
+  /* Divider */
+  .pb-buybox-divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin: 16px 0;
+  }
+
+  /* Quantity + ATC row */
+  .pb-buybox-atc-row {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .pb-buybox-qty {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #e5e5e5;
+    background: #fff;
+    flex-shrink: 0;
+  }
+  .pb-buybox-qty__btn {
+    width: 40px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+    transition: background 150ms ease;
+    line-height: 1;
+  }
+  .pb-buybox-qty__btn:hover { background: #f7f7f7; }
+  .pb-buybox-qty__val {
+    width: 40px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    color: #000;
+    -moz-appearance: textfield;
+  }
+  .pb-buybox-qty__val::-webkit-inner-spin-button,
+  .pb-buybox-qty__val::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+  .pb-buybox-atc-btn {
+    flex: 1;
+    background: #2d5a3d;
+    color: #ffffff;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 200ms ease, transform 200ms ease;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .pb-buybox-atc-btn:hover:not(:disabled) {
+    background: #1e3d2a;
+    transform: translateY(-1px);
+  }
+  .pb-buybox-atc-btn:disabled {
+    background: #aaaaaa;
+    cursor: not-allowed;
+  }
+
+  /* Trust badges below ATC */
+  .pb-buybox-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 12px;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    padding: 14px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+  .pb-buybox-badge,
+  .pb-buybox-badge * {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    color: #2d5a3d !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    background: transparent !important;
+  }
+  .pb-buybox-badge svg {
+    width: 15px !important;
+    height: 15px !important;
+    color: #2d5a3d !important;
+    fill: none !important;
+    flex-shrink: 0;
+  }
+
+  /* Delivery bar */
+  .pb-buybox-delivery {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #f7f7f7;
+    border-left: 3px solid #2d5a3d;
+    padding: 11px 14px;
+    margin-top: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #555555;
+  }
+  .pb-buybox-delivery svg {
+    width: 16px;
+    height: 16px;
+    color: #2d5a3d;
+    flex-shrink: 0;
+  }
+</style>
 
 <section class="pb-product-hero">
   <div class="pb-container">
@@ -17,19 +250,29 @@
               height="900"
             >
           {%- else -%}
-            <div style="background:var(--pb-cream);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--pb-gray-300)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <div style="background:#f7f7f7;width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#cccccc" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
             </div>
           {%- endif -%}
         </div>
         {%- if product.images.size > 1 -%}
-          <div class="pb-product-gallery__thumbs">
-            {%- for image in product.images limit: 4 -%}
+          <div class="pb-product-gallery__thumbs pb-gallery-thumbs-scroll">
+            {%- for image in product.images -%}
               <div
                 class="pb-product-gallery__thumb{% if forloop.first %} is-active{% endif %}"
                 data-src="{{ image | image_url: width: 900 }}"
+                data-alt="{{ image.alt | default: product.title | escape }}"
+                role="button"
+                tabindex="0"
+                aria-label="Visa bild {{ forloop.index }}"
               >
-                <img src="{{ image | image_url: width: 200 }}" alt="{{ image.alt | escape }}" loading="lazy">
+                <img
+                  src="{{ image | image_url: width: 200 }}"
+                  alt="{{ image.alt | default: product.title | escape }}"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                >
               </div>
             {%- endfor -%}
           </div>
@@ -38,73 +281,137 @@
 
       {%- comment -%} Buybox {%- endcomment -%}
       <div class="pb-product-buybox">
-        <div class="pb-product-buybox__category">{{ product.type | default: section.settings.category }}</div>
-        <h1 class="pb-product-buybox__title">{{ product.title }}</h1>
-        <div class="pb-product-buybox__reviews">
-          <div class="pb-stars">{% for i in (1..5) %}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>{% endfor %}</div>
-          <a href="#pb-product-reviews" class="pb-product-buybox__review-count">{{ section.settings.review_text | default: '(156 recensioner)' }}</a>
-        </div>
-        <div class="pb-product-buybox__price">{{ product.price | money }}</div>
-        <div class="pb-product-buybox__price-note">{{ section.settings.price_note | default: 'Inkl. moms. Fri frakt över 499 kr.' }}</div>
 
+        {%- if product.type != blank -%}
+          <div class="pb-product-buybox__category">{{ product.type }}</div>
+        {%- endif -%}
+
+        <h1 class="pb-product-buybox__title">{{ product.title }}</h1>
+
+        {%- comment -%} Price {%- endcomment -%}
+        <div class="pb-buybox-price">
+          {{ product.price | money }}
+          {%- if product.compare_at_price > product.price -%}
+            <span class="pb-buybox-price--compare">{{ product.compare_at_price | money }}</span>
+          {%- endif -%}
+        </div>
+
+        {%- comment -%} Klarna {%- endcomment -%}
+        {%- if section.settings.show_klarna -%}
+          <div class="pb-buybox-klarna">
+            Shoppa nu. Betala inom 60 dagar med
+            <span class="pb-buybox-klarna__brand">Klarna</span>
+            <a href="https://www.klarna.com/se/" target="_blank" rel="noopener">Läs mer</a>
+          </div>
+        {%- endif -%}
+
+        {%- comment -%} Trustpilot widget {%- endcomment -%}
+        <div class="pb-buybox-trust-row" style="margin-bottom:14px;">
+          {%- assign rc = section.settings.review_count_num | default: 70 -%}
+          {%- render 'trustpilot-widget', rating: 4.9, review_count: rc -%}
+        </div>
+
+        {%- comment -%} Feature checkmarks {%- endcomment -%}
+        {%- assign feature_blocks = section.blocks | where: "type", "feature" -%}
+        {%- if feature_blocks.size > 0 -%}
+          <ul class="pb-buybox-features">
+            {%- for block in feature_blocks -%}
+              <li {{ block.shopify_attributes }}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                {{ block.settings.text }}
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- comment -%} Variants {%- endcomment -%}
         {%- unless product.has_only_default_variant -%}
-          <div class="pb-product-buybox__divider"></div>
+          <div class="pb-buybox-divider"></div>
           {%- for option in product.options_with_values -%}
             <div class="pb-product-buybox__label">{{ option.name }}</div>
-            <div class="pb-product-variants">
+            <div class="pb-product-variants" style="margin-bottom:12px;">
               {%- for value in option.values -%}
-                <button type="button" class="pb-product-variant{% if forloop.first %} is-active{% endif %}">{{ value }}</button>
+                {%- comment -%} Find first variant matching this option value {%- endcomment -%}
+                {%- assign matched_variant = nil -%}
+                {%- for variant in product.variants -%}
+                  {%- if option.position == 1 and variant.option1 == value -%}
+                    {%- assign matched_variant = variant -%}
+                    {%- break -%}
+                  {%- elsif option.position == 2 and variant.option2 == value -%}
+                    {%- assign matched_variant = variant -%}
+                    {%- break -%}
+                  {%- elsif option.position == 3 and variant.option3 == value -%}
+                    {%- assign matched_variant = variant -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                <button
+                  type="button"
+                  class="pb-product-variant{% if forloop.first %} is-active{% endif %}"
+                  data-variant-id="{{ matched_variant.id }}"
+                  {%- if matched_variant.featured_image != blank -%}
+                    data-image="{{ matched_variant.featured_image | image_url: width: 900 }}"
+                    data-image-srcset="{{ matched_variant.featured_image | image_url: width: 400 }} 400w, {{ matched_variant.featured_image | image_url: width: 900 }} 900w"
+                    data-image-alt="{{ matched_variant.featured_image.alt | escape }}"
+                  {%- elsif product.featured_image != blank -%}
+                    data-image="{{ product.featured_image | image_url: width: 900 }}"
+                    data-image-alt="{{ product.featured_image.alt | escape }}"
+                  {%- endif -%}
+                >{{ value }}</button>
               {%- endfor -%}
             </div>
           {%- endfor -%}
         {%- endunless -%}
 
-        <div class="pb-product-buybox__divider"></div>
-        <div class="pb-product-buybox__label">Antal</div>
-        <div class="pb-product-quantity">
-          <button type="button" class="pb-product-quantity__btn" data-action="decrease">−</button>
-          <input type="number" class="pb-product-quantity__value" value="1" min="1" readonly>
-          <button type="button" class="pb-product-quantity__btn" data-action="increase">+</button>
-        </div>
+        <div class="pb-buybox-divider"></div>
 
+        {%- comment -%} Quantity + ATC {%- endcomment -%}
         {%- form 'product', product -%}
           <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-          <button type="submit" class="pb-add-to-cart" {% unless product.available %}disabled{% endunless %}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-            {% if product.available %}{{ section.settings.atc_label | default: 'Lägg i kundvagn' }}{% else %}Slut i lager{% endif %}
-          </button>
+          <div class="pb-buybox-atc-row">
+            <div class="pb-buybox-qty">
+              <button type="button" class="pb-buybox-qty__btn" data-action="decrease" aria-label="Minska antal">−</button>
+              <input type="number" name="quantity" class="pb-buybox-qty__val" value="1" min="1" aria-label="Antal">
+              <button type="button" class="pb-buybox-qty__btn" data-action="increase" aria-label="Öka antal">+</button>
+            </div>
+            <button
+              type="submit"
+              class="pb-buybox-atc-btn"
+              {% unless product.available %}disabled{% endunless %}
+              aria-label="{{ product.title | escape }} — lägg i kundvagn"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              {% if product.available %}{{ section.settings.atc_label | default: 'Lägg till i varukorg' }}{% else %}Slut i lager{% endif %}
+            </button>
+          </div>
         {%- endform -%}
 
-        <a href="/checkout" class="pb-buy-now">{{ section.settings.buy_now_label | default: 'Köp direkt' }}</a>
-
-        <div class="pb-product-trust">
-          <div class="pb-product-trust__item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        {%- comment -%} Trust badges {%- endcomment -%}
+        <div class="pb-buybox-badges">
+          <div class="pb-buybox-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             Säker betalning
           </div>
-          <div class="pb-product-trust__item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            30 dagars garanti
+          <div class="pb-buybox-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            {{ section.settings.return_text | default: '30 dagars returrätt' }}
           </div>
-          <div class="pb-product-trust__item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          <div class="pb-buybox-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
             Fri frakt 499 kr+
           </div>
-          <div class="pb-product-trust__item">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div class="pb-buybox-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             Svensk support
           </div>
         </div>
 
-        <div class="pb-product-delivery">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          <span>{{ section.settings.delivery_text | default: 'Beställ innan kl 15.00 – levereras inom 1–3 vardagar.' }}</span>
-        </div>
+
       </div>
     </div>
   </div>
 
-  {%- comment -%} Sticky Add to Cart (mobile) {%- endcomment -%}
+  {%- comment -%} Sticky ATC — mobile {%- endcomment -%}
   <div class="pb-sticky-atc">
     <div class="pb-sticky-atc__inner">
       <div class="pb-sticky-atc__info">
@@ -116,6 +423,92 @@
   </div>
 </section>
 
+<script>
+(function () {
+  /* ── Quantity stepper ── */
+  document.querySelectorAll('.pb-buybox-qty__btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var input = btn.closest('.pb-buybox-qty').querySelector('.pb-buybox-qty__val');
+      var val = parseInt(input.value, 10) || 1;
+      input.value = btn.dataset.action === 'increase' ? val + 1 : Math.max(1, val - 1);
+    });
+  });
+
+  /* ── Thumbnail gallery — all images ── */
+  var mainImg = document.getElementById('pb-gallery-main-img');
+
+  function swapMainImage(src, alt) {
+    if (!mainImg) return;
+    mainImg.style.opacity = '0';
+    mainImg.style.transition = 'opacity 0.18s ease';
+    setTimeout(function () {
+      mainImg.src = src;
+      if (alt) mainImg.alt = alt;
+      mainImg.style.opacity = '1';
+    }, 140);
+  }
+
+  document.querySelectorAll('.pb-product-gallery__thumb').forEach(function (thumb) {
+    function activate() {
+      document.querySelectorAll('.pb-product-gallery__thumb').forEach(function (t) {
+        t.classList.remove('is-active');
+      });
+      thumb.classList.add('is-active');
+      if (thumb.dataset.src) swapMainImage(thumb.dataset.src, thumb.dataset.alt);
+    }
+    thumb.addEventListener('click', activate);
+    thumb.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); }
+    });
+  });
+
+  /* ── Variant switcher — image + form ID ── */
+  var formInput  = document.querySelector('.pb-product-hero input[name="id"]');
+  var priceEl    = document.querySelector('.pb-buybox-price');
+  var stickyPrice = document.querySelector('.pb-sticky-atc__price');
+
+  document.querySelectorAll('.pb-product-variant').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+
+      /* Active state — only within same option group */
+      btn.closest('.pb-product-variants')
+         .querySelectorAll('.pb-product-variant')
+         .forEach(function (s) { s.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+
+      /* Swap main gallery image */
+      if (btn.dataset.image && mainImg) {
+        mainImg.style.opacity = '0';
+        mainImg.style.transition = 'opacity 0.2s ease';
+        setTimeout(function () {
+          mainImg.src = btn.dataset.image;
+          if (btn.dataset.imageSrcset) mainImg.srcset = btn.dataset.imageSrcset;
+          if (btn.dataset.imageAlt)    mainImg.alt    = btn.dataset.imageAlt;
+          mainImg.style.opacity = '1';
+        }, 150);
+      }
+
+      /* Update hidden variant ID for add-to-cart form */
+      if (btn.dataset.variantId && formInput) {
+        formInput.value = btn.dataset.variantId;
+      }
+
+      /* Fetch variant price and update display */
+      if (btn.dataset.variantId) {
+        fetch('/variants/' + btn.dataset.variantId + '.js')
+          .then(function (r) { return r.json(); })
+          .then(function (v) {
+            var formatted = (v.price / 100).toFixed(2).replace('.', ',') + ' kr';
+            if (priceEl)    priceEl.firstChild.textContent = formatted;
+            if (stickyPrice) stickyPrice.textContent = formatted;
+          })
+          .catch(function () {});
+      }
+    });
+  });
+})();
+</script>
+
 <script src="{{ 'premium-brand.js' | asset_url }}" defer></script>
 
 {% schema %}
@@ -123,13 +516,37 @@
   "name": "PB — Product Hero",
   "tag": "section",
   "settings": [
-    { "type": "text", "id": "category", "label": "Category label", "default": "Återhämtning" },
-    { "type": "text", "id": "review_text", "label": "Review count text", "default": "(156 recensioner)" },
-    { "type": "text", "id": "price_note", "label": "Price note", "default": "Inkl. moms. Fri frakt över 499 kr." },
-    { "type": "text", "id": "atc_label", "label": "Add to cart label", "default": "Lägg i kundvagn" },
-    { "type": "text", "id": "buy_now_label", "label": "Buy now label", "default": "Köp direkt" },
-    { "type": "text", "id": "delivery_text", "label": "Delivery text", "default": "Beställ innan kl 15.00 – levereras inom 1–3 vardagar." }
+    { "type": "header",   "content": "Recensioner" },
+    { "type": "number",   "id": "review_count_num", "label": "Antal omdömen", "default": 70 },
+    { "type": "header",   "content": "Klarna" },
+    { "type": "checkbox", "id": "show_klarna",   "label": "Visa Klarna-meddelande", "default": true },
+    { "type": "header",   "content": "Knappar & text" },
+    { "type": "text",     "id": "atc_label",     "label": "Lägg i kundvagn-text", "default": "Lägg till i varukorg" },
+    { "type": "text",     "id": "return_text",   "label": "Returtext",         "default": "30 dagars returrätt" },
+    { "type": "text",     "id": "delivery_text", "label": "Leveranstext",      "default": "Beställ innan kl 15.00 – levereras inom 1–3 vardagar." }
   ],
-  "presets": [{ "name": "PB — Product Hero" }]
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Produktfördel",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Fördel",
+          "default": "Skriv en produktfördel här"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "PB — Product Hero",
+    "blocks": [
+      { "type": "feature", "settings": { "text": "Värme- & kylfunktion" } },
+      { "type": "feature", "settings": { "text": "Tre timmars batteritid" } },
+      { "type": "feature", "settings": { "text": "5 olika munstycken" } },
+      { "type": "feature", "settings": { "text": "Upp till 3000 RPM" } }
+    ]
+  }]
 }
 {% endschema %}

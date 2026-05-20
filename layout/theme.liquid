@@ -25,8 +25,12 @@
       >
     {% endif %}
 
-    {%- render 'pb-fonts' -%}
     {%- render 'meta-tags' -%}
+    {%- render 'pb-fonts' -%}
+    {%- comment -%} Preload critical CSS assets for LCP performance {%- endcomment -%}
+    <link rel="preload" href="{{ 'premium-brand.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>{{ 'premium-brand.css' | asset_url | stylesheet_tag }}</noscript>
+    {{ 'pb-wellness-overrides.css' | asset_url | stylesheet_tag }}
     {%- render 'stylesheets' -%}
     {%- render 'fonts' -%}
     {%- render 'scripts' -%}
@@ -38,7 +42,6 @@
     {% endif %}
 
     {{ content_for_header }}
-    {{ 'pb-wellness-overrides.css' | asset_url | stylesheet_tag }}
     {% # theme-check-enable RemoteAsset %}
   </head>
 

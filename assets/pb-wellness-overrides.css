@@ -357,7 +357,8 @@ input[type="tel"], select, textarea {
    FOOTER — full black
    ================================================ */
 footer, .footer, site-footer,
-[class*="footer"], [class*="footer-section"],
+[class*="footer"]:not([class*="tp-"]):not([class*="rl-"]):not([class*="pb-buybox"]):not([class*="rv-"]),
+[class*="footer-section"],
 .shopify-section--footer, .footer-section,
 footer.section, .footer.section,
 [class*="shopify-section-group-footer"],
@@ -610,6 +611,22 @@ footer .utilities--blocks-3 {
    SECTIONS — white background only on non-footer sections
    ================================================ */
 .section:not(footer):not([class*="footer"]) { background: #FFFFFF !important; }
+
+/* ================================================
+   PRODUCT BUYBOX — trust badges force white bg + green text
+   ================================================ */
+.pb-buybox-badges {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+.pb-buybox-badge {
+  color: #2d5a3d !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+.pb-buybox-badge svg { color: #2d5a3d !important; }
 
 /* ================================================
    HORIZON CSS VARIABLES
