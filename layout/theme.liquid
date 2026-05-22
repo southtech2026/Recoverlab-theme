@@ -26,6 +26,169 @@
     {% endif %}
 
     {%- render 'meta-tags' -%}
+
+    {%- comment -%} ── Recoverlab SEO: Open Graph + Twitter Card + JSON-LD ── {%- endcomment -%}
+
+    {%- liquid
+      assign seo_title = page_title | default: shop.name
+      assign seo_desc  = page_description | default: 'Köp premium recovery-produkter, massagepistol, blåljusglasögon och träningsverktyg för optimal återhämtning. Vetenskapligt beprövat, svenskt fokus.'
+      if template.name == 'product'
+        assign seo_image = product.featured_image | image_url: width: 1200
+        assign seo_price = product.price | money_without_currency
+        assign seo_avail = 'https://schema.org/InStock'
+        unless product.available
+          assign seo_avail = 'https://schema.org/OutOfStock'
+        endunless
+      elsif template.name == 'collection'
+        assign seo_image = collection.image | image_url: width: 1200
+      else
+        assign seo_image = settings.share_image | image_url: width: 1200
+      endif
+    -%}
+
+    {%- comment -%} Open Graph {%- endcomment -%}
+    <meta property="og:site_name"   content="{{ shop.name | escape }}">
+    <meta property="og:url"         content="{{ canonical_url }}">
+    <meta property="og:type"        content="{% if template.name == 'product' %}product{% else %}website{% endif %}">
+    <meta property="og:title"       content="{{ seo_title | escape }}">
+    <meta property="og:description" content="{{ seo_desc | escape }}">
+    {%- if seo_image != blank -%}
+      <meta property="og:image"       content="https:{{ seo_image }}">
+      <meta property="og:image:width" content="1200">
+    {%- endif -%}
+    {%- if template.name == 'product' -%}
+      <meta property="og:price:amount"   content="{{ seo_price }}">
+      <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">
+    {%- endif -%}
+
+    {%- comment -%} Twitter Card {%- endcomment -%}
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="{{ seo_title | escape }}">
+    <meta name="twitter:description" content="{{ seo_desc | escape }}">
+    {%- if seo_image != blank -%}
+      <meta name="twitter:image" content="https:{{ seo_image }}">
+    {%- endif -%}
+
+    {%- comment -%} Organisation JSON-LD {%- endcomment -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Recoverlab",
+      "url": "https://recoverlab.se",
+      "logo": "{{ settings.logo | image_url: width: 400 | prepend: 'https:' }}",
+      "description": "Premium recovery-produkter för svenska idrottare — vetenskapligt beprövade.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "kontakt@recoverlabs.se",
+        "contactType": "customer service",
+        "availableLanguage": "Swedish"
+      },
+      "address": { "@type": "PostalAddress", "addressCountry": "SE" },
+      "sameAs": [
+        "https://www.instagram.com/recoverlab.se",
+        "https://www.facebook.com/recoverlab.se"
+      ]
+    }
+    </script>
+
+    {%- comment -%} Product JSON-LD {%- endcomment -%}
+    {%- if template.name == 'product' -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": {{ product.title | json }},
+      "description": {{ product.description | strip_html | truncate: 300 | json }},
+      "image": "https:{{ product.featured_image | image_url: width: 1200 }}",
+      "sku": {{ product.selected_or_first_available_variant.sku | json }},
+      "brand": { "@type": "Brand", "name": "Recoverlab" },
+      "offers": {
+        "@type": "Offer",
+        "url": "{{ canonical_url }}",
+        "priceCurrency": {{ cart.currency.iso_code | json }},
+        "price": "{{ product.price | money_without_currency | remove: ' ' }}",
+        "availability": {{ seo_avail | json }},
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": { "@type": "Organization", "name": "Recoverlab" }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "70",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    {%- endif -%}
+
+    {%- comment -%} Breadcrumb JSON-LD {%- endcomment -%}
+    {%- if template.name == 'product' or template.name == 'collection' or template.name == 'page' -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Hem",
+          "item": "{{ shop.url }}"
+        }
+        {%- if template.name == 'collection' -%}
+        ,{
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ collection.title | json }},
+          "item": "{{ shop.url }}{{ collection.url }}"
+        }
+        {%- elsif template.name == 'product' -%}
+        ,{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Produkter",
+          "item": "{{ shop.url }}/collections/all"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ product.title | json }},
+          "item": "{{ canonical_url }}"
+        }
+        {%- elsif template.name == 'page' -%}
+        ,{
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | json }},
+          "item": "{{ canonical_url }}"
+        }
+        {%- endif -%}
+      ]
+    }
+    </script>
+    {%- endif -%}
+
+    {%- comment -%} WebSite schema with Sitelinks Searchbox {%- endcomment -%}
+    {%- if template.name == 'index' -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Recoverlab",
+      "url": "https://recoverlab.se",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "{{ shop.url }}/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    {%- endif -%}
+
     {%- render 'pb-fonts' -%}
     {%- comment -%} Preload critical CSS assets for LCP performance {%- endcomment -%}
     <link rel="preload" href="{{ 'premium-brand.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">

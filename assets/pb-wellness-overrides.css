@@ -23,11 +23,20 @@ body {
    TYPOGRAPHY
    ================================================ */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4,
-[class*="heading"]:not([class*="pb-"]),
-[class*="title"]:not([class*="pb-"]) {
+[class*="heading"]:not([class*="pb-"]):not([class*="cart-drawer"]),
+[class*="title"]:not([class*="pb-"]):not([class*="cart-drawer"]) {
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif !important;
   color: #000000 !important;
   letter-spacing: -0.02em;
+}
+/* Cart drawer heading excluded above — force white here */
+#cart-drawer-heading {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
 }
 p, span, a, li, label, input, button, select, textarea {
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
@@ -302,34 +311,201 @@ quantity-selector, [class*="quantity"] {
 /* ================================================
    CART DRAWER
    ================================================ */
-.cart-drawer, [class*="cart-drawer"], cart-drawer {
+.cart-drawer, [class*="cart-drawer"], cart-drawer-component {
   background: #FFFFFF !important;
   box-shadow: -8px 0 60px rgba(0,0,0,0.14) !important;
 }
-[class*="cart-drawer__header"], .cart-drawer__header {
-  background: #000000 !important; border-bottom: none !important; padding: 20px 24px !important;
+
+/* ── Header: black background, white "Varukorg" — ID selector for max specificity ── */
+#cart-drawer-header,
+.cart-drawer__header {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  padding: 16px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
 }
-[class*="cart-drawer__title"], .cart-drawer__title {
-  font-family: 'Montserrat', sans-serif !important; color: #FFFFFF !important;
-  font-weight: 800 !important; font-size: 16px !important;
-  letter-spacing: -0.01em !important; text-transform: uppercase !important;
+/* Force heading white — must beat [class*="heading"] typography rule (specificity 0,2,0) */
+#cart-drawer-header h2,
+#cart-drawer-header .cart-drawer__heading,
+.cart-drawer__dialog .cart-drawer__header .cart-drawer__heading {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
 }
-.cart-item, [class*="cart-item"] { border-bottom: 1px solid #F0F0F0 !important; padding: 16px 0 !important; }
-.cart-item__name, [class*="cart-item__name"] {
-  font-family: 'Inter', sans-serif !important; font-weight: 600 !important; color: #000000 !important; font-size: 14px !important;
+/* Cart item count bubble inside header — white ring */
+#cart-drawer-header .cart-bubble__background,
+.cart-drawer__header .cart-bubble__background {
+  background: rgba(255,255,255,0.2) !important;
 }
-.cart-item__price, [class*="cart-item__price"] {
-  font-family: 'Montserrat', sans-serif !important; font-weight: 700 !important; color: #2d5a3d !important;
+#cart-drawer-header .cart-bubble__text,
+.cart-drawer__header .cart-bubble__text {
+  color: #FFFFFF !important;
 }
+
+/* ── Close button: orange circle, white X ── */
+.cart-drawer__close-button {
+  background: #ff6b35 !important;
+  border-radius: 50% !important;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+  box-shadow: 0 2px 8px rgba(255,107,53,0.4) !important;
+}
+.cart-drawer__close-button svg,
+.cart-drawer__close-button .svg-wrapper svg {
+  color: #FFFFFF !important;
+  fill: none !important;
+  stroke: #FFFFFF !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* ── Row separator (only between rows, NOT inside a row) ── */
+.cart-items__table-row {
+  border-bottom: 1px solid #F0F0F0 !important;
+  padding-bottom: 18px !important;
+  margin-bottom: 18px !important;
+}
+.cart-items__table-row:last-of-type {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+}
+/* Remove inner lines on details sub-elements */
+.cart-items__details > * { border: none !important; }
+.cart-items__details > * + * { margin-block-start: 2px !important; }
+
+/* ── Product image — larger & clean ── */
+.cart-items__media { padding: 0 !important; }
+.cart-items__media-container {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background: #F7F7F7 !important;
+  min-width: 80px !important;
+  width: 80px !important;
+}
+.cart-items__media-image {
+  object-fit: contain !important;
+  padding: 6px !important;
+  background: #F7F7F7 !important;
+}
+
+/* ── Product name — bold, black, clearly visible ── */
+.cart-items__title {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  line-height: 1.35 !important;
+}
+
+/* ── Variant text — small, grey ── */
+.cart-items__variants,
+.cart-items__variant,
+.cart-items__variant dt,
+.cart-items__variant dd {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  color: #999999 !important;
+  border: none !important;
+}
+
+/* ── Price pill below name: rearrange drawer grid ── */
+.cart-drawer .cart-items__table-row {
+  grid-template-columns: 80px 1fr !important;
+  grid-template-areas:
+    'media details'
+    'media price'
+    'media quantity'
+    'media error' !important;
+  column-gap: 14px !important;
+}
+.cart-drawer .cart-items__table-row--full-width-variants {
+  grid-template-columns: 80px 1fr !important;
+  grid-template-areas:
+    'media details'
+    'media variants'
+    'media price'
+    'media quantity'
+    'media error' !important;
+}
+/* Hide the redundant unit price in drawer (we show line total pill) */
+.cart-drawer .cart-items__unit-price-wrapper { display: none !important; }
+
+/* Price pill */
+.cart-items__price {
+  grid-area: price !important;
+  justify-self: start !important;
+  align-self: start !important;
+  background: #000000 !important;
+  color: #FFFFFF !important;
+  border-radius: 20px !important;
+  padding: 4px 12px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: max-content !important;
+  height: fit-content !important;
+  margin-top: 4px !important;
+  min-width: unset !important;
+  min-height: unset !important;
+  text-align: left !important;
+}
+
+/* ── Delete / remove button — orange square with white trash icon ── */
+.cart-items__remove {
+  background: #ff6b35 !important;
+  border-radius: 8px !important;
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.cart-items__remove:hover {
+  background: #e05a25 !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.cart-items__remove svg,
+.cart-items__remove .svg-wrapper svg {
+  color: #FFFFFF !important;
+  stroke: #FFFFFF !important;
+  fill: none !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* ── Subtotal & summary ── */
 [class*="cart__subtotal"], .cart-subtotal {
   font-family: 'Montserrat', sans-serif !important; color: #000000 !important; font-weight: 700 !important;
 }
+
+/* ── Checkout button — navy ── */
 [class*="cart__checkout"], .cart__checkout-button {
-  background: #ff6b35 !important; border-radius: 0 !important;
+  background: #1B365D !important; border-radius: 8px !important;
   font-size: 12px !important; font-weight: 700 !important;
   letter-spacing: 1.5px !important; text-transform: uppercase !important;
 }
-.cart__checkout-button:hover { background: #e05a25 !important; }
+.cart__checkout-button:hover { background: #142840 !important; }
+
 [class*="cart__shipping"] { color: #2d5a3d !important; font-family: 'Inter', sans-serif !important; }
 [class*="cart__shipping-bar"] { background: #2d5a3d !important; height: 2px !important; }
 

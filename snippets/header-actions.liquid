@@ -196,14 +196,17 @@
               <div
                 class="cart-drawer__header"
                 id="cart-drawer-header"
+                style="background:#000000;"
               >
-                <h2
-                  class="cart-drawer__heading h4"
+                <div
+                  class="cart-drawer__heading"
                   id="cart-drawer-heading"
+                  role="heading"
+                  aria-level="2"
                 >
-                  {{ 'content.cart_title' | t }}
+                  <span style="color:#ffffff !important; font-family:'Montserrat',sans-serif; font-weight:800; font-size:15px; letter-spacing:0.06em; text-transform:uppercase;">{{ 'content.cart_title' | t }}</span>
                   {% render 'cart-bubble' %}
-                </h2>
+                </div>
 
                 <button
                   ref="closeButton"
@@ -385,6 +388,20 @@
     align-items: center;
     gap: var(--gap-xs);
     margin-bottom: 0;
+  }
+
+  /* Recoverlab: force white heading text on black header */
+  #cart-drawer-heading {
+    color: #ffffff !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+  }
+  #cart-drawer-header {
+    background-color: #000000 !important;
+    background: #000000 !important;
   }
 
   .cart-drawer__close-button {
