@@ -205,6 +205,37 @@
     {% endif %}
 
     {{ content_for_header }}
+
+    <style id="rl-cart-drawer-critical">
+      /* Black header background */
+      #cart-drawer-header,
+      .cart-drawer__header {
+        background: #000000 !important;
+        background-color: #000000 !important;
+      }
+      /* Heading div: transparent bg so it inherits black from header, white text */
+      #cart-drawer-heading,
+      .cart-drawer__heading {
+        background: transparent !important;
+        background-color: transparent !important;
+        color: #ffffff !important;
+      }
+      /* VARUKORG text element */
+      #rl-varukorg {
+        background: transparent !important;
+        background-color: transparent !important;
+        color: #ffffff !important;
+        font-family: Montserrat, sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 15px !important;
+        letter-spacing: .06em !important;
+        text-transform: uppercase !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: inline-block !important;
+      }
+    </style>
+
     {% # theme-check-enable RemoteAsset %}
   </head>
 
