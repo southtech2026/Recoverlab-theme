@@ -9,7 +9,8 @@
     background: #1a1a1a;
   }
 
-  .rl-hero__img {
+  .rl-hero__img,
+  .rl-hero__video {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -87,7 +88,18 @@
 </style>
 
 <section class="rl-hero">
-  {%- if section.settings.image != blank -%}
+  {%- if section.settings.video_url != blank -%}
+    <video
+      class="rl-hero__video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    >
+      <source src="{{ section.settings.video_url }}" type="video/mp4">
+    </video>
+  {%- elsif section.settings.image != blank -%}
     <img
       class="rl-hero__img"
       src="{{ section.settings.image | image_url: width: 1200 }}"
@@ -129,9 +141,15 @@
   "tag": "section",
   "settings": [
     {
+      "type": "text",
+      "id": "video_url",
+      "label": "Bakgrundsvideo (MP4-länk)",
+      "info": "Klistrar in en direktlänk till en MP4-video. Används istället för bilden om den är ifylld."
+    },
+    {
       "type": "image_picker",
       "id": "image",
-      "label": "Bakgrundsbild"
+      "label": "Bakgrundsbild (fallback)"
     },
     {
       "type": "range",

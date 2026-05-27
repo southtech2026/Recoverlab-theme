@@ -143,8 +143,9 @@
       "type": "hero-banner",
       "name": "Hero Banner",
       "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/f49d6d0fdef3438d8f82e61ae6aaaf6e.mp4",
         "image": "shopify://shop_images/PBbadafargerna.png",
-        "overlay_opacity": 50,
+        "overlay_opacity": 20,
         "title": "Recoverlab - Din väg till optimal återhämtning",
         "subtitle": "Vetenskapligt beprövade recovery-produkter för svenska idrottare",
         "btn_label": "Utforska produkter",

@@ -20,7 +20,11 @@
         poster="{{ section.settings.bg_image | image_url: width: 1920 }}"
       {%- endif -%}
     >
-      <source data-src="https://cdn.shopify.com/videos/c/o/v/5b5c78e0f4c24e72b192f2823f3575f8.mp4" type="video/mp4">
+      {%- if section.settings.bg_video_desktop != blank -%}
+        <source data-src="{{ section.settings.bg_video_desktop }}" type="video/mp4">
+      {%- else -%}
+        <source data-src="https://cdn.shopify.com/videos/c/o/v/f49d6d0fdef3438d8f82e61ae6aaaf6e.mp4" type="video/mp4">
+      {%- endif -%}
     </video>
 
     {%- comment -%} Mobile video (9:16) — hidden on desktop {%- endcomment -%}
@@ -147,7 +151,8 @@
     { "type": "richtext",     "id": "headline",     "label": "Headline",            "default": "<p>PRESTERA.<br><em>ÅTERHÄMTA DIG.</em></p>" },
     { "type": "text",         "id": "subheadline",  "label": "Subheadline",         "default": "Premium produkter för atleter som tar sin träning och återhämtning på allvar." },
     { "type": "header",       "content": "Video" },
-    { "type": "text",         "id": "bg_video_mobile", "label": "Mobil video URL (.mp4)", "info": "Vertikal 9:16 video för telefon. Lämna tomt för att använda desktop-videon." },
+    { "type": "text",         "id": "bg_video_desktop", "label": "Desktop video URL (.mp4)", "info": "Horisontell 16:9 video för dator/surfplatta." },
+    { "type": "text",         "id": "bg_video_mobile",  "label": "Mobil video URL (.mp4)",   "info": "Vertikal 9:16 video för telefon. Lämna tomt för att använda desktop-videon." },
     { "type": "header",       "content": "Poster-bilder (visas medan video laddar)" },
     { "type": "image_picker", "id": "bg_image",        "label": "Poster desktop" },
     { "type": "image_picker", "id": "bg_image_mobile", "label": "Poster mobil" },
