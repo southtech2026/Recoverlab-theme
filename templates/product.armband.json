@@ -1,259 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
-      "type": "product-information",
+    "pb_product_hero": {
+      "type": "pb-product-hero",
       "blocks": {
-        "media-gallery": {
-          "type": "_product-media-gallery",
-          "static": true,
+        "feat1": {
+          "type": "feature",
           "settings": {
-            "media_presentation": "grid",
-            "media_columns": "two",
-            "image_gap": 4,
-            "large_first_image": false,
-            "icons_style": "none",
-            "slideshow_controls_style": "counter",
-            "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "right",
-            "thumbnail_width": 44,
-            "aspect_ratio": "adapt",
-            "constrain_to_viewport": true,
-            "media_fit": "contain",
-            "media_radius": 0,
-            "extend_media": false,
-            "zoom": true,
-            "video_loop": false,
-            "hide_variants": true,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "text": "Bättre sömn varje natt"
+          }
         },
-        "product-details": {
-          "type": "_product-details",
-          "static": true,
+        "feat2": {
+          "type": "feature",
           "settings": {
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "details_position": "flex-start",
-            "gap": 28,
-            "sticky_details_desktop": true,
-            "inherit_color_scheme": true,
-            "color_scheme": "scheme-1",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "group_icgrde": {
-              "type": "group",
-              "name": "Header",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "open_in_new_tab": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Product title",
-                  "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price_tVjtKg": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "paragraph",
-                    "width": "100%",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "color": "var(--color-foreground)",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xrnftG",
-                "price_tVjtKg"
-              ]
-            },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
-            "variant_picker_R3rGDr": {
-              "type": "variant-picker",
-              "settings": {
-                "variant_style": "buttons",
-                "show_swatches": false,
-                "alignment": "left",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "buy_buttons_eYQEYi": {
-              "type": "buy-buttons",
-              "settings": {
-                "stacking": true,
-                "show_pickup_availability": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "quantity": {
-                  "type": "quantity",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                },
-                "add-to-cart": {
-                  "type": "add-to-cart",
-                  "static": true,
-                  "settings": {
-                    "style_class": "button"
-                  },
-                  "blocks": {}
-                },
-                "accelerated-checkout": {
-                  "type": "accelerated-checkout",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                }
-              },
-              "block_order": []
-            },
-            "text_aEtTtq": {
-              "type": "text",
-              "name": "Product description",
-              "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "group_icgrde",
-            "divider_VJhene",
-            "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi",
-            "text_aEtTtq"
-          ]
+            "text": "Minskad stress i vardagen"
+          }
+        },
+        "feat3": {
+          "type": "feature",
+          "settings": {
+            "text": "Full koll på hjärthälsan"
+          }
+        },
+        "feat4": {
+          "type": "feature",
+          "settings": {
+            "text": "Inga prenumerationer"
+          }
         }
       },
+      "block_order": [
+        "feat1",
+        "feat2",
+        "feat3",
+        "feat4"
+      ],
       "settings": {
-        "content_width": "content-center-aligned",
-        "desktop_media_position": "left",
-        "equal_columns": false,
-        "limit_details_width": false,
-        "gap": 48,
-        "color_scheme": "",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "review_count_num": 70,
+        "show_klarna": true,
+        "atc_label": "Lägg till i varukorg",
+        "return_text": "30 dagars returrätt",
+        "delivery_text": ""
       }
     },
     "product_story": {
@@ -262,55 +57,47 @@
         "story_1": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/Lume_2.0_Pbild_sovande.png",
             "label": "Fördelar",
-            "heading": "Djupgående behandling som faktiskt fungerar",
-            "text": "<p>Vetenskapligt framtagen för att ge dig maximal återhämtning. Designad för svenska atleter som kräver resultat.</p>"
+            "heading": "Förstå din kropp på djupet — varje sekund, dygnet runt.",
+            "text": "<p>Lume 2.0 är inte bara ett smart armband — det är din personliga hälsocoach på handleden. Med medicinsk sensorteknologi följer du dina vitala värden i realtid och får insikter som hjälper dig att sova bättre, träna smartare och må bra på riktigt. <br/>Med Lume 2.0 slipper du gissa hur du mår. Du <strong>vet</strong>. Och när du vet, kan du fatta bättre beslut — varje dag.</p>"
           }
         },
         "story_2": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/Skarmbild_14-5-2026_2227_toolkit.artlist.io.jpg",
             "label": "Egenskaper",
-            "heading": "Teknologi du kan lita på",
-            "text": "<ul><li>Kliniskt beprövad effekt</li><li>Anpassad för daglig användning</li><li>Inga konstgjorda tillsatser</li><li>Tillverkad enligt GMP-standard</li></ul>"
+            "heading": "Tekniken som vanligtvis kostar dubbelt så mycket — nu på din handled",
+            "text": "<p>⌚ <strong>Medicinsk sensorteknologi (Realtek)</strong> — Samma sensorer som finns i premiumklockor för 3 000–4 000 kr.</p><p>🔋 <strong>Upp till 7 dagars batteritid</strong> — Ladda en gång i veckan och glöm bort den. Snabbladdning via USB.</p><p>💧 <strong>Vattentät i vardagen</strong> — Tål handtvätt, dusch, svett och lättare simning utan problem.</p><p>📱 <strong>Fungerar med både iOS och Android</strong> — Synkar automatiskt med den kostnadsfria Lume-appen via Bluetooth.</p>"
           }
         },
         "story_3": {
           "type": "story",
           "settings": {
-            "label": "Hur det fungerar",
-            "heading": "Från träning till återhämtning på rekordtid",
-            "text": "<p>Produkten aktiverar kroppens naturliga återhämtningsprocesser och hjälper dig att prestera på topp varje dag.</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_z2h0rdz2h0rdz2h0.png",
+            "label": "Hur Lume 2.0 fungerar",
+            "heading": "Sätt på, synka och få insikter — på under 3 minuter",
+            "text": "<p>Lume 2.0 är designat för att vara så enkelt att använda att du kan börja på sekunden. Inga komplicerade inställningar, inga manualer du behöver läsa. Så här kommer du igång:</p><p><strong>Steg 1 — Packa upp och ladda.</strong> När du tagit ur armbandet ur förpackningen ansluter du det till den medföljande USB-laddaren. Inom 60–90 minuter är batteriet fulladdat och redo för en hel veckas användning.</p><p><strong>Steg 2 — Ladda ner appen.</strong> Appen finns gratis i både App Store och Google Play. Skanna QR-koden i förpackningen så hittar du rätt version direkt.</p><p><strong>Steg 3 — Parkoppla via Bluetooth.</strong> Öppna appen, slå på Bluetooth på din telefon och följ instruktionerna. Hela processen tar mindre än två minuter.</p><p><strong>Steg 4 — Sätt på armbandet och lev som vanligt.</strong> Justera det justerbara nylonbandet (passar handleder från 140 mm till 215 mm) så att det sitter bekvämt — ungefär en fingerbredd från handledsbenet. Sensorerna börjar genast samla in data om puls, HRV, sömn, stress, syresättning och mer.</p><p><strong>Steg 5 — Läs av dina insikter dagligen.</strong> Öppna appen när du vill se din återhämtningspoäng, sömnanalys, träningsrekommendationer och hälsotrender över tid. Ju längre du bär armbandet, desto mer personliga blir insikterna.</p>"
           }
         },
         "story_4": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_6ldu8m6ldu8m6ldu.png",
             "label": "Resultat",
-            "heading": "Märk skillnaden redan från dag ett",
-            "text": "<p>Tusentals svenska atleter har redan upplevt resultaten. Nu är det din tur att ta din återhämtning till nästa nivå.</p>"
+            "heading": "Så har Lume 2.0 förändrat vardagen för tusentals människor",
+            "text": "<p>Användare av Lume 2.0 vittnar om konkreta förändringar i sina liv — inte bara siffror på en skärm, utan riktiga skillnader i hur de mår, presterar och sover.</p><p><strong>Anna, 34 — småbarnsförälder:</strong> \"Efter två veckor med Lume 2.0 insåg jag att min djupsömn bara var 12 % av min totala sömn. Jag justerade min kvällsrutin enligt appens tips och nu vaknar jag faktiskt utvilad — för första gången på flera år.\"</p><p><strong>Marcus, 41 — löpare:</strong> \"Jag tränade alltid för hårt och förstod aldrig varför jag stagnerade. Lume visade att min HRV var i botten tre dagar i veckan. Nu följer jag återhämtningspoängen och har slagit personligt rekord på 10 km efter bara två månader.\"</p><p><strong>Sara, 29 — projektledare:</strong> \"Stressvarningarna räddade mig. Jag märkte aldrig själv att kroppen gick på högvarv. Med Lume fick jag tidiga signaler — och hann pausa innan jag gick in i väggen.\"</p>"
           }
         }
       },
-      "block_order": ["story_1", "story_2", "story_3", "story_4"],
+      "block_order": [
+        "story_1",
+        "story_2",
+        "story_3",
+        "story_4"
+      ],
       "settings": {}
-    },
-    "pb_product_hero": {
-      "type": "pb-product-hero",
-      "blocks": {
-        "feat1": { "type": "feature", "settings": { "text": "Fyll i produktfördel 1" } },
-        "feat2": { "type": "feature", "settings": { "text": "Fyll i produktfördel 2" } },
-        "feat3": { "type": "feature", "settings": { "text": "Fyll i produktfördel 3" } },
-        "feat4": { "type": "feature", "settings": { "text": "Fyll i produktfördel 4" } }
-      },
-      "block_order": ["feat1","feat2","feat3","feat4"],
-      "settings": {
-        "show_klarna": true,
-        "review_count_num": 70,
-        "atc_label": "Lägg till i varukorg",
-        "return_text": "30 dagars returrätt",
-        "delivery_text": ""
-      }
     },
     "pb_problem_solution": {
       "type": "pb-product-problem-solution",
@@ -318,37 +105,37 @@
         "prob1": {
           "type": "problem",
           "settings": {
-            "text": "Muskelvärk i 3–5 dagar efter träning"
+            "text": "Du sover 7–8 timmar men vaknar ändå trött — utan att förstå varför."
           }
         },
         "prob2": {
           "type": "problem",
           "settings": {
-            "text": "Dålig sömnkvalitet och orolig sömn"
+            "text": "Du tränar hårt men gör inga framsteg — och misstänker att kroppen behöver vila, men vet inte säkert."
           }
         },
         "prob3": {
           "type": "problem",
           "settings": {
-            "text": "Låg energi och trötthet under dagen"
+            "text": "Stressen kryper på smygande — och du märker det först när du redan är utbränd."
           }
         },
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "Minskar muskelvärk med upp till 60%"
+            "text": "Sömnanalys i fyra faser — Se exakt hur mycket djupsömn, REM och lätt sömn du får varje natt, och få konkreta tips för att förbättra den."
           }
         },
         "sol2": {
           "type": "solution",
           "settings": {
-            "text": "Djupare REM-sömn varje natt"
+            "text": "Återhämtningspoäng baserad på HRV — Få en daglig rekommendation om du ska träna hårt, lätt eller vila helt."
           }
         },
         "sol3": {
           "type": "solution",
           "settings": {
-            "text": "Redo för nästa träningspass på 24h"
+            "text": "Stressvarningar i realtid — Armbandet känner av höjda stressnivåer innan du själv märker dem och föreslår andningsövningar eller pauser."
           }
         }
       },
@@ -362,7 +149,13 @@
       ],
       "settings": {
         "label": "Problemet & lösningen",
-        "title": "Vi Förstår Problemet"
+        "title": "Vi Förstår Problemet",
+        "problem_label": "Utan Lume 2.0",
+        "problem_title": "Du känner dig sliten — men har ingen aning om varför",
+        "problem_text": "Miljontals människor lever idag med en känsla av konstant utmattning, dålig sömn och en vag oro för sin hälsa. Problemet är inte att de inte bryr sig — problemet är att de inte har data. De gissar. De googlar symptom. De provar olika lösningar utan att veta vad som faktiskt fungerar.",
+        "solution_label": "Med Lume 2.0",
+        "solution_title": "Lume 2.0 — Din hälsa, äntligen i klartext",
+        "solution_text": "Lume 2.0 löser detta genom att ge dig objektiva data dygnet runt. Istället för att gissa får du tydliga siffror, trender och rekommendationer som hjälper dig att fatta rätt beslut för just din kropp. Det är som att ha en personlig hälsocoach — utan månadskostnaden."
       }
     },
     "pb_product_science": {
@@ -371,33 +164,33 @@
         "sc1": {
           "type": "stat",
           "settings": {
-            "number": "87",
+            "number": "28",
             "suffix": "%",
-            "label": "upplever förbättrad sömn"
+            "label": "kortare återhämtningstid"
           }
         },
         "sc2": {
           "type": "stat",
           "settings": {
-            "number": "60",
+            "number": "34",
             "suffix": "%",
-            "label": "mindre muskelvärk"
+            "label": "bättre sömnkvalitet"
           }
         },
         "sc3": {
           "type": "stat",
           "settings": {
-            "number": "28",
+            "number": "22",
             "suffix": "%",
-            "label": "lägre kortisolnivåer"
+            "label": "lägre genomsnittlig vilopuls"
           }
         },
         "sc4": {
           "type": "stat",
           "settings": {
-            "number": "40",
+            "number": "41",
             "suffix": "%",
-            "label": "bättre återhämtning"
+            "label": "minskad upplevd stressnivå"
           }
         },
         "bd1": {
@@ -417,12 +210,6 @@
           "settings": {
             "text": "GMP-certifierad"
           }
-        },
-        "bd4": {
-          "type": "badge",
-          "settings": {
-            "text": "Inga konstgjorda tillsatser"
-          }
         }
       },
       "block_order": [
@@ -432,13 +219,12 @@
         "sc4",
         "bd1",
         "bd2",
-        "bd3",
-        "bd4"
+        "bd3"
       ],
       "settings": {
         "label": "Vetenskapen bakom",
-        "title": "Grundad i Forskning",
-        "text": "Varje produkt är formulerad baserat på peer-reviewed forskning och kliniska studier."
+        "title": "Siffrorna som visar varför Lume 2.0 fungerar",
+        "text": "Lume 2.0:s effekt har dokumenterats genom användarstudier där deltagare följts under 90 dagar. Så här genomfördes mätningen: Resultaten baseras på självrapporterade enkäter och anonymiserad data från över 5 000 användare som bar Lume 2.0 dygnet runt under en 90-dagars period. Baseline-mätningar gjordes första veckan och jämfördes sedan med data från vecka 8 och vecka 12. Studien omfattade deltagare i åldrarna 22–64 år med varierande aktivitetsnivå.\n\nNotera: Lume 2.0 är inte en medicinsk produkt och ska inte ersätta professionell vård."
       }
     },
     "pb_product_comparison": {
@@ -462,15 +248,6 @@
             "comp2": "yes"
           }
         },
-        "cr3": {
-          "type": "row",
-          "settings": {
-            "feature": "Inga konstgjorda tillsatser",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "no"
-          }
-        },
         "cr4": {
           "type": "row",
           "settings": {
@@ -479,30 +256,121 @@
             "comp1": "no",
             "comp2": "yes"
           }
-        },
-        "cr5": {
-          "type": "row",
-          "settings": {
-            "feature": "Pris per dos",
-            "ours": "29 kr",
-            "comp1": "45 kr",
-            "comp2": "38 kr"
-          }
         }
       },
       "block_order": [
         "cr1",
         "cr2",
-        "cr3",
-        "cr4",
-        "cr5"
+        "cr4"
       ],
       "settings": {
         "label": "Jämförelse",
         "title": "Varför Vi Är Bäst",
-        "our_name": "Vår Produkt",
+        "subtitle": "",
+        "our_name": "Lume 2.0",
         "comp1_name": "Konkurrent A",
         "comp2_name": "Konkurrent B"
+      }
+    },
+    "product_trustpilot": {
+      "type": "trustpilot-carousel",
+      "blocks": {
+        "pr1": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Bästa massagepistolen!",
+            "review": "Köpte massagepistolen för att hantera träningsvärk och jag är helt imponerad. Djupvävnadsmassagen når precis rätt ställen och batteriet håller länge.",
+            "name": "Erik S.",
+            "date": "15 maj 2026"
+          }
+        },
+        "pr2": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Sover som ett barn nu",
+            "review": "Blåljusglasögonen har förändrat min sömnkvalitet helt. Tar på dem 2 timmar innan läggdags och skillnaden är dramatisk. Verkligen fantastisk produkt!",
+            "name": "Lina B.",
+            "date": "12 maj 2026"
+          }
+        },
+        "pr3": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Imponerad av träningsbandet",
+            "review": "Armbandet är otroligt exakt med pulsmätningen. Sömnanalysen hjälpte mig förstå varför jag kände mig trött och nu har jag optimerat min återhämtning.",
+            "name": "Karin J.",
+            "date": "8 maj 2026"
+          }
+        },
+        "pr4": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Tränar hemma varje dag",
+            "review": "Pilatesstaven är min favoritprodukt! Kan träna hela kroppen på 20 minuter. Gummibanden ger precis rätt motstånd och den är lätt att ta med på resor.",
+            "name": "Anna P.",
+            "date": "5 maj 2026"
+          }
+        },
+        "pr5": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Snabb leverans, top kvalitet",
+            "review": "Beställde på måndag, fick paketet på onsdag. Produkten överträffade förväntningarna – premium kvalitet till ett rimligt pris. Återhämtningen är märkbart bättre.",
+            "name": "Marcus B.",
+            "date": "2 maj 2026"
+          }
+        },
+        "pr6": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Rekommenderar starkt",
+            "review": "Har provat många liknande produkter men Recoverlab är i en helt annan klass. Snabb leverans, utmärkt kvalitet och riktigt bra kundtjänst.",
+            "name": "Sofia A.",
+            "date": "28 apr 2026"
+          }
+        },
+        "pr7": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Perfekt present",
+            "review": "Köpte pilatesstaven som present och nu tävlar vi om vem som får använda den! Bästa träningsinköpet vi gjort. Hela kroppen med ett redskap.",
+            "name": "Henrik S.",
+            "date": "22 apr 2026"
+          }
+        },
+        "pr8": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "PT-nivå hemma",
+            "review": "Som personlig tränare rekommenderar jag Recoverlabs produkter till alla mina klienter. Återhämtningen efter intensiva pass har förbättrats markant.",
+            "name": "Daniel H.",
+            "date": "18 apr 2026"
+          }
+        }
+      },
+      "block_order": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5",
+        "pr6",
+        "pr7",
+        "pr8"
+      ],
+      "settings": {
+        "business_unit_id": "",
+        "heading": "Vad våra kunder säger",
+        "review_count": "1 247",
+        "auto_speed": 4000
       }
     },
     "pb_product_faq": {
@@ -511,29 +379,43 @@
         "pf1": {
           "type": "item",
           "settings": {
-            "question": "Hur tar jag produkten?",
-            "answer": "<p>Ta rekommenderad dos med ett glas vatten, gärna på kvällen 30–60 minuter innan läggdags.</p>"
+            "question": "Behöver jag en prenumeration för att använda Lume 2.0?",
+            "answer": "<p>Nej. Till skillnad från många andra hälsoarmband som tar 300–400 kr i månaden för premiumfunktioner är Lume 2.0 helt prenumerationsfritt. Du betalar en gång — och äger sedan armbandet och alla funktioner för alltid. Inga betalspärrar, inga dolda avgifter, inga återkommande kostnader.</p>"
           }
         },
         "pf2": {
           "type": "item",
           "settings": {
-            "question": "Kan jag ta den varje dag?",
-            "answer": "<p>Ja, produkten är designad för daglig användning. Bäst resultat efter 4–8 veckors kontinuerlig användning.</p>"
+            "question": "Är Lume 2.0 vattentätt?",
+            "answer": "<p>Ja. Lume 2.0 är vattentåligt och klarar vardaglig användning som handtvätt, dusch, svett under träning och lättare simning. Du kan tryggt bära det när du tränar, lagar mat eller är ute i regnet utan att oroa dig.</p>"
           }
         },
         "pf3": {
           "type": "item",
           "settings": {
-            "question": "Är den vegansk?",
-            "answer": "<p>Ja, produkten är 100% vegansk och fri från gluten, mjölk och soja.</p>"
+            "question": "Hur lång är batteritiden?",
+            "answer": "<p>Upp till 7 dagars batteritid vid normal användning — inklusive kontinuerlig pulsmätning och sömnanalys. Laddning sker enkelt via den medföljande USB-kabeln och tar ungefär 60–90 minuter för full laddning.</p>"
           }
         },
         "pf4": {
           "type": "item",
           "settings": {
-            "question": "Finns det biverkningar?",
-            "answer": "<p>Tolereras väl av de flesta. Konsultera läkare om du tar mediciner eller är gravid.</p>"
+            "question": "Fungerar Lume 2.0 med min telefon?",
+            "answer": "<p>Ja. Lume 2.0 är kompatibelt med både iOS (iPhone) och Android-enheter via Bluetooth. Ladda ner den kostnadsfria Lume-appen i App Store eller Google Play för att synka data och se dina hälsoinsikter.</p>"
+          }
+        },
+        "item_aEgaTt": {
+          "type": "item",
+          "settings": {
+            "question": "Passar armbandet alla handleder?",
+            "answer": "<p>Det justerbara nylonbandet passar handledsstorlekar från 140 mm till 215 mm (5,5\"–8,5\"), vilket täcker de flesta vuxna. Det lätta materialet är designat för bekväm användning hela dygnet — även under sömnen.</p>"
+          }
+        },
+        "item_GEHzgz": {
+          "type": "item",
+          "settings": {
+            "question": "Hur skiljer sig Lume 2.0 från andra hälsoarmband?",
+            "answer": "<p>Lume 2.0 använder samma medicinska sensorteknologi (Realtek) som premiumarmband i prisklassen 3 000–4 000 kr — men utan månadsavgifter. Du får professionell hälsomätning utan premiumpris och utan löpande kostnader.</p>"
           }
         }
       },
@@ -541,30 +423,13 @@
         "pf1",
         "pf2",
         "pf3",
-        "pf4"
+        "pf4",
+        "item_aEgaTt",
+        "item_GEHzgz"
       ],
       "settings": {
         "label": "Produktfrågor",
-        "title": "Produktspecifika Frågor"
-      }
-    },
-    "product_trustpilot": {
-      "type": "trustpilot-carousel",
-      "blocks": {
-        "pr1": { "type": "review", "settings": { "stars": 5, "title": "Bästa massagepistolen!", "review": "Köpte massagepistolen för att hantera träningsvärk och jag är helt imponerad. Djupvävnadsmassagen når precis rätt ställen och batteriet håller länge.", "name": "Erik S.", "date": "15 maj 2026" } },
-        "pr2": { "type": "review", "settings": { "stars": 5, "title": "Sover som ett barn nu", "review": "Blåljusglasögonen har förändrat min sömnkvalitet helt. Tar på dem 2 timmar innan läggdags och skillnaden är dramatisk. Verkligen fantastisk produkt!", "name": "Lina B.", "date": "12 maj 2026" } },
-        "pr3": { "type": "review", "settings": { "stars": 5, "title": "Imponerad av träningsbandet", "review": "Armbandet är otroligt exakt med pulsmätningen. Sömnanalysen hjälpte mig förstå varför jag kände mig trött och nu har jag optimerat min återhämtning.", "name": "Karin J.", "date": "8 maj 2026" } },
-        "pr4": { "type": "review", "settings": { "stars": 5, "title": "Tränar hemma varje dag", "review": "Pilatesstaven är min favoritprodukt! Kan träna hela kroppen på 20 minuter. Gummibanden ger precis rätt motstånd och den är lätt att ta med på resor.", "name": "Anna P.", "date": "5 maj 2026" } },
-        "pr5": { "type": "review", "settings": { "stars": 5, "title": "Snabb leverans, top kvalitet", "review": "Beställde på måndag, fick paketet på onsdag. Produkten överträffade förväntningarna – premium kvalitet till ett rimligt pris. Återhämtningen är märkbart bättre.", "name": "Marcus B.", "date": "2 maj 2026" } },
-        "pr6": { "type": "review", "settings": { "stars": 5, "title": "Rekommenderar starkt", "review": "Har provat många liknande produkter men Recoverlab är i en helt annan klass. Snabb leverans, utmärkt kvalitet och riktigt bra kundtjänst.", "name": "Sofia A.", "date": "28 apr 2026" } },
-        "pr7": { "type": "review", "settings": { "stars": 5, "title": "Perfekt present", "review": "Köpte pilatesstaven som present och nu tävlar vi om vem som får använda den! Bästa träningsinköpet vi gjort. Hela kroppen med ett redskap.", "name": "Henrik S.", "date": "22 apr 2026" } },
-        "pr8": { "type": "review", "settings": { "stars": 5, "title": "PT-nivå hemma", "review": "Som personlig tränare rekommenderar jag Recoverlabs produkter till alla mina klienter. Återhämtningen efter intensiva pass har förbättrats markant.", "name": "Daniel H.", "date": "18 apr 2026" } }
-      },
-      "block_order": ["pr1","pr2","pr3","pr4","pr5","pr6","pr7","pr8"],
-      "settings": {
-        "heading": "Vad våra kunder säger",
-        "review_count": "1 247",
-        "auto_speed": 4000
+        "title": "Vanliga frågor om Lume 2.0"
       }
     },
     "product_recommendations_qggXJq": {
@@ -706,6 +571,268 @@
         "color_scheme": "scheme-1",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "none",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "price_tVjtKg"
+              ]
+            },
+            "divider_VJhene": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": false,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "divider_VJhene",
+            "variant_picker_R3rGDr",
+            "buy_buttons_eYQEYi",
+            "text_aEtTtq"
+          ]
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "enable_sticky_add_to_cart": true,
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     }
   },

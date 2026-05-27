@@ -1,259 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
-      "type": "product-information",
+    "pb_product_hero": {
+      "type": "pb-product-hero",
       "blocks": {
-        "media-gallery": {
-          "type": "_product-media-gallery",
-          "static": true,
+        "feat1": {
+          "type": "feature",
           "settings": {
-            "media_presentation": "grid",
-            "media_columns": "two",
-            "image_gap": 4,
-            "large_first_image": false,
-            "icons_style": "none",
-            "slideshow_controls_style": "counter",
-            "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "right",
-            "thumbnail_width": 44,
-            "aspect_ratio": "adapt",
-            "constrain_to_viewport": true,
-            "media_fit": "contain",
-            "media_radius": 0,
-            "extend_media": false,
-            "zoom": true,
-            "video_loop": false,
-            "hide_variants": true,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "text": "Hej hej"
+          }
         },
-        "product-details": {
-          "type": "_product-details",
-          "static": true,
+        "feat2": {
+          "type": "feature",
           "settings": {
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "details_position": "flex-start",
-            "gap": 28,
-            "sticky_details_desktop": true,
-            "inherit_color_scheme": true,
-            "color_scheme": "scheme-1",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "group_icgrde": {
-              "type": "group",
-              "name": "Header",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "open_in_new_tab": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Product title",
-                  "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price_tVjtKg": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "paragraph",
-                    "width": "100%",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "color": "var(--color-foreground)",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xrnftG",
-                "price_tVjtKg"
-              ]
-            },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
-            "variant_picker_R3rGDr": {
-              "type": "variant-picker",
-              "settings": {
-                "variant_style": "buttons",
-                "show_swatches": false,
-                "alignment": "left",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "buy_buttons_eYQEYi": {
-              "type": "buy-buttons",
-              "settings": {
-                "stacking": true,
-                "show_pickup_availability": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "quantity": {
-                  "type": "quantity",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                },
-                "add-to-cart": {
-                  "type": "add-to-cart",
-                  "static": true,
-                  "settings": {
-                    "style_class": "button"
-                  },
-                  "blocks": {}
-                },
-                "accelerated-checkout": {
-                  "type": "accelerated-checkout",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                }
-              },
-              "block_order": []
-            },
-            "text_aEtTtq": {
-              "type": "text",
-              "name": "Product description",
-              "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "group_icgrde",
-            "divider_VJhene",
-            "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi",
-            "text_aEtTtq"
-          ]
+            "text": "Fyll i produktfördel 2"
+          }
+        },
+        "feat3": {
+          "type": "feature",
+          "settings": {
+            "text": "Fyll i produktfördel 3"
+          }
+        },
+        "feat4": {
+          "type": "feature",
+          "settings": {
+            "text": "Fyll i produktfördel 4"
+          }
         }
       },
+      "block_order": [
+        "feat1",
+        "feat2",
+        "feat3",
+        "feat4"
+      ],
       "settings": {
-        "content_width": "content-center-aligned",
-        "desktop_media_position": "left",
-        "equal_columns": false,
-        "limit_details_width": false,
-        "gap": 48,
-        "color_scheme": "",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "review_count_num": 70,
+        "show_klarna": true,
+        "atc_label": "Lägg till i varukorg",
+        "return_text": "30 dagars returrätt",
+        "delivery_text": ""
       }
     },
     "product_story": {
@@ -292,25 +87,13 @@
           }
         }
       },
-      "block_order": ["story_1", "story_2", "story_3", "story_4"],
+      "block_order": [
+        "story_1",
+        "story_2",
+        "story_3",
+        "story_4"
+      ],
       "settings": {}
-    },
-    "pb_product_hero": {
-      "type": "pb-product-hero",
-      "blocks": {
-        "feat1": { "type": "feature", "settings": { "text": "Fyll i produktfördel 1" } },
-        "feat2": { "type": "feature", "settings": { "text": "Fyll i produktfördel 2" } },
-        "feat3": { "type": "feature", "settings": { "text": "Fyll i produktfördel 3" } },
-        "feat4": { "type": "feature", "settings": { "text": "Fyll i produktfördel 4" } }
-      },
-      "block_order": ["feat1","feat2","feat3","feat4"],
-      "settings": {
-        "show_klarna": true,
-        "review_count_num": 70,
-        "atc_label": "Lägg till i varukorg",
-        "return_text": "30 dagars returrätt",
-        "delivery_text": ""
-      }
     },
     "pb_problem_solution": {
       "type": "pb-product-problem-solution",
@@ -362,7 +145,13 @@
       ],
       "settings": {
         "label": "Problemet & lösningen",
-        "title": "Vi Förstår Problemet"
+        "title": "Vi Förstår Problemet",
+        "problem_label": "Utan rätt återhämtning",
+        "problem_title": "Kroppen fastnar i ett destruktivt mönster",
+        "problem_text": "Utan rätt återhämtning bryts muskler ner istället för att byggas upp. Kortisolet stiger. Sömnen försämras. Energin sjunker.",
+        "solution_label": "Med vår produkt",
+        "solution_title": "Din kropp får vad den verkligen behöver",
+        "solution_text": "Vår vetenskapligt formulerade produkt ger kroppen de exakta närämnena den behöver för optimal återhämtning."
       }
     },
     "pb_product_science": {
@@ -500,9 +289,111 @@
       "settings": {
         "label": "Jämförelse",
         "title": "Varför Vi Är Bäst",
+        "subtitle": "",
         "our_name": "Vår Produkt",
         "comp1_name": "Konkurrent A",
         "comp2_name": "Konkurrent B"
+      }
+    },
+    "product_trustpilot": {
+      "type": "trustpilot-carousel",
+      "blocks": {
+        "pr1": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Bästa massagepistolen!",
+            "review": "Köpte massagepistolen för att hantera träningsvärk och jag är helt imponerad. Djupvävnadsmassagen når precis rätt ställen och batteriet håller länge.",
+            "name": "Erik S.",
+            "date": "15 maj 2026"
+          }
+        },
+        "pr2": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Sover som ett barn nu",
+            "review": "Blåljusglasögonen har förändrat min sömnkvalitet helt. Tar på dem 2 timmar innan läggdags och skillnaden är dramatisk. Verkligen fantastisk produkt!",
+            "name": "Lina B.",
+            "date": "12 maj 2026"
+          }
+        },
+        "pr3": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Imponerad av träningsbandet",
+            "review": "Armbandet är otroligt exakt med pulsmätningen. Sömnanalysen hjälpte mig förstå varför jag kände mig trött och nu har jag optimerat min återhämtning.",
+            "name": "Karin J.",
+            "date": "8 maj 2026"
+          }
+        },
+        "pr4": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Tränar hemma varje dag",
+            "review": "Pilatesstaven är min favoritprodukt! Kan träna hela kroppen på 20 minuter. Gummibanden ger precis rätt motstånd och den är lätt att ta med på resor.",
+            "name": "Anna P.",
+            "date": "5 maj 2026"
+          }
+        },
+        "pr5": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Snabb leverans, top kvalitet",
+            "review": "Beställde på måndag, fick paketet på onsdag. Produkten överträffade förväntningarna – premium kvalitet till ett rimligt pris. Återhämtningen är märkbart bättre.",
+            "name": "Marcus B.",
+            "date": "2 maj 2026"
+          }
+        },
+        "pr6": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Rekommenderar starkt",
+            "review": "Har provat många liknande produkter men Recoverlab är i en helt annan klass. Snabb leverans, utmärkt kvalitet och riktigt bra kundtjänst.",
+            "name": "Sofia A.",
+            "date": "28 apr 2026"
+          }
+        },
+        "pr7": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Perfekt present",
+            "review": "Köpte pilatesstaven som present och nu tävlar vi om vem som får använda den! Bästa träningsinköpet vi gjort. Hela kroppen med ett redskap.",
+            "name": "Henrik S.",
+            "date": "22 apr 2026"
+          }
+        },
+        "pr8": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "PT-nivå hemma",
+            "review": "Som personlig tränare rekommenderar jag Recoverlabs produkter till alla mina klienter. Återhämtningen efter intensiva pass har förbättrats markant.",
+            "name": "Daniel H.",
+            "date": "18 apr 2026"
+          }
+        }
+      },
+      "block_order": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5",
+        "pr6",
+        "pr7",
+        "pr8"
+      ],
+      "settings": {
+        "business_unit_id": "",
+        "heading": "Vad våra kunder säger",
+        "review_count": "1 247",
+        "auto_speed": 4000
       }
     },
     "pb_product_faq": {
@@ -546,25 +437,6 @@
       "settings": {
         "label": "Produktfrågor",
         "title": "Produktspecifika Frågor"
-      }
-    },
-    "product_trustpilot": {
-      "type": "trustpilot-carousel",
-      "blocks": {
-        "pr1": { "type": "review", "settings": { "stars": 5, "title": "Bästa massagepistolen!", "review": "Köpte massagepistolen för att hantera träningsvärk och jag är helt imponerad. Djupvävnadsmassagen når precis rätt ställen och batteriet håller länge.", "name": "Erik S.", "date": "15 maj 2026" } },
-        "pr2": { "type": "review", "settings": { "stars": 5, "title": "Sover som ett barn nu", "review": "Blåljusglasögonen har förändrat min sömnkvalitet helt. Tar på dem 2 timmar innan läggdags och skillnaden är dramatisk. Verkligen fantastisk produkt!", "name": "Lina B.", "date": "12 maj 2026" } },
-        "pr3": { "type": "review", "settings": { "stars": 5, "title": "Imponerad av träningsbandet", "review": "Armbandet är otroligt exakt med pulsmätningen. Sömnanalysen hjälpte mig förstå varför jag kände mig trött och nu har jag optimerat min återhämtning.", "name": "Karin J.", "date": "8 maj 2026" } },
-        "pr4": { "type": "review", "settings": { "stars": 5, "title": "Tränar hemma varje dag", "review": "Pilatesstaven är min favoritprodukt! Kan träna hela kroppen på 20 minuter. Gummibanden ger precis rätt motstånd och den är lätt att ta med på resor.", "name": "Anna P.", "date": "5 maj 2026" } },
-        "pr5": { "type": "review", "settings": { "stars": 5, "title": "Snabb leverans, top kvalitet", "review": "Beställde på måndag, fick paketet på onsdag. Produkten överträffade förväntningarna – premium kvalitet till ett rimligt pris. Återhämtningen är märkbart bättre.", "name": "Marcus B.", "date": "2 maj 2026" } },
-        "pr6": { "type": "review", "settings": { "stars": 5, "title": "Rekommenderar starkt", "review": "Har provat många liknande produkter men Recoverlab är i en helt annan klass. Snabb leverans, utmärkt kvalitet och riktigt bra kundtjänst.", "name": "Sofia A.", "date": "28 apr 2026" } },
-        "pr7": { "type": "review", "settings": { "stars": 5, "title": "Perfekt present", "review": "Köpte pilatesstaven som present och nu tävlar vi om vem som får använda den! Bästa träningsinköpet vi gjort. Hela kroppen med ett redskap.", "name": "Henrik S.", "date": "22 apr 2026" } },
-        "pr8": { "type": "review", "settings": { "stars": 5, "title": "PT-nivå hemma", "review": "Som personlig tränare rekommenderar jag Recoverlabs produkter till alla mina klienter. Återhämtningen efter intensiva pass har förbättrats markant.", "name": "Daniel H.", "date": "18 apr 2026" } }
-      },
-      "block_order": ["pr1","pr2","pr3","pr4","pr5","pr6","pr7","pr8"],
-      "settings": {
-        "heading": "Vad våra kunder säger",
-        "review_count": "1 247",
-        "auto_speed": 4000
       }
     },
     "product_recommendations_qggXJq": {
@@ -706,6 +578,267 @@
         "color_scheme": "scheme-1",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "none",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "price_tVjtKg"
+              ]
+            },
+            "divider_VJhene": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": false,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "divider_VJhene",
+            "variant_picker_R3rGDr",
+            "buy_buttons_eYQEYi",
+            "text_aEtTtq"
+          ]
+        }
+      },
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "enable_sticky_add_to_cart": true,
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     }
   },
