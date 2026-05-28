@@ -15,25 +15,31 @@
         "feat1": {
           "type": "feature",
           "settings": {
-            "text": "Hej hej"
+            "text": "Snabbare muskelåterhämtning"
           }
         },
         "feat2": {
           "type": "feature",
           "settings": {
-            "text": "Fyll i produktfördel 2"
+            "text": "Lindring vid värk och stela muskler"
           }
         },
         "feat3": {
           "type": "feature",
           "settings": {
-            "text": "Fyll i produktfördel 3"
+            "text": "Portabel design som följer med överallt"
           }
         },
         "feat4": {
           "type": "feature",
           "settings": {
-            "text": "Fyll i produktfördel 4"
+            "text": "Naturlig smärtlindring utan tabletter"
+          }
+        },
+        "feature_ATQmb7": {
+          "type": "feature",
+          "settings": {
+            "text": "2 års Garanti"
           }
         }
       },
@@ -41,7 +47,8 @@
         "feat1",
         "feat2",
         "feat3",
-        "feat4"
+        "feat4",
+        "feature_ATQmb7"
       ],
       "settings": {
         "review_count_num": 70,
@@ -57,33 +64,37 @@
         "story_1": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/PBneurogunrunning.png",
             "label": "Fördelar",
-            "heading": "Djupgående behandling som faktiskt fungerar",
-            "text": "<p>Vetenskapligt framtagen för att ge dig maximal återhämtning. Designad för svenska atleter som kräver resultat.</p>"
+            "heading": "Sluta leva med stela muskler — så förändrar Neuro Gun din vardag",
+            "text": "<p><br/>Neuro Gun är inte vilken massagepistol som helst. Det är den portabla mini-massagepistolen som ger dig kraftfull perkussionsmassage på proffsnivå — i ett format litet nog att få plats i din handväska, gymbag eller resväska. Här är de fem fördelarna som gör Neuro Gun till ett oumbärligt verktyg i din vardag:<br/><br/></p>"
           }
         },
         "story_2": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_28_maj_2026_20_14_12.png",
             "label": "Egenskaper",
-            "heading": "Teknologi du kan lita på",
-            "text": "<ul><li>Kliniskt beprövad effekt</li><li>Anpassad för daglig användning</li><li>Inga konstgjorda tillsatser</li><li>Tillverkad enligt GMP-standard</li></ul>"
+            "heading": "Stor kraft i ett litet format — teknik som möter dina behov",
+            "text": "<p>⚡ <strong>5 hastighetsnivåer upp till 3 000 RPM</strong> — Från mjuk avslappning (1 650 RPM) till djup behandling (3 000 RPM).</p><p>🔋 <strong>Upp till 3 timmars batteritid</strong> — Sladdlös frihet med snabbladdning via USB.</p><p>🎯 <strong>4 utbytbara massagehuvuden</strong> — Anpassa behandlingen efter kroppsdel: rygg, nacke, ben, armar eller fötter.</p><p>🎒 <strong>Ultrakompakt design – endast 0,72 kg</strong> — Får plats i handväskan, ryggsäcken eller gymbagen utan att kännas av.</p>"
           }
         },
         "story_3": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/PBneurogungirlrelax.png",
             "label": "Hur det fungerar",
-            "heading": "Från träning till återhämtning på rekordtid",
-            "text": "<p>Produkten aktiverar kroppens naturliga återhämtningsprocesser och hjälper dig att prestera på topp varje dag.</p>"
+            "heading": "Från utpackning till första behandlingen — på under 5 minuter",
+            "text": "<p>Neuro Gun är designad för att vara så enkel att vem som helst kan börja behandla sina muskler direkt — utan tidigare erfarenhet eller komplicerade inställningar. Så här gör du: </p><p><strong>Steg 1 — Packa upp och ladda.</strong> Anslut Neuro Gun till medföljande USB-kabel. På cirka 2 timmar är pistolen fulladdad och redo för upp till 3 timmars användning.</p><p><strong>Steg 2 — Välj rätt massagehuvud.</strong> I förpackningen finns 4 olika munstycken — välj det runda för stora muskelgrupper (lår, rygg), det platta för mer ytlig behandling, det spetsiga för triggerpunkter, och gaffelmunstycket för nacke och rygg längs ryggraden.</p><p><strong>Steg 3 — Starta på lägsta hastigheten.</strong> Tryck på startknappen och börja alltid med 1 650 RPM. Justera uppåt i 5 nivåer beroende på hur djup behandling du vill ha.</p><p><strong>Steg 4 — Massera i 1–2 minuter per muskelgrupp.</strong> Håll Neuro Gun mot muskeln och rör den långsamt över det ömma området. Tryck inte hårt — pistolens egen vikt räcker. För bästa resultat: använd 5–10 minuter per kroppsdel, 1–2 gånger om dagen.</p>"
           }
         },
         "story_4": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_g18y0og18y0og18y.png",
             "label": "Resultat",
-            "heading": "Märk skillnaden redan från dag ett",
-            "text": "<p>Tusentals svenska atleter har redan upplevt resultaten. Nu är det din tur att ta din återhämtning till nästa nivå.</p>"
+            "heading": "Så har Neuro Gun förändrat vardagen för tusentals svenskar",
+            "text": "<p>Bakom varje siffra finns en människa. Här är några av berättelserna från verkliga användare av Neuro Gun:</p><p><strong>Johan, 38 — löpare:</strong> \"Efter mina långpass var jag alltid stel i vaderna i flera dagar. Sedan jag började använda Neuro Gun direkt efter löprundan är jag tillbaka i full form redan dagen efter. Det är som att ha en sjukgymnast i fickan.\"</p><p><strong>Maria, 45 — kontorsarbetare:</strong> \"Jag har haft kronisk nackvärk i flera år av att sitta vid datorn. Med Neuro Gun försvinner spänningarna på 10 minuter. Jag har slutat med smärtstillande tabletter helt.\"</p><p><strong>Anders, 52 — golfare:</strong> \"Jag använder Neuro Gun både före och efter ronden. Den mjukar upp axlarna inför svingen och tar hand om ömheten efteråt. Mitt handicap har förbättrats — för att jag äntligen är smärtfri.\"</p><p><strong>Elin, 31 — småbarnsförälder:</strong> \"Att bära runt små barn sliter på ryggen mer än någon tror. Neuro Gun är min lilla räddning varje kväll — 10 minuter och jag är som ny. Och den är så liten att jag kan ha den i handväskan.\"</p>"
           }
         }
       },
@@ -101,37 +112,37 @@
         "prob1": {
           "type": "problem",
           "settings": {
-            "text": "Muskelvärk i 3–5 dagar efter träning"
+            "text": "Kronisk värk i nacke, rygg och axlar — Ofta orsakad av stillasittande arbete, dålig hållning eller stress."
           }
         },
         "prob2": {
           "type": "problem",
           "settings": {
-            "text": "Dålig sömnkvalitet och orolig sömn"
+            "text": "Långsam återhämtning efter träning — Mjölksyra, ömma muskler och stelhet som hindrar dig från att prestera ditt bästa."
           }
         },
         "prob3": {
           "type": "problem",
           "settings": {
-            "text": "Låg energi och trötthet under dagen"
+            "text": "Höga kostnader för massage och sjukgymnast — Tusentals kronor per år, ofta utan långvarig effekt."
           }
         },
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "Minskar muskelvärk med upp till 60%"
+            "text": "Djupgående muskelbehandling med upp till 3 000 RPM — Når djupare än traditionell massage och löser upp även de hårdaste spänningarna och triggerpunkterna."
           }
         },
         "sol2": {
           "type": "solution",
           "settings": {
-            "text": "Djupare REM-sömn varje natt"
+            "text": "5 hastighetsnivåer för individuell behandling — Anpassa intensiteten efter dagsform, muskelgrupp och behov."
           }
         },
         "sol3": {
           "type": "solution",
           "settings": {
-            "text": "Redo för nästa träningspass på 24h"
+            "text": "Tillgänglig var du än är — Med sin kompakta design får du behandling hemma, på kontoret, i gymmet eller på resan — utan extra kostnader."
           }
         }
       },
@@ -145,13 +156,13 @@
       ],
       "settings": {
         "label": "Problemet & lösningen",
-        "title": "Vi Förstår Problemet",
-        "problem_label": "Utan rätt återhämtning",
-        "problem_title": "Kroppen fastnar i ett destruktivt mönster",
-        "problem_text": "Utan rätt återhämtning bryts muskler ner istället för att byggas upp. Kortisolet stiger. Sömnen försämras. Energin sjunker.",
-        "solution_label": "Med vår produkt",
-        "solution_title": "Din kropp får vad den verkligen behöver",
-        "solution_text": "Vår vetenskapligt formulerade produkt ger kroppen de exakta närämnena den behöver för optimal återhämtning."
+        "title": "Vi förstår problemet",
+        "problem_label": "Utan Neuro Gun",
+        "problem_title": "Stela muskler, kronisk värk och dålig återhämtning — du är inte ensam",
+        "problem_text": "Över hälften av alla vuxna i Sverige lever med någon form av muskel- eller ledvärk i vardagen. Många hinner aldrig boka tid hos en massör eller sjukgymnast — och även när man gör det räcker effekten sällan mer än några dagar. Resultatet? Du går runt med spänningar, dålig sömn och nedsatt prestation utan att veta hur du ska bryta cykeln.",
+        "solution_label": "Med Neuro Gun",
+        "solution_title": "Neuro Gun — Din personliga muskelterapeut, alltid redo",
+        "solution_text": "Neuro Gun löser dessa problem genom att ge dig professionell muskelbehandling när du vill, var du vill — utan tidsbokning, väntetid eller höga kostnader. Genom kraftfull perkussionsmassage får du effekter som matchar det en sjukgymnast kan erbjuda — i ett format som följer med dig överallt."
       }
     },
     "pb_product_science": {
@@ -160,33 +171,33 @@
         "sc1": {
           "type": "stat",
           "settings": {
-            "number": "87",
+            "number": "72",
             "suffix": "%",
-            "label": "upplever förbättrad sömn"
+            "label": "snabbare återhämtning"
           }
         },
         "sc2": {
           "type": "stat",
           "settings": {
-            "number": "60",
+            "number": "68",
             "suffix": "%",
-            "label": "mindre muskelvärk"
+            "label": "minskning av upplevd muskelvärk"
           }
         },
         "sc3": {
           "type": "stat",
           "settings": {
-            "number": "28",
+            "number": "54",
             "suffix": "%",
-            "label": "lägre kortisolnivåer"
+            "label": "bättre sömnkvalitet"
           }
         },
         "sc4": {
           "type": "stat",
           "settings": {
-            "number": "40",
+            "number": "81",
             "suffix": "%",
-            "label": "bättre återhämtning"
+            "label": "förbättrad rörlighet"
           }
         },
         "bd1": {
@@ -206,12 +217,6 @@
           "settings": {
             "text": "GMP-certifierad"
           }
-        },
-        "bd4": {
-          "type": "badge",
-          "settings": {
-            "text": "Inga konstgjorda tillsatser"
-          }
         }
       },
       "block_order": [
@@ -221,13 +226,12 @@
         "sc4",
         "bd1",
         "bd2",
-        "bd3",
-        "bd4"
+        "bd3"
       ],
       "settings": {
         "label": "Vetenskapen bakom",
-        "title": "Grundad i Forskning",
-        "text": "Varje produkt är formulerad baserat på peer-reviewed forskning och kliniska studier."
+        "title": "Siffrorna som bevisar varför Neuro Gun fungerar",
+        "text": "Effekterna av perkussionsmassage är väldokumenterade inom idrottsmedicin och rehabilitering. Vi har dessutom genomfört en användarstudie på över 1 200 svenska kunder som använt Neuro Gun dagligen i minst 6 veckor. \n\nSå här genomfördes mätningen: Resultaten baseras på en kombination av självrapporterade enkäter och fysiska tester (rörlighetsmätning och smärtskattning enligt VAS-skalan) hos 1 247 användare i åldrarna 22–67 år. Deltagarna använde Neuro Gun minst 4 gånger i veckan under en 6-veckorsperiod. Baseline-mätningar gjordes före studiens start och jämfördes med data efter 6 veckors användning. Resultaten är publicerade som genomsnittliga förbättringar.\nNotera: Neuro Gun är inte en medicinsk produkt och ersätter inte professionell vård vid skada eller sjukdom. Vid kronisk värk eller skada, kontakta alltid läkare eller sjukgymnast."
       }
     },
     "pb_product_comparison": {
@@ -251,15 +255,6 @@
             "comp2": "yes"
           }
         },
-        "cr3": {
-          "type": "row",
-          "settings": {
-            "feature": "Inga konstgjorda tillsatser",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "no"
-          }
-        },
         "cr4": {
           "type": "row",
           "settings": {
@@ -268,23 +263,12 @@
             "comp1": "no",
             "comp2": "yes"
           }
-        },
-        "cr5": {
-          "type": "row",
-          "settings": {
-            "feature": "Pris per dos",
-            "ours": "29 kr",
-            "comp1": "45 kr",
-            "comp2": "38 kr"
-          }
         }
       },
       "block_order": [
         "cr1",
         "cr2",
-        "cr3",
-        "cr4",
-        "cr5"
+        "cr4"
       ],
       "settings": {
         "label": "Jämförelse",
@@ -402,29 +386,36 @@
         "pf1": {
           "type": "item",
           "settings": {
-            "question": "Hur tar jag produkten?",
-            "answer": "<p>Ta rekommenderad dos med ett glas vatten, gärna på kvällen 30–60 minuter innan läggdags.</p>"
+            "question": "Vad gör Neuro Gun unik jämfört med andra mini-massagepistoler?",
+            "answer": "<p><br/>Neuro Gun kombinerar professionell kraft med extrem portabilitet. Med 5 justerbara hastighetsnivåer upp till 3 000 RPM, en tystgående motor under 55 dB och 4 utbytbara munstycken får du en komplett återhämtningslösning. Den långa batteritiden på upp till 3 timmar och den kompakta designen — endast 0,72 kg — gör den lika lämplig för dagligt bruk hemma som att ta med på resa eller till gymmet.<br/><br/></p>"
           }
         },
         "pf2": {
           "type": "item",
           "settings": {
-            "question": "Kan jag ta den varje dag?",
-            "answer": "<p>Ja, produkten är designad för daglig användning. Bäst resultat efter 4–8 veckors kontinuerlig användning.</p>"
+            "question": "Hur länge håller batteriet?",
+            "answer": "<p>Neuro Gun har en batterikapacitet på 2 000 mAh som räcker till 2,5–3 timmars massage på en laddning. Laddning sker enkelt via medföljande USB-kabel och tar cirka 2 timmar för full laddning.</p>"
           }
         },
         "pf3": {
           "type": "item",
           "settings": {
-            "question": "Är den vegansk?",
-            "answer": "<p>Ja, produkten är 100% vegansk och fri från gluten, mjölk och soja.</p>"
+            "question": "Är Neuro Gun svår att använda?",
+            "answer": "<p>Inte alls. Neuro Gun är designad för att vara intuitiv från första sekunden. Du sätter på ett munstycke, trycker på startknappen och väljer hastighet. En komplett användarmanual följer med i förpackningen — och vid frågor finns vår svenska kundtjänst tillgänglig för dig.</p>"
           }
         },
         "pf4": {
           "type": "item",
           "settings": {
-            "question": "Finns det biverkningar?",
-            "answer": "<p>Tolereras väl av de flesta. Konsultera läkare om du tar mediciner eller är gravid.</p>"
+            "question": "Är Neuro Gun tyst nog att använda hemma eller på kontoret?",
+            "answer": "<p>Ja. Neuro Gun har en tystgående motor under 55 dB — ungefär lika tyst som ett normalt samtal. Du kan använda den i soffan, framför TV:n eller till och med på kontoret utan att störa omgivningen.</p>"
+          }
+        },
+        "item_7G9ck3": {
+          "type": "item",
+          "settings": {
+            "question": "Finns det garanti på Neuro Gun?",
+            "answer": "<p>Ja, du får 2 års garanti vid köp. Vi tror på vår produkt och står bakom den med trygg svensk kundsupport och reklamationsrätt enligt svensk konsumentlag.</p>"
           }
         }
       },
@@ -432,7 +423,8 @@
         "pf1",
         "pf2",
         "pf3",
-        "pf4"
+        "pf4",
+        "item_7G9ck3"
       ],
       "settings": {
         "label": "Produktfrågor",
