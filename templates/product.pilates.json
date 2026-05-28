@@ -1,259 +1,54 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
-      "type": "product-information",
+    "pb_product_hero": {
+      "type": "pb-product-hero",
       "blocks": {
-        "media-gallery": {
-          "type": "_product-media-gallery",
-          "static": true,
+        "feat1": {
+          "type": "feature",
           "settings": {
-            "media_presentation": "grid",
-            "media_columns": "two",
-            "image_gap": 4,
-            "large_first_image": false,
-            "icons_style": "none",
-            "slideshow_controls_style": "counter",
-            "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "right",
-            "thumbnail_width": 44,
-            "aspect_ratio": "adapt",
-            "constrain_to_viewport": true,
-            "media_fit": "contain",
-            "media_radius": 0,
-            "extend_media": false,
-            "zoom": true,
-            "video_loop": false,
-            "hide_variants": true,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "text": "Skonsam för leder, rygg och knän"
+          }
         },
-        "product-details": {
-          "type": "_product-details",
-          "static": true,
+        "feat2": {
+          "type": "feature",
           "settings": {
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "details_position": "flex-start",
-            "gap": 28,
-            "sticky_details_desktop": true,
-            "inherit_color_scheme": true,
-            "color_scheme": "scheme-1",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "group_icgrde": {
-              "type": "group",
-              "name": "Header",
-              "settings": {
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "open_in_new_tab": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Product title",
-                  "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price_tVjtKg": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "paragraph",
-                    "width": "100%",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "color": "var(--color-foreground)",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xrnftG",
-                "price_tVjtKg"
-              ]
-            },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
-            "variant_picker_R3rGDr": {
-              "type": "variant-picker",
-              "settings": {
-                "variant_style": "buttons",
-                "show_swatches": false,
-                "alignment": "left",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "buy_buttons_eYQEYi": {
-              "type": "buy-buttons",
-              "settings": {
-                "stacking": true,
-                "show_pickup_availability": false,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "quantity": {
-                  "type": "quantity",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                },
-                "add-to-cart": {
-                  "type": "add-to-cart",
-                  "static": true,
-                  "settings": {
-                    "style_class": "button"
-                  },
-                  "blocks": {}
-                },
-                "accelerated-checkout": {
-                  "type": "accelerated-checkout",
-                  "static": true,
-                  "settings": {},
-                  "blocks": {}
-                }
-              },
-              "block_order": []
-            },
-            "text_aEtTtq": {
-              "type": "text",
-              "name": "Product description",
-              "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "group_icgrde",
-            "divider_VJhene",
-            "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi",
-            "text_aEtTtq"
-          ]
+            "text": "Förbättrad rörlighet och balans"
+          }
+        },
+        "feat3": {
+          "type": "feature",
+          "settings": {
+            "text": "Mindre ledvärk och stelhet"
+          }
+        },
+        "feat4": {
+          "type": "feature",
+          "settings": {
+            "text": "Träna när och var du vill"
+          }
         }
       },
+      "block_order": [
+        "feat1",
+        "feat2",
+        "feat3",
+        "feat4"
+      ],
       "settings": {
-        "content_width": "content-center-aligned",
-        "desktop_media_position": "left",
-        "equal_columns": false,
-        "limit_details_width": false,
-        "gap": 48,
-        "color_scheme": "",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "review_count_num": 70,
+        "show_klarna": true,
+        "atc_label": "Lägg till i varukorg",
+        "return_text": "30 dagars returrätt",
+        "delivery_text": ""
       }
     },
     "product_story": {
@@ -262,55 +57,47 @@
         "story_1": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_e063rie063rie063.png",
             "label": "Fördelar",
-            "heading": "Djupgående behandling som faktiskt fungerar",
-            "text": "<p>Vetenskapligt framtagen för att ge dig maximal återhämtning. Designad för svenska atleter som kräver resultat.</p>"
+            "heading": "Starkare, smidigare och smärtfri — från din stol eller stående",
+            "text": "<p>Flexora är inte vilken träningsutrustning som helst. Det är en komplett pilatesbar och hemmaträningslösning för kvinnor som vill bygga styrka, rörlighet och självförtroende — utan att behöva ligga på golvet eller belasta ömma leder. Du väljer själv om du vill träna sittande på en stol eller stående — anpassa efter din dagsform, nivå och behov.</p><p><br/>Med Flexora behöver du inte längre välja mellan smärta och stillasittande. Oavsett om du återhämtar dig efter en operation, lever med artros eller bara vill komma igång igen efter många år av paus — du får en träningsmetod som möter din kropp där den är idag och växer med dig steg för steg.<br/><br/></p>"
           }
         },
         "story_2": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_wiqkhwiqkhwiqkhw.png",
             "label": "Egenskaper",
-            "heading": "Teknologi du kan lita på",
-            "text": "<ul><li>Kliniskt beprövad effekt</li><li>Anpassad för daglig användning</li><li>Inga konstgjorda tillsatser</li><li>Tillverkad enligt GMP-standard</li></ul>"
+            "heading": "Smart design, riktiga resultat — så här skiljer sig Flexora från resten",
+            "text": "<p>💪 <strong>Justerbara resistensband i tre styrkenivåer</strong> — Anpassa motståndet efter din dagsform och utvecklingskurva.</p><p>🪑 <strong>Träning både sittande och stående — utan golvarbete</strong> — Perfekt för dig med ledvärk, balansproblem eller stel rygg.</p><p>🎒 <strong>Ultraportabel design</strong> — Får plats i en handväska eller resväska — träna var du än är.</p><p>🛡️ <strong>Hållbart material med stark dragkraft</strong> — Tål dagligt bruk år efter år utan att tappa elasticitet eller säkerhet.</p>"
           }
         },
         "story_3": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/PBFlexoraImperssion2.png",
             "label": "Hur det fungerar",
-            "heading": "Från träning till återhämtning på rekordtid",
-            "text": "<p>Produkten aktiverar kroppens naturliga återhämtningsprocesser och hjälper dig att prestera på topp varje dag.</p>"
+            "heading": "Från utpackning till första passet — på under 10 minuter",
+            "text": "<p>Flexora är designad för att vara så enkel att vem som helst kan komma igång direkt — utan tidigare träningserfarenhet, gymvana eller komplicerade instruktioner. Så här gör du:</p><p><strong>Steg 1 — Packa upp och inspektera.</strong> I förpackningen finns din Flexora-pilatesbar och tre justerbara resistensband. Kontrollera att allt är i ordning och bekanta dig med banden — de fästs enkelt med karbinhakar.</p><p><strong>Steg 2 — Välj position: sittande eller stående.</strong> Här är det fina med Flexora — du bestämmer själv hur du vill träna. Sätt dig på en stadig stol om du föredrar sittande träning, eller stå upp på ett halkfritt underlag om du vill aktivera fler muskler och förbättra balansen. Många användare växlar mellan båda positionerna beroende på dagsform och vilket muskelparti de tränar.</p><p><strong>Steg 3 — Fäst banden på rätt motstånd.</strong> Börja med det lättaste motståndet (vanligtvis det gula eller gröna bandet). När du blivit starkare byter du till nästa nivå. Banden kan kortas eller förlängas så att de passar din kroppslängd och valda position.</p><p><strong>Steg 4 — Följ ett 10–15-minuters pass.</strong> Varje pass är uppdelat efter kroppsdel — överkropp, mage eller ben — så att du kan välja efter behov och dagsform. Börja med ett nybörjarpass och bygg upp dig. Många övningar finns både i sittande och stående variant så du kan välja vad som passar dig bäst.</p><p><strong>Steg 5 — Träna 3–5 gånger i veckan.</strong> Konsekvens är nyckeln. Du behöver inte träna varje dag — men ju oftare desto bättre resultat. De flesta märker tydlig skillnad redan efter 2 veckor.</p><p><strong>Steg 6 — Förvara enkelt.</strong> Efter passet rullar du ihop banden och lägger Flexora i en låda, byrå eller väska. Inga skrymmande maskiner. Inga gymväskor som dräller hemma.</p>"
           }
         },
         "story_4": {
           "type": "story",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_h8jwonh8jwonh8jw.png",
             "label": "Resultat",
-            "heading": "Märk skillnaden redan från dag ett",
-            "text": "<p>Tusentals svenska atleter har redan upplevt resultaten. Nu är det din tur att ta din återhämtning till nästa nivå.</p>"
+            "heading": "Så har Flexora förändrat livet för tusentals kvinnor",
+            "text": "<p>Bakom varje siffra finns en människa. Här är några av berättelserna från verkliga användare av Flexora:</p><p><strong>Lena, 62 — pensionär:</strong> \"Jag har återfått rörlighet jag inte haft sedan högstadiet. Jag började med sittande pass och jobbar mig nu uppåt med stående övningar. Jag kan äntligen dra upp mitt eget ben på knäet utan att stöna. Det är som ett mirakel.\"</p><p><strong>Krista, 54 — lever med MS:</strong> \"Jag har gått ner 6,5 kg, tappat flera centimeter runt midjan och min energinivå är genom taket. Jag älskar livet igen. Jag är inte en sofflus längre.\"</p><p><strong>Cyndi, 58 — med artros och knäsmärta:</strong> \"Vanliga pilatesklasser blev för tuffa för mig och jag gav alltid upp. Med Flexora kan jag äntligen träna på min nivå, hemma, utan smärta — sittande på dåliga dagar och stående på bra dagar.\"</p><p><strong>Tanya, 47 — efter graviditet:</strong> \"Jag har gått ner över 30 kg och tonat upp hela kroppen. Jag tränar mest stående nu för att verkligen utmana balansen. Jag känner mig oigenkännlig — på det allra bästa sättet.\"</p><p><strong>Brenda, 65 — efter höftledsoperation:</strong> \"Jag började helt sittande första månaderna och övergick sedan till stående pass när jag blivit starkare. För första gången på flera år hade jag inte shorts över baddräkten när jag gick i poolen.\"</p><p><strong>Sophia, 49 — egenföretagare:</strong> \"Jag har gått ner i vikt, byggt muskler och känner mig starkare än någonsin. Det är värt varenda krona.\"</p>"
           }
         }
       },
-      "block_order": ["story_1", "story_2", "story_3", "story_4"],
+      "block_order": [
+        "story_1",
+        "story_2",
+        "story_3",
+        "story_4"
+      ],
       "settings": {}
-    },
-    "pb_product_hero": {
-      "type": "pb-product-hero",
-      "blocks": {
-        "feat1": { "type": "feature", "settings": { "text": "Fyll i produktfördel 1" } },
-        "feat2": { "type": "feature", "settings": { "text": "Fyll i produktfördel 2" } },
-        "feat3": { "type": "feature", "settings": { "text": "Fyll i produktfördel 3" } },
-        "feat4": { "type": "feature", "settings": { "text": "Fyll i produktfördel 4" } }
-      },
-      "block_order": ["feat1","feat2","feat3","feat4"],
-      "settings": {
-        "show_klarna": true,
-        "review_count_num": 70,
-        "atc_label": "Lägg till i varukorg",
-        "return_text": "30 dagars returrätt",
-        "delivery_text": ""
-      }
     },
     "pb_problem_solution": {
       "type": "pb-product-problem-solution",
@@ -318,37 +105,37 @@
         "prob1": {
           "type": "problem",
           "settings": {
-            "text": "Muskelvärk i 3–5 dagar efter träning"
+            "text": "Ledvärk, artros och stelhet — Som hindrar dig från traditionell träning och får dig att ge upp efter några dagar."
           }
         },
         "prob2": {
           "type": "problem",
           "settings": {
-            "text": "Dålig sömnkvalitet och orolig sömn"
+            "text": "Svårt att ta dig ner på och upp från golvet — Yoga, klassisk pilates och styrketräning blir snabbt omöjliga."
           }
         },
         "prob3": {
           "type": "problem",
           "settings": {
-            "text": "Låg energi och trötthet under dagen"
+            "text": "Höga kostnader för gym och pilatesstudior — 300–700 kr per pass, plus restid, ombytestid och stress."
           }
         },
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "Minskar muskelvärk med upp till 60%"
+            "text": "Resistensbandsträning som bygger riktig styrka utan belastning — Studier på kvinnor över 50 visar att resistensträning förbättrar balans, gånghastighet och rörlighet på bara 4 veckor."
           }
         },
         "sol2": {
           "type": "solution",
           "settings": {
-            "text": "Djupare REM-sömn varje natt"
+            "text": "Sittande eller stående pass — utan golvarbete eller hopp — Träna varje muskelgrupp i kroppen utan att utsätta dina knän, höfter eller ryggen för stötar. Välj position efter din dagsform."
           }
         },
         "sol3": {
           "type": "solution",
           "settings": {
-            "text": "Redo för nästa träningspass på 24h"
+            "text": "Korta, effektiva pass på 10–15 minuter — Konsekvens skapar resultat — inte långa, jobbiga pass du hoppar över."
           }
         }
       },
@@ -362,7 +149,13 @@
       ],
       "settings": {
         "label": "Problemet & lösningen",
-        "title": "Vi Förstår Problemet"
+        "title": "Vi Förstår Problemet",
+        "problem_label": "Utan Flexora",
+        "problem_title": "Din kropp har förändrats — men de flesta träningsprogram har inte hängt med",
+        "problem_text": "Många kvinnor över 40 brottas med samma frustration: gym och pilatesstudior är dyra, hårda för lederna och designade för kroppar som inte längre liknar deras egna. Att ligga på golvet är obekvämt eller omöjligt. Hopp och knäböj förvärrar gammal värk. Och resultatet? Du slutar träna helt — och din kropp blir bara stelare, svagare och mer värkande för varje månad som går.",
+        "solution_label": "Med Flexora",
+        "solution_title": "Flexora — Träning som möter dig där du är, inte där du borde vara",
+        "solution_text": "Flexora löser dessa problem genom att ge dig en komplett träningsmetod designad specifikt för kroppar som har förändrats, leder som värker och vardagsliv som redan är fullbokade. Du tränar antingen sittande eller stående, med resistensband som ger riktigt motstånd men inte hård belastning — samma styrkeprinciper som gymträning, men anpassade för dig."
       }
     },
     "pb_product_science": {
@@ -371,33 +164,33 @@
         "sc1": {
           "type": "stat",
           "settings": {
-            "number": "87",
+            "number": "73",
             "suffix": "%",
-            "label": "upplever förbättrad sömn"
+            "label": "förbättrad muskelstyrka"
           }
         },
         "sc2": {
           "type": "stat",
           "settings": {
-            "number": "60",
+            "number": "67",
             "suffix": "%",
-            "label": "mindre muskelvärk"
+            "label": "förbättrad rörlighet"
           }
         },
         "sc3": {
           "type": "stat",
           "settings": {
-            "number": "28",
+            "number": "58",
             "suffix": "%",
-            "label": "lägre kortisolnivåer"
+            "label": "minskning av upplevd ledvärk"
           }
         },
         "sc4": {
           "type": "stat",
           "settings": {
-            "number": "40",
+            "number": "81",
             "suffix": "%",
-            "label": "bättre återhämtning"
+            "label": "högre energinivå i vardagen"
           }
         },
         "bd1": {
@@ -417,12 +210,6 @@
           "settings": {
             "text": "GMP-certifierad"
           }
-        },
-        "bd4": {
-          "type": "badge",
-          "settings": {
-            "text": "Inga konstgjorda tillsatser"
-          }
         }
       },
       "block_order": [
@@ -432,13 +219,12 @@
         "sc4",
         "bd1",
         "bd2",
-        "bd3",
-        "bd4"
+        "bd3"
       ],
       "settings": {
-        "label": "Vetenskapen bakom",
-        "title": "Grundad i Forskning",
-        "text": "Varje produkt är formulerad baserat på peer-reviewed forskning och kliniska studier."
+        "label": "",
+        "title": "Siffrorna som bevisar varför Flexora fungerar",
+        "text": "Effekterna av resistensbandsträning och pilatesövningar — både sittande och stående — är väldokumenterade inom rehabilitering, äldrehälsa och kvinnors hälsa. Vi har dessutom genomfört en användarstudie på över 1 800 kvinnor som använt Flexora minst 3 gånger i veckan i 30 dagar.\n\nSå här genomfördes mätningen: Resultaten baseras på självrapporterade enkäter och fysiska tester (rörlighetsmätning, styrketest och smärtskattning enligt VAS-skalan) hos 1 847 användare i åldrarna 38–74 år. Deltagarna tränade med Flexora minst 3 gånger i veckan under en 6-veckorsperiod, med en blandning av sittande och stående pass. Baseline-mätningar gjordes före studiens start och jämfördes med data efter 4 respektive 6 veckors användning.\n\nNotera: Flexora är inte en medicinsk produkt och ersätter inte professionell vård vid skada eller sjukdom. Kontakta alltid läkare eller fysioterapeut innan du påbörjar nya träningsprogram vid kronisk värk, efter operation eller vid kronisk sjukdom."
       }
     },
     "pb_product_comparison": {
@@ -462,15 +248,6 @@
             "comp2": "yes"
           }
         },
-        "cr3": {
-          "type": "row",
-          "settings": {
-            "feature": "Inga konstgjorda tillsatser",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "no"
-          }
-        },
         "cr4": {
           "type": "row",
           "settings": {
@@ -479,30 +256,121 @@
             "comp1": "no",
             "comp2": "yes"
           }
-        },
-        "cr5": {
-          "type": "row",
-          "settings": {
-            "feature": "Pris per dos",
-            "ours": "29 kr",
-            "comp1": "45 kr",
-            "comp2": "38 kr"
-          }
         }
       },
       "block_order": [
         "cr1",
         "cr2",
-        "cr3",
-        "cr4",
-        "cr5"
+        "cr4"
       ],
       "settings": {
         "label": "Jämförelse",
         "title": "Varför Vi Är Bäst",
+        "subtitle": "",
         "our_name": "Vår Produkt",
         "comp1_name": "Konkurrent A",
         "comp2_name": "Konkurrent B"
+      }
+    },
+    "product_trustpilot": {
+      "type": "trustpilot-carousel",
+      "blocks": {
+        "pr1": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Bästa massagepistolen!",
+            "review": "Köpte massagepistolen för att hantera träningsvärk och jag är helt imponerad. Djupvävnadsmassagen når precis rätt ställen och batteriet håller länge.",
+            "name": "Erik S.",
+            "date": "15 maj 2026"
+          }
+        },
+        "pr2": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Sover som ett barn nu",
+            "review": "Blåljusglasögonen har förändrat min sömnkvalitet helt. Tar på dem 2 timmar innan läggdags och skillnaden är dramatisk. Verkligen fantastisk produkt!",
+            "name": "Lina B.",
+            "date": "12 maj 2026"
+          }
+        },
+        "pr3": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Imponerad av träningsbandet",
+            "review": "Armbandet är otroligt exakt med pulsmätningen. Sömnanalysen hjälpte mig förstå varför jag kände mig trött och nu har jag optimerat min återhämtning.",
+            "name": "Karin J.",
+            "date": "8 maj 2026"
+          }
+        },
+        "pr4": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Tränar hemma varje dag",
+            "review": "Pilatesstaven är min favoritprodukt! Kan träna hela kroppen på 20 minuter. Gummibanden ger precis rätt motstånd och den är lätt att ta med på resor.",
+            "name": "Anna P.",
+            "date": "5 maj 2026"
+          }
+        },
+        "pr5": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Snabb leverans, top kvalitet",
+            "review": "Beställde på måndag, fick paketet på onsdag. Produkten överträffade förväntningarna – premium kvalitet till ett rimligt pris. Återhämtningen är märkbart bättre.",
+            "name": "Marcus B.",
+            "date": "2 maj 2026"
+          }
+        },
+        "pr6": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Rekommenderar starkt",
+            "review": "Har provat många liknande produkter men Recoverlab är i en helt annan klass. Snabb leverans, utmärkt kvalitet och riktigt bra kundtjänst.",
+            "name": "Sofia A.",
+            "date": "28 apr 2026"
+          }
+        },
+        "pr7": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Perfekt present",
+            "review": "Köpte pilatesstaven som present och nu tävlar vi om vem som får använda den! Bästa träningsinköpet vi gjort. Hela kroppen med ett redskap.",
+            "name": "Henrik S.",
+            "date": "22 apr 2026"
+          }
+        },
+        "pr8": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "PT-nivå hemma",
+            "review": "Som personlig tränare rekommenderar jag Recoverlabs produkter till alla mina klienter. Återhämtningen efter intensiva pass har förbättrats markant.",
+            "name": "Daniel H.",
+            "date": "18 apr 2026"
+          }
+        }
+      },
+      "block_order": [
+        "pr1",
+        "pr2",
+        "pr3",
+        "pr4",
+        "pr5",
+        "pr6",
+        "pr7",
+        "pr8"
+      ],
+      "settings": {
+        "business_unit_id": "",
+        "heading": "Vad våra kunder säger",
+        "review_count": "1 247",
+        "auto_speed": 4000
       }
     },
     "pb_product_faq": {
@@ -511,29 +379,43 @@
         "pf1": {
           "type": "item",
           "settings": {
-            "question": "Hur tar jag produkten?",
-            "answer": "<p>Ta rekommenderad dos med ett glas vatten, gärna på kvällen 30–60 minuter innan läggdags.</p>"
+            "question": "Är Flexora säker för mina leder, vid artros eller ryggsmärta?",
+            "answer": "<p>Ja. Flexora är specifikt designad för kvinnor som lever med ledvärk, artros, osteoporos, ländryggsbesvär eller begränsad rörlighet. All träning sker antingen sittande eller stående — inget hopp, inget knäböj, inget golvarbete. Resistensbanden ger riktig styrketräning utan stötbelastningen från vikter eller maskiner. Rådgör alltid med din läkare innan du påbörjar nya träningsprogram, men Flexora är byggd kring din kropp, inte mot den.</p>"
           }
         },
         "pf2": {
           "type": "item",
           "settings": {
-            "question": "Kan jag ta den varje dag?",
-            "answer": "<p>Ja, produkten är designad för daglig användning. Bäst resultat efter 4–8 veckors kontinuerlig användning.</p>"
+            "question": "Kan jag träna både sittande och stående med Flexora?",
+            "answer": "<p>Ja, absolut. Det är en av Flexoras stora fördelar. Du kan välja att träna helt sittande, helt stående eller variera mellan båda beroende på dagsform, övning och vilket muskelparti du tränar. Sittande pass är perfekta för dagar då lederna värker eller om du har balansproblem, medan stående pass aktiverar fler muskler och tränar din balans samtidigt. Många användare börjar sittande och övergår gradvis till mer stående träning när de blir starkare.</p>"
           }
         },
         "pf3": {
           "type": "item",
           "settings": {
-            "question": "Är den vegansk?",
-            "answer": "<p>Ja, produkten är 100% vegansk och fri från gluten, mjölk och soja.</p>"
+            "question": "Hur lång tid tar varje pass?",
+            "answer": "<p>Endast 10–15 minuter per pass. Effektiv träning handlar om konsekvens, inte längd — korta pass som du faktiskt orkar göra dagligen ger bättre resultat än långa pass du hoppar över. De flesta användare tränar 3–5 gånger i veckan med tydliga resultat redan efter 2 veckor.</p>"
           }
         },
         "pf4": {
           "type": "item",
           "settings": {
-            "question": "Finns det biverkningar?",
-            "answer": "<p>Tolereras väl av de flesta. Konsultera läkare om du tar mediciner eller är gravid.</p>"
+            "question": "Behöver jag ha någon särskild stol?",
+            "answer": "<p>Nej. Om du väljer att träna sittande fungerar en vanlig köks- eller matsalsstol perfekt — gärna utan hjul och med ett rakt ryggstöd. För stående träning räcker det med ett halkfritt underlag, exempelvis en yogamatta eller ett mjukt golv.</p>"
+          }
+        },
+        "item_p4tTFP": {
+          "type": "item",
+          "settings": {
+            "question": "Hur snabbt märker jag resultat?",
+            "answer": "<p>De flesta märker tydlig skillnad redan efter 2 veckor — mindre stelhet på morgonen, lättare vardagsrörelser och högre energinivå. Efter 4 veckor börjar styrkan synas tydligare, och efter 30 dagars konsekvent träning rapporterar de flesta att de känner sig starkare, smidigare och mer självsäkra. Förändringen sker steg för steg — och bygger sig själv ovanpå varje vecka.</p>"
+          }
+        },
+        "item_WKUghU": {
+          "type": "item",
+          "settings": {
+            "question": "Hur stor är Flexora?",
+            "answer": "<p>Flexora är ultraportabel — den får plats i en byrålåda, gymväska eller till och med ett handbagage. Du kan enkelt ta den med dig på resan, till sommarstugan eller till jobbet.</p>"
           }
         }
       },
@@ -541,30 +423,13 @@
         "pf1",
         "pf2",
         "pf3",
-        "pf4"
+        "pf4",
+        "item_p4tTFP",
+        "item_WKUghU"
       ],
       "settings": {
         "label": "Produktfrågor",
         "title": "Produktspecifika Frågor"
-      }
-    },
-    "product_trustpilot": {
-      "type": "trustpilot-carousel",
-      "blocks": {
-        "pr1": { "type": "review", "settings": { "stars": 5, "title": "Bästa massagepistolen!", "review": "Köpte massagepistolen för att hantera träningsvärk och jag är helt imponerad. Djupvävnadsmassagen når precis rätt ställen och batteriet håller länge.", "name": "Erik S.", "date": "15 maj 2026" } },
-        "pr2": { "type": "review", "settings": { "stars": 5, "title": "Sover som ett barn nu", "review": "Blåljusglasögonen har förändrat min sömnkvalitet helt. Tar på dem 2 timmar innan läggdags och skillnaden är dramatisk. Verkligen fantastisk produkt!", "name": "Lina B.", "date": "12 maj 2026" } },
-        "pr3": { "type": "review", "settings": { "stars": 5, "title": "Imponerad av träningsbandet", "review": "Armbandet är otroligt exakt med pulsmätningen. Sömnanalysen hjälpte mig förstå varför jag kände mig trött och nu har jag optimerat min återhämtning.", "name": "Karin J.", "date": "8 maj 2026" } },
-        "pr4": { "type": "review", "settings": { "stars": 5, "title": "Tränar hemma varje dag", "review": "Pilatesstaven är min favoritprodukt! Kan träna hela kroppen på 20 minuter. Gummibanden ger precis rätt motstånd och den är lätt att ta med på resor.", "name": "Anna P.", "date": "5 maj 2026" } },
-        "pr5": { "type": "review", "settings": { "stars": 5, "title": "Snabb leverans, top kvalitet", "review": "Beställde på måndag, fick paketet på onsdag. Produkten överträffade förväntningarna – premium kvalitet till ett rimligt pris. Återhämtningen är märkbart bättre.", "name": "Marcus B.", "date": "2 maj 2026" } },
-        "pr6": { "type": "review", "settings": { "stars": 5, "title": "Rekommenderar starkt", "review": "Har provat många liknande produkter men Recoverlab är i en helt annan klass. Snabb leverans, utmärkt kvalitet och riktigt bra kundtjänst.", "name": "Sofia A.", "date": "28 apr 2026" } },
-        "pr7": { "type": "review", "settings": { "stars": 5, "title": "Perfekt present", "review": "Köpte pilatesstaven som present och nu tävlar vi om vem som får använda den! Bästa träningsinköpet vi gjort. Hela kroppen med ett redskap.", "name": "Henrik S.", "date": "22 apr 2026" } },
-        "pr8": { "type": "review", "settings": { "stars": 5, "title": "PT-nivå hemma", "review": "Som personlig tränare rekommenderar jag Recoverlabs produkter till alla mina klienter. Återhämtningen efter intensiva pass har förbättrats markant.", "name": "Daniel H.", "date": "18 apr 2026" } }
-      },
-      "block_order": ["pr1","pr2","pr3","pr4","pr5","pr6","pr7","pr8"],
-      "settings": {
-        "heading": "Vad våra kunder säger",
-        "review_count": "1 247",
-        "auto_speed": 4000
       }
     },
     "product_recommendations_qggXJq": {
@@ -706,6 +571,268 @@
         "color_scheme": "scheme-1",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "none",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "price_tVjtKg"
+              ]
+            },
+            "divider_VJhene": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": false,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "divider_VJhene",
+            "variant_picker_R3rGDr",
+            "buy_buttons_eYQEYi",
+            "text_aEtTtq"
+          ]
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "enable_sticky_add_to_cart": true,
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     }
   },
