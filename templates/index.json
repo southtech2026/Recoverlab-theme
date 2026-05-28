@@ -15,9 +15,8 @@
         "eyebrow": "",
         "headline": "<p>Din kropp presterar på den nivå du <em>återhämtar dig</em>.</p>",
         "subheadline": "Vetenskapligt framtagna produkter för optimal återhämtning, bättre sömn och högre prestation.",
+        "bg_video_desktop": "https://cdn.shopify.com/videos/c/o/v/7c7a128e33004266adc71f9bf1f60047.mp4",
         "bg_video_mobile": "https://cdn.shopify.com/videos/c/o/v/89f955fde8504af0aacf5c333437e2d1.mp4",
-        "bg_image": "shopify://shop_images/Logga_stor_Recoverlab-removebg-preview.png",
-        "bg_image_mobile": "shopify://shop_images/Namnlos_design.png",
         "ov_bottom": "0.90",
         "ov_mid": "0.50",
         "ov_top": "0.14",
@@ -143,9 +142,8 @@
       "type": "hero-banner",
       "name": "Hero Banner",
       "settings": {
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/f49d6d0fdef3438d8f82e61ae6aaaf6e.mp4",
         "image": "shopify://shop_images/PBbadafargerna.png",
-        "overlay_opacity": 20,
+        "overlay_opacity": 50,
         "title": "Recoverlab - Din väg till optimal återhämtning",
         "subtitle": "Vetenskapligt beprövade recovery-produkter för svenska idrottare",
         "btn_label": "Utforska produkter",
@@ -269,144 +267,6 @@
         "label": "Varför oss",
         "title": "Varför Välja Oss?",
         "subtitle": "Vi kombinerar vetenskap, kvalitet och service för din bästa upplevelse."
-      }
-    },
-    "pb_transformation": {
-      "type": "pb-transformation",
-      "blocks": {
-        "bf1": {
-          "type": "before",
-          "settings": {
-            "text": "Kronisk trötthet och låg energi"
-          }
-        },
-        "bf2": {
-          "type": "before",
-          "settings": {
-            "text": "Dålig sömnkvalitet och stress"
-          }
-        },
-        "bf3": {
-          "type": "before",
-          "settings": {
-            "text": "Lång återhämtningstid efter träning"
-          }
-        },
-        "bf4": {
-          "type": "before",
-          "settings": {
-            "text": "Svårt att fokusera under dagen"
-          }
-        },
-        "bf5": {
-          "type": "before",
-          "settings": {
-            "text": "Hög kortisolnivå och inflammation"
-          }
-        },
-        "af1": {
-          "type": "after",
-          "settings": {
-            "text": "Hög naturlig energi hela dagen"
-          }
-        },
-        "af2": {
-          "type": "after",
-          "settings": {
-            "text": "Djup restorativ sömn varje natt"
-          }
-        },
-        "af3": {
-          "type": "after",
-          "settings": {
-            "text": "Snabb återhämtning – redo på 24h"
-          }
-        },
-        "af4": {
-          "type": "after",
-          "settings": {
-            "text": "Skarp mental fokus och klarhet"
-          }
-        },
-        "af5": {
-          "type": "after",
-          "settings": {
-            "text": "Balanserat stressystem och minskad inflammation"
-          }
-        }
-      },
-      "block_order": [
-        "bf1",
-        "bf2",
-        "bf3",
-        "bf4",
-        "bf5",
-        "af1",
-        "af2",
-        "af3",
-        "af4",
-        "af5"
-      ],
-      "settings": {
-        "title": "Din Transformation Börjar Här",
-        "subtitle": "Från utmattad och stressad till energifull och fokuserad.",
-        "cta_label": "Starta Din Transformation",
-        "cta_url": "shopify://collections"
-      }
-    },
-    "pb_faq": {
-      "type": "pb-faq",
-      "blocks": {
-        "f1": {
-          "type": "item",
-          "settings": {
-            "question": "Hur snabbt ser jag resultat?",
-            "answer": "<p>De flesta kunder märker förbättringar inom 2–4 veckor med regelbunden användning.</p>"
-          }
-        },
-        "f2": {
-          "type": "item",
-          "settings": {
-            "question": "Är produkterna säkra att använda?",
-            "answer": "<p>Ja, absolut. Alla våra produkter är testade och certifierade.</p>"
-          }
-        },
-        "f4": {
-          "type": "item",
-          "settings": {
-            "question": "Vad är er returpolicy?",
-            "answer": "<p>Vi erbjuder 30 dagars nöjd-kund-garanti med full återbetalning.</p>"
-          }
-        },
-        "f5": {
-          "type": "item",
-          "settings": {
-            "question": "Hur lång är leveranstiden?",
-            "answer": "<p>Standard leveranstid är 5-12 arbetsdagar.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "f1",
-        "f2",
-        "f4",
-        "f5"
-      ],
-      "settings": {
-        "label": "FAQ",
-        "title": "Vanliga Frågor",
-        "subtitle": "Har du fler frågor? Kontakta oss gärna."
-      }
-    },
-    "pb_email_capture": {
-      "type": "pb-email-capture",
-      "settings": {
-        "offer": "Bli din bästa version",
-        "title": "Gå Med i Recovery Movement",
-        "subtitle": "Prenumerera och få exklusiva erbjudanden, tips om återhämtning och tidig tillgång till nya produkter.",
-        "placeholder": "Din e-postadress",
-        "button": "Prenumerera",
-        "disclaimer": "Vi skickar aldrig spam. Avsluta prenumerationen när som helst."
       }
     },
     "trustpilot_carousel_rnJKEy": {
@@ -675,6 +535,144 @@
         "review_count": "1 247",
         "auto_speed": 4000
       }
+    },
+    "pb_transformation": {
+      "type": "pb-transformation",
+      "blocks": {
+        "bf1": {
+          "type": "before",
+          "settings": {
+            "text": "Kronisk trötthet och låg energi"
+          }
+        },
+        "bf2": {
+          "type": "before",
+          "settings": {
+            "text": "Dålig sömnkvalitet och stress"
+          }
+        },
+        "bf3": {
+          "type": "before",
+          "settings": {
+            "text": "Lång återhämtningstid efter träning"
+          }
+        },
+        "bf4": {
+          "type": "before",
+          "settings": {
+            "text": "Svårt att fokusera under dagen"
+          }
+        },
+        "bf5": {
+          "type": "before",
+          "settings": {
+            "text": "Hög kortisolnivå och inflammation"
+          }
+        },
+        "af1": {
+          "type": "after",
+          "settings": {
+            "text": "Hög naturlig energi hela dagen"
+          }
+        },
+        "af2": {
+          "type": "after",
+          "settings": {
+            "text": "Djup restorativ sömn varje natt"
+          }
+        },
+        "af3": {
+          "type": "after",
+          "settings": {
+            "text": "Snabb återhämtning – redo på 24h"
+          }
+        },
+        "af4": {
+          "type": "after",
+          "settings": {
+            "text": "Skarp mental fokus och klarhet"
+          }
+        },
+        "af5": {
+          "type": "after",
+          "settings": {
+            "text": "Balanserat stressystem och minskad inflammation"
+          }
+        }
+      },
+      "block_order": [
+        "bf1",
+        "bf2",
+        "bf3",
+        "bf4",
+        "bf5",
+        "af1",
+        "af2",
+        "af3",
+        "af4",
+        "af5"
+      ],
+      "settings": {
+        "title": "Din Transformation Börjar Här",
+        "subtitle": "Från utmattad och stressad till energifull och fokuserad.",
+        "cta_label": "Starta Din Transformation",
+        "cta_url": "shopify://collections"
+      }
+    },
+    "pb_faq": {
+      "type": "pb-faq",
+      "blocks": {
+        "f1": {
+          "type": "item",
+          "settings": {
+            "question": "Hur snabbt ser jag resultat?",
+            "answer": "<p>De flesta kunder märker förbättringar inom 2–4 veckor med regelbunden användning.</p>"
+          }
+        },
+        "f2": {
+          "type": "item",
+          "settings": {
+            "question": "Är produkterna säkra att använda?",
+            "answer": "<p>Ja, absolut. Alla våra produkter är testade och certifierade.</p>"
+          }
+        },
+        "f4": {
+          "type": "item",
+          "settings": {
+            "question": "Vad är er returpolicy?",
+            "answer": "<p>Vi erbjuder 30 dagars nöjd-kund-garanti med full återbetalning.</p>"
+          }
+        },
+        "f5": {
+          "type": "item",
+          "settings": {
+            "question": "Hur lång är leveranstiden?",
+            "answer": "<p>Standard leveranstid är 5-12 arbetsdagar.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f4",
+        "f5"
+      ],
+      "settings": {
+        "label": "FAQ",
+        "title": "Vanliga Frågor",
+        "subtitle": "Har du fler frågor? Kontakta oss gärna."
+      }
+    },
+    "pb_email_capture": {
+      "type": "pb-email-capture",
+      "settings": {
+        "offer": "Bli din bästa version",
+        "title": "Gå Med i Recovery Movement",
+        "subtitle": "Prenumerera och få exklusiva erbjudanden, tips om återhämtning och tidig tillgång till nya produkter.",
+        "placeholder": "Din e-postadress",
+        "button": "Prenumerera",
+        "disclaimer": "Vi skickar aldrig spam. Avsluta prenumerationen när som helst."
+      }
     }
   },
   "order": [
@@ -684,9 +682,9 @@
     "hero_banner_4DVheb",
     "pb_storytelling",
     "pb_why_us",
+    "trustpilot_carousel_rnJKEy",
     "pb_transformation",
     "pb_faq",
-    "pb_email_capture",
-    "trustpilot_carousel_rnJKEy"
+    "pb_email_capture"
   ]
 }
