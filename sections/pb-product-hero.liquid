@@ -410,6 +410,7 @@
                 role="radio"
                 aria-checked="{% if forloop.first %}true{% else %}false{% endif %}"
                 tabindex="0"
+                style="flex-wrap:wrap;"
               >
                 {%- if item.badge != blank -%}
                   <span class="pb-bundle__badge">{{ item.badge }}</span>
@@ -424,11 +425,10 @@
                   {%- if discount_pct > 0 -%}<div class="pb-bundle__option-price-save">Spara {{ save_amount | money }}</div>{%- endif -%}
                   <div class="pb-bundle__option-price-each">{{ price_each | money }} / st</div>
                 </div>
+                <div class="pb-bundle__selectors" style="display:none; width:100%; margin-top:12px; padding-top:12px; border-top:1px solid #e5e5e5; flex-direction:column; gap:8px;"></div>
               </div>
             {%- endfor -%}
           </div>
-
-          <div id="pb-bundle-variant-selectors" style="display:none; flex-direction:column; gap:10px; margin-bottom:16px;"></div>
 
           <div class="pb-buybox-atc-row">
             <button type="button" id="pb-bundle-atc-btn" class="pb-buybox-atc-btn" {% unless product.available %}disabled{% endunless %}>
@@ -585,7 +585,6 @@
 
   /* ── Bundle variant selectors + Cart API ── */
   var bundleOptions  = document.querySelectorAll('#pb-bundle-options .pb-bundle__option');
-  var selectorWrap   = document.getElementById('pb-bundle-variant-selectors');
   var bundleAtcBtn   = document.getElementById('pb-bundle-atc-btn');
   var bundleAtcLabel = document.getElementById('pb-bundle-atc-label');
   var baseBtnLabel   = bundleAtcLabel ? bundleAtcLabel.textContent.trim() : 'Lägg till i varukorg';
@@ -601,34 +600,37 @@
     });
   }
 
-  function buildSelectors(qty) {
-    if (!selectorWrap) return;
-    selectorWrap.innerHTML = '';
+  function buildSelectors(selectedEl) {
+    document.querySelectorAll('.pb-bundle__selectors').forEach(function (s) {
+      s.style.display = 'none';
+      s.innerHTML = '';
+    });
 
-    if (qty <= 1 || pbOptions.length === 0) {
-      selectorWrap.style.display = 'none';
-      return;
-    }
+    if (!selectedEl) return;
+    var qty = parseInt(selectedEl.dataset.qty, 10) || 1;
+    if (qty <= 1 || pbOptions.length === 0) return;
 
-    selectorWrap.style.display = 'flex';
+    var wrap = selectedEl.querySelector('.pb-bundle__selectors');
+    if (!wrap) return;
+    wrap.style.display = 'flex';
 
     for (var i = 0; i < qty; i++) {
       var item = document.createElement('div');
-      item.style.cssText = 'display:flex; flex-direction:column; gap:6px;';
+      item.style.cssText = 'display:flex; align-items:center; gap:10px;';
 
       var lbl = document.createElement('div');
-      lbl.style.cssText = 'font-family:Inter,sans-serif; font-size:12px; font-weight:600; color:#555; text-transform:uppercase; letter-spacing:0.5px;';
+      lbl.style.cssText = 'font-family:Inter,sans-serif; font-size:12px; font-weight:600; color:#555; text-transform:uppercase; letter-spacing:0.5px; white-space:nowrap; min-width:70px;';
       lbl.textContent = 'Exemplar ' + (i + 1);
       item.appendChild(lbl);
 
       var row = document.createElement('div');
-      row.style.cssText = 'display:flex; flex-wrap:wrap; gap:8px;';
+      row.style.cssText = 'display:flex; flex-wrap:wrap; gap:8px; flex:1;';
 
       pbOptions.forEach(function (opt) {
         var sel = document.createElement('select');
         sel.dataset.exemplar = i;
         sel.dataset.option   = opt.name;
-        sel.style.cssText    = 'flex:1; min-width:120px; height:40px; border:1.5px solid #e5e5e5; font-family:Inter,sans-serif; font-size:13px; font-weight:500; color:#000; padding:0 10px; background:#fff; cursor:pointer;';
+        sel.style.cssText    = 'flex:1; min-width:100px; height:36px; border:1.5px solid #e5e5e5; font-family:Inter,sans-serif; font-size:13px; color:#000; padding:0 8px; background:#fff; cursor:pointer;';
 
         opt.values.forEach(function (val) {
           var o = document.createElement('option');
@@ -637,11 +639,9 @@
           sel.appendChild(o);
         });
 
-        /* Pre-select currently active variant value */
         var activeBtn = document.querySelector('.pb-product-variant.is-active');
         if (activeBtn) {
-          var activeVariantId = activeBtn.dataset.variantId;
-          var activeVariant   = pbVariants.find(function (v) { return String(v.id) === String(activeVariantId); });
+          var activeVariant = pbVariants.find(function (v) { return String(v.id) === String(activeBtn.dataset.variantId); });
           if (activeVariant) {
             var optIndex = pbOptions.findIndex(function (o) { return o.name === opt.name; });
             if (optIndex > -1) sel.value = activeVariant['option' + (optIndex + 1)];
@@ -652,7 +652,7 @@
       });
 
       item.appendChild(row);
-      selectorWrap.appendChild(item);
+      wrap.appendChild(item);
     }
   }
 
@@ -672,7 +672,7 @@
       el.setAttribute('aria-checked', 'true');
 
       var qty = parseInt(el.dataset.qty, 10) || 1;
-      buildSelectors(qty);
+      buildSelectors(el);
 
       if (bundleAtcLabel) {
         bundleAtcLabel.textContent = qty > 1
@@ -699,7 +699,8 @@
       }
 
       /* Build items array – one per exemplar */
-      var exemplarDivs = selectorWrap.querySelectorAll('[data-exemplar]');
+      var selectedOption = document.querySelector('#pb-bundle-options .pb-bundle__option.is-selected');
+      var exemplarDivs = selectedOption ? selectedOption.querySelectorAll('[data-exemplar]') : [];
       var exemplarMap  = {};
 
       exemplarDivs.forEach(function (sel) {
@@ -740,7 +741,7 @@
   }
 
   /* Init selectors for default selected bundle option */
-  buildSelectors(getSelectedQty());
+  buildSelectors(document.querySelector('#pb-bundle-options .pb-bundle__option.is-selected'));
 })();
 </script>
 
