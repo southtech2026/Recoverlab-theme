@@ -53,7 +53,7 @@
       "settings": {
         "review_count_num": 70,
         "show_klarna": true,
-        "atc_label": "Lägg till i varukorg",
+        "atc_label": "Köp nu",
         "return_text": "30 dagars returrätt",
         "delivery_text": ""
       }
