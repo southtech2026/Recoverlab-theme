@@ -807,18 +807,49 @@
 
       var bundleDiscountCodes = { 1: 'Bundel 1', 2: 'Bundel 2', 3: 'Bundel 3' };
 
-      /* Single item – apply discount then redirect */
+      /* Single item – add to cart first, then apply discount, then redirect */
       if (qty <= 1 || pbOptions.length === 0) {
-        var singleCode = bundleDiscountCodes[1];
-        if (singleCode) {
-          fetch('/discount/' + encodeURIComponent(singleCode), { method: 'GET' })
-            .finally(function () {
-              window.location.href = '/cart';
-            });
+        /* No variants: use standard form submit */
+        if (pbOptions.length === 0) {
+          var existingForm = document.querySelector('.pb-product-hero form');
+          if (existingForm) { existingForm.submit(); }
           return;
         }
-        var existingForm = document.querySelector('.pb-product-hero form');
-        if (existingForm) { existingForm.submit(); }
+
+        /* Has variants: find selected variant from active button */
+        var activeVariantBtn = document.querySelector('.pb-product-variant.is-active');
+        var singleVariantId  = activeVariantBtn
+          ? activeVariantBtn.dataset.variantId
+          : (pbVariants.length > 0 ? String(pbVariants[0].id) : null);
+
+        if (!singleVariantId) return;
+
+        bundleAtcBtn.disabled = true;
+        if (bundleAtcLabel) bundleAtcLabel.textContent = 'Lägger till…';
+
+        fetch('/cart/add.js', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body:    JSON.stringify({ items: [{ id: parseInt(singleVariantId, 10), quantity: 1 }] })
+        })
+        .then(function (r) { return r.json(); })
+        .then(function () {
+          var singleCode = bundleDiscountCodes[1];
+          if (singleCode) {
+            return fetch('/discount/' + encodeURIComponent(singleCode), {
+              method: 'GET',
+              headers: { 'X-Requested-With': 'XMLHttpRequest' }
+            });
+          }
+        })
+        .then(function () {
+          window.location.href = '/cart';
+        })
+        .catch(function () {
+          bundleAtcBtn.disabled = false;
+          if (bundleAtcLabel) bundleAtcLabel.textContent = baseBtnLabel;
+          alert('Något gick fel, försök igen.');
+        });
         return;
       }
 
