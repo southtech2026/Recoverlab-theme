@@ -735,8 +735,18 @@
     bundleAtcBtn.addEventListener('click', function () {
       var qty = getSelectedQty();
 
-      /* Single item – use existing hidden form input approach */
+      var bundleDiscountCodes = { 1: 'Bundel 1', 2: 'Bundel 2', 3: 'Bundel 3' };
+
+      /* Single item – apply discount then redirect */
       if (qty <= 1 || pbOptions.length === 0) {
+        var singleCode = bundleDiscountCodes[1];
+        if (singleCode) {
+          fetch('/discount/' + encodeURIComponent(singleCode), { method: 'GET' })
+            .finally(function () {
+              window.location.href = '/cart';
+            });
+          return;
+        }
         var existingForm = document.querySelector('.pb-product-hero form');
         if (existingForm) { existingForm.submit(); }
         return;
@@ -773,6 +783,15 @@
         body:    JSON.stringify({ items: items })
       })
       .then(function (r) { return r.json(); })
+      .then(function () {
+        var discountCode = bundleDiscountCodes[qty];
+        if (discountCode) {
+          return fetch('/discount/' + encodeURIComponent(discountCode), {
+            method: 'GET',
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+          });
+        }
+      })
       .then(function () {
         window.location.href = '/cart';
       })
