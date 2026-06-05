@@ -21,9 +21,9 @@
         "ov_mid": "0.50",
         "ov_top": "0.14",
         "cta1_label": "Shoppa Nu",
-        "cta1_url": "shopify://collections",
+        "cta1_url": "shopify://collections/all",
         "cta2_label": "Utforska Produkterna",
-        "cta2_url": "shopify://collections",
+        "cta2_url": "shopify://collections/all",
         "trust1": "Säker betalning",
         "trust2": "Gratis frakt över 499 kr",
         "trust3": "30 dagar returrätt"
