@@ -375,6 +375,14 @@ quantity-selector, [class*="quantity"] {
   border-bottom: 1px solid #F0F0F0 !important;
   padding-bottom: 18px !important;
   margin-bottom: 18px !important;
+  /* Lock media column to match the fixed 80px image width below — */
+  /* prevents the image from overlapping product name/price on narrow screens */
+  grid-template-columns: 80px minmax(0, 1fr) minmax(var(--cart-item-price-width), auto) !important;
+}
+@container cart-items (min-width: 720px) {
+  .cart-items__table-row {
+    grid-template-columns: 80px 1fr 1fr minmax(var(--cart-item-price-width), auto) !important;
+  }
 }
 .cart-items__table-row:last-of-type {
   border-bottom: none !important;
