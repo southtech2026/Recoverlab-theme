@@ -44,6 +44,7 @@
   // Animated counters
   function animateCounter(el) {
     const target = parseFloat(el.dataset.target || el.textContent.replace(/[^0-9.]/g, ''));
+    if (isNaN(target)) return;
     const suffix = el.dataset.suffix || '';
     const prefix = el.dataset.prefix || '';
     const duration = 1800;

@@ -28,7 +28,9 @@
           {%- for block in section.blocks -%}
             <div class="pb-storytelling__stat" {{ block.shopify_attributes }}>
               <div class="pb-storytelling__stat-number">
+                {%- if block.settings.number != blank -%}
                 <span class="pb-counter" data-target="{{ block.settings.number }}" data-suffix="{{ block.settings.suffix }}">{{ block.settings.number }}{{ block.settings.suffix }}</span>
+              {%- endif -%}
               </div>
               <div class="pb-storytelling__stat-label">{{ block.settings.label }}</div>
             </div>

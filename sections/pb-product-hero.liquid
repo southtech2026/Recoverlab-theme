@@ -665,6 +665,7 @@
         fetch('/variants/' + btn.dataset.variantId + '.js')
           .then(function (r) { return r.json(); })
           .then(function (v) {
+            if (!v || typeof v.price !== 'number') return;
             var formatted = (v.price / 100).toFixed(2).replace('.', ',') + ' kr';
             if (priceEl)    priceEl.firstChild.textContent = formatted;
             if (stickyPrice) stickyPrice.textContent = formatted;
