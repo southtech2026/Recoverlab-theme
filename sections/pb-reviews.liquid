@@ -1,0 +1,210 @@
+<style>
+  .pb-omd {
+    background: #F7F7F7;
+    padding: 80px 0;
+  }
+
+  .pb-omd__inner {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 48px);
+    text-align: center;
+  }
+
+  /* ── Empty state ── */
+  .pb-omd__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pb-omd__empty-icon {
+    width: 72px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .pb-omd__empty-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .pb-omd__empty-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555555;
+    max-width: 460px;
+    margin: 0;
+  }
+
+  .pb-omd__cta {
+    margin-top: 8px;
+  }
+
+  /* ── Has-reviews state ── */
+  .pb-omd__has {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .pb-omd__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .pb-omd__summary {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pb-omd__score {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+
+  .pb-omd__stars {
+    display: flex;
+    gap: 4px;
+  }
+
+  .pb-omd__star--on  { fill: #F59E0B; }
+  .pb-omd__star--off { fill: #E5E5E5; }
+
+  .pb-omd__count {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #555555;
+  }
+</style>
+
+{%- liquid
+  assign r_count = product.metafields.reviews.rating_count | default: 0
+  assign r_val   = 0
+  assign r_round = 0
+  if r_count > 0
+    assign r_val   = product.metafields.reviews.rating.value | round: 1
+    assign r_round = r_val | round
+  endif
+-%}
+
+<section class="pb-omd" id="pb-omd-{{ section.id }}">
+  <div class="pb-omd__inner">
+
+    {%- if r_count > 0 -%}
+
+      <div class="pb-omd__has">
+        {%- if section.settings.title != blank -%}
+          <h2 class="pb-omd__title">{{ section.settings.title }}</h2>
+        {%- endif -%}
+
+        <div class="pb-omd__summary">
+          <span class="pb-omd__score" aria-hidden="true">{{ r_val }}</span>
+          <div class="pb-omd__stars" aria-label="{{ r_val }} av 5 stjärnor" role="img">
+            {%- for i in (1..5) -%}
+              {%- if i <= r_round -%}
+                <svg class="pb-omd__star pb-omd__star--on" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              {%- else -%}
+                <svg class="pb-omd__star pb-omd__star--off" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          <span class="pb-omd__count">{{ r_count }} omdömen</span>
+        </div>
+
+        {%- if section.settings.cta_label != blank -%}
+          <a href="{{ section.settings.cta_url }}" class="pb-btn pb-btn--primary pb-omd__cta">
+            {{ section.settings.cta_label }}
+          </a>
+        {%- endif -%}
+      </div>
+
+    {%- else -%}
+
+      <div class="pb-omd__empty">
+        <div class="pb-omd__empty-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1B365D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+
+        {%- if section.settings.title != blank -%}
+          <h2 class="pb-omd__empty-title">{{ section.settings.title }}</h2>
+        {%- endif -%}
+
+        <p class="pb-omd__empty-body">{{ section.settings.empty_text }}</p>
+
+        {%- if section.settings.cta_label != blank -%}
+          <a href="{{ section.settings.cta_url }}" class="pb-btn pb-btn--primary pb-omd__cta">
+            {{ section.settings.cta_label }}
+          </a>
+        {%- endif -%}
+      </div>
+
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB – Omdömen",
+  "tag": "section",
+  "class": "pb-section-omdomen",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Rubrik",
+      "default": "Vad våra kunder säger"
+    },
+    {
+      "type": "textarea",
+      "id": "empty_text",
+      "label": "Text när inga omdömen finns",
+      "default": "Vi är en nystartad butik och samlar just nu våra första omdömen. Har du handlat hos oss? Vi blir glada för din ärliga feedback."
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Knapp-text",
+      "default": "Lämna ett omdöme"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Knapp-länk (t.ex. kontaktsida)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PB – Omdömen"
+    }
+  ]
+}
+{% endschema %}
