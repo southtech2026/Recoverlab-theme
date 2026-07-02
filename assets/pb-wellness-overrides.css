@@ -826,3 +826,19 @@ footer .utilities--blocks-3 {
   --font-heading--family:      'Montserrat', 'Helvetica Neue', Arial, sans-serif !important;
   --font-body--family:         'Inter', 'Helvetica Neue', Arial, sans-serif !important;
 }
+
+/* ================================================
+   PRODUKT-GRID: enhetlig 1:1-proportion
+   Horizon sätter --ratio från bildens eget bildformat vilket ger
+   ojämna höjder i kollektion- och söksidan. Vi låser till 1:1.
+   ================================================ */
+.product-grid .product-media,
+.product-grid .product-media-container {
+  aspect-ratio: 1 / 1 !important;
+}
+
+.product-grid .product-media__image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
