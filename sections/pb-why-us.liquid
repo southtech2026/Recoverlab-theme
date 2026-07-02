@@ -5,6 +5,24 @@
     padding-top: 40px;
     border-top: 1px solid rgba(255,255,255,0.12);
   }
+  .pb-why-us__cta-btn {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 36px;
+    border: 2px solid #FFFFFF;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .pb-why-us__cta-btn:hover {
+    background: transparent;
+    color: #FFFFFF;
+  }
 </style>
 ﻿<section class="pb-why-us pb-section">
   <div class="pb-container">
@@ -38,11 +56,11 @@
         </div>
       {%- endfor -%}
     </div>
-    {%- if section.settings.cta_label != blank -%}
-      <div class="pb-why-us__cta">
-        <a href="{{ section.settings.cta_url }}" class="pb-btn pb-btn--primary">{{ section.settings.cta_label }}</a>
-      </div>
-    {%- endif -%}
+    {%- assign _cta_label = section.settings.cta_label | default: 'Läs mer om oss' -%}
+    {%- assign _cta_url   = section.settings.cta_url   | default: '/pages/om-oss' -%}
+    <div class="pb-why-us__cta">
+      <a href="{{ _cta_url }}" class="pb-why-us__cta-btn">{{ _cta_label }}</a>
+    </div>
   </div>
 </section>
 
