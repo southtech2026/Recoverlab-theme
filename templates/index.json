@@ -213,7 +213,9 @@
       "settings": {
         "label": "Varför oss",
         "title": "Varför Välja Oss?",
-        "subtitle": "Vi kombinerar vetenskap, kvalitet och service för din bästa upplevelse."
+        "subtitle": "Vi kombinerar vetenskap, kvalitet och service för din bästa upplevelse.",
+        "cta_label": "Läs mer om oss",
+        "cta_url": "/pages/om-oss"
       }
     },
     "pb_transformation": {
