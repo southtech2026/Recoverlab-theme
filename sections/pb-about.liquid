@@ -1,0 +1,229 @@
+<style>
+  .pb-about {
+    background: #FFFFFF;
+    padding: 80px 0 96px;
+  }
+
+  .pb-about__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4vw, 64px);
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+
+  /* ── Founder image ── */
+  .pb-about__image-wrap {
+    position: sticky;
+    top: 100px;
+  }
+
+  .pb-about__img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+    background: #F7F7F7;
+  }
+
+  .pb-about__img-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background: #F7F7F7;
+    border: 1px dashed #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #AAAAAA;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding: 24px;
+  }
+
+  /* ── Text content ── */
+  .pb-about__content {
+    padding-top: 8px;
+  }
+
+  .pb-about__eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #1B365D;
+    margin: 0 0 16px;
+  }
+
+  .pb-about__heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin: 0 0 36px;
+  }
+
+  .pb-about__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pb-about__body p {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #333333;
+    margin: 0;
+  }
+
+  .pb-about__body a {
+    color: #1B365D;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .pb-about__body a:hover { color: #142840; }
+
+  /* ── Founder byline ── */
+  .pb-about__founder {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .pb-about__founder-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .pb-about__founder-role {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #777777;
+    letter-spacing: 0.01em;
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 767px) {
+    .pb-about { padding: 48px 0 64px; }
+
+    .pb-about__inner {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
+    .pb-about__image-wrap { position: static; }
+
+    .pb-about__img,
+    .pb-about__img-placeholder { aspect-ratio: 3 / 4; }
+  }
+</style>
+
+<section class="pb-about" id="pb-about-{{ section.id }}">
+  <div class="pb-about__inner">
+
+    <div class="pb-about__image-wrap">
+      {%- if section.settings.founder_image != blank -%}
+        <img
+          class="pb-about__img"
+          src="{{ section.settings.founder_image | image_url: width: 760 }}"
+          srcset="
+            {{ section.settings.founder_image | image_url: width: 400 }} 400w,
+            {{ section.settings.founder_image | image_url: width: 600 }} 600w,
+            {{ section.settings.founder_image | image_url: width: 760 }} 760w
+          "
+          sizes="(max-width: 767px) calc(100vw - 40px), 380px"
+          alt="{{ section.settings.founder_name | default: 'Grundare, Recoverlab' }}"
+          loading="lazy"
+          width="380"
+          height="475"
+        >
+      {%- else -%}
+        <div class="pb-about__img-placeholder" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span>Lägg till bild via Temaredigeraren → PB – Om oss</span>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="pb-about__content">
+      <p class="pb-about__eyebrow">Om oss</p>
+      <h1 class="pb-about__heading">{{ page.title | default: 'Recoverlab' }}</h1>
+
+      <div class="pb-about__body">
+        <p>Recoverlab startades av en enkel insikt: vi lägger mycket tid på att träna och prestera, men alldeles för lite på att återhämta oss.</p>
+        <p>Vi är en liten, nystartad svensk butik. Vi väljer ut produkter vi själva använder och tror på, inom rörlighet, återhämtning och sömn. Ingen enorm katalog – bara noggrant utvalda verktyg som gör vardagen lite bättre.</p>
+        <p>Har du frågor når du oss alltid på <a href="mailto:kontakt@recoverlab.se">kontakt@recoverlab.se</a></p>
+      </div>
+
+      {%- if section.settings.founder_name != blank or section.settings.founder_role != blank -%}
+        <div class="pb-about__founder">
+          {%- if section.settings.founder_name != blank -%}
+            <span class="pb-about__founder-name">{{ section.settings.founder_name }}</span>
+          {%- endif -%}
+          {%- if section.settings.founder_role != blank -%}
+            <span class="pb-about__founder-role">{{ section.settings.founder_role }}</span>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PB – Om oss",
+  "tag": "section",
+  "class": "pb-section-about",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Grundarens bild"
+    },
+    {
+      "type": "image_picker",
+      "id": "founder_image",
+      "label": "Foto"
+    },
+    {
+      "type": "header",
+      "content": "Grundarens namn och roll"
+    },
+    {
+      "type": "text",
+      "id": "founder_name",
+      "label": "Namn",
+      "placeholder": "Ditt namn"
+    },
+    {
+      "type": "text",
+      "id": "founder_role",
+      "label": "Roll / titel",
+      "placeholder": "Grundare, Recoverlab"
+    }
+  ],
+  "presets": [
+    {
+      "name": "PB – Om oss"
+    }
+  ]
+}
+{% endschema %}

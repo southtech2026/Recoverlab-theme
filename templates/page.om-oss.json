@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "pb_about": {
+      "type": "pb-about",
+      "settings": {
+        "founder_name": "",
+        "founder_role": ""
+      }
+    }
+  },
+  "order": [
+    "pb_about"
+  ]
+}
