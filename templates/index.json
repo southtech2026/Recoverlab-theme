@@ -25,7 +25,7 @@
         "cta2_label": "Utforska Produkterna",
         "cta2_url": "shopify://collections/all",
         "trust1": "Säker betalning",
-        "trust2": "Gratis frakt över 499 kr",
+        "trust2": "Gratis frakt på alla order",
         "trust3": "30 dagar returrätt"
       }
     },
@@ -173,8 +173,8 @@
           "type": "item",
           "settings": {
             "icon": "shipping",
-            "title": "Fri frakt",
-            "text": "Fri frakt på order över 499 kr."
+            "title": "Gratis frakt",
+            "text": "Gratis frakt på alla order."
           }
         },
         "w4": {
