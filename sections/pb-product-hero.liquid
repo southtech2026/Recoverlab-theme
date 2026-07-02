@@ -414,12 +414,6 @@
           </div>
         {%- endif -%}
 
-        {%- comment -%} Trustpilot widget {%- endcomment -%}
-        <div class="pb-buybox-trust-row" style="margin-bottom:14px;">
-          {%- assign rc = section.settings.review_count_num | default: 70 -%}
-          {%- render 'trustpilot-widget', rating: 4.9, review_count: rc -%}
-        </div>
-
         {%- comment -%} Feature checkmarks {%- endcomment -%}
         {%- assign feature_blocks = section.blocks | where: "type", "feature" -%}
         {%- if feature_blocks.size > 0 -%}

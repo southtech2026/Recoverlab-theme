@@ -35,40 +35,14 @@
         "stat1": {
           "type": "stat",
           "settings": {
-            "number": "10000",
-            "suffix": "+",
-            "label": "Nöjda kunder"
-          }
-        },
-        "rating1": {
-          "type": "rating",
-          "settings": {
-            "rating": "4.9",
-            "label": "Genomsnittligt betyg"
-          }
-        },
-        "stat2": {
-          "type": "stat",
-          "settings": {
-            "number": "98",
-            "suffix": "%",
-            "label": "Rekommenderar oss"
-          }
-        },
-        "stat3": {
-          "type": "stat",
-          "settings": {
-            "number": "10",
-            "suffix": "år",
-            "label": "Erfarenhet"
+            "number": "",
+            "suffix": "",
+            "label": "Nystartad svensk butik"
           }
         }
       },
       "block_order": [
-        "stat1",
-        "rating1",
-        "stat2",
-        "stat3"
+        "stat1"
       ],
       "settings": {}
     },
@@ -176,21 +150,12 @@
             "suffix": "x",
             "label": "snabbare återhämtning"
           }
-        },
-        "s4": {
-          "type": "stat",
-          "settings": {
-            "number": "10000",
-            "suffix": "+",
-            "label": "nöjda atleter"
-          }
         }
       },
       "block_order": [
         "s1",
         "s2",
-        "s3",
-        "s4"
+        "s3"
       ],
       "settings": {
         "label": "Vår filosofi",
@@ -267,273 +232,6 @@
         "label": "Varför oss",
         "title": "Varför Välja Oss?",
         "subtitle": "Vi kombinerar vetenskap, kvalitet och service för din bästa upplevelse."
-      }
-    },
-    "trustpilot_carousel_rnJKEy": {
-      "type": "trustpilot-carousel",
-      "blocks": {
-        "review_cVCpTt": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Bästa massagepistolen!",
-            "review": "Köpte massagepistolen för att hantera träningsvärk och jag är helt imponerad. Djupvävnadsmassagen når precis rätt ställen. Kan inte träna utan den nu.",
-            "name": "Erik S.",
-            "date": "15 maj 2026"
-          }
-        },
-        "review_r8V3YF": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Sover som ett barn nu",
-            "review": "Blåljusglasögonen har förändrat min sömnkvalitet helt. Tar på dem 2 timmar innan läggdags och skillnaden är dramatisk.",
-            "name": "Lina B.",
-            "date": "12 maj 2026"
-          }
-        },
-        "review_AphPx4": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Imponerad av träningsbandet",
-            "review": "Armbandet är otroligt exakt med pulsmätningen. Sömnanalysen hjälpte mig förstå varför jag kände mig trött.",
-            "name": "Karin J.",
-            "date": "8 maj 2026"
-          }
-        },
-        "review_TzKaPd": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Tränar hemma varje dag",
-            "review": "Pilatesstaven är min favoritprodukt! Kan träna hela kroppen på 20 minuter. Gummibanden ger precis rätt motstånd.",
-            "name": "Anna P.",
-            "date": "5 maj 2026"
-          }
-        },
-        "review_LKx38m": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Snabb leverans, top kvalitet",
-            "review": "Beställde på måndag, fick paketet på onsdag. Produkten överträffade förväntningarna – premium kvalitet till ett rimligt pris.",
-            "name": "Marcus B.",
-            "date": "2 maj 2026"
-          }
-        },
-        "review_D8LBft": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Rekommenderar starkt",
-            "review": "Har provat många liknande produkter men Recoverlab är i en helt annan klass. Snabb leverans och riktigt bra kundtjänst.",
-            "name": "Sofia A.",
-            "date": "28 apr 2026"
-          }
-        },
-        "review_BDkyUe": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Perfekt present",
-            "review": "Köpte pilatesstaven som present och nu tävlar vi om vem som får använda den! Bästa träningsinköpet vi gjort.",
-            "name": "Henrik S.",
-            "date": "22 apr 2026"
-          }
-        },
-        "review_Np7yNy": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "PT-nivå hemma",
-            "review": "Som personlig tränare rekommenderar jag Recoverlabs produkter till alla mina klienter. Återhämtningen har förbättrats markant.",
-            "name": "Daniel H.",
-            "date": "18 apr 2026"
-          }
-        },
-        "review_Ma2kPq": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Axelsmärtan är borta!",
-            "review": "Var skeptisk till en början men efter en veckas användning förstår jag hypen. Axelsmärtan efter simträning är borta på minuter. Leveransen var snabb också!",
-            "name": "Sara E.",
-            "date": "15 apr 2026"
-          }
-        },
-        "review_Xp9rLw": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Perfekta glasögon för gaming",
-            "review": "Perfekta för gaming-sessioner på kvällen. Ögonen är inte längre röda och trötta efter långa spelsessioner. Designen är snygg och de sitter bekvämt hela natten.",
-            "name": "Amanda N.",
-            "date": "12 apr 2026"
-          }
-        },
-        "review_Qw3nBv": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Läkare rekommenderar",
-            "review": "Rekommenderar glasögonen till alla mina patienter med sömnproblem. Blåljusfilter i ett snyggt par glasögon är ett enkelt och effektivt sätt att förbättra sömnkvaliteten.",
-            "name": "Thomas E.",
-            "date": "9 apr 2026"
-          }
-        },
-        "review_Hn5cZt": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "All data på handleden",
-            "review": "Har haft dyra märkesarmband men detta slår dem på precision och batteritid. Stegräknaren är spot-on och sömndata är superdetaljerade. Rekommenderar starkt!",
-            "name": "Peter L.",
-            "date": "6 apr 2026"
-          }
-        },
-        "review_Jk7mVs": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Enkelt att använda",
-            "review": "Perfekt för oss som vill hålla koll på hälsan utan krångel! Enkel att använda, tydlig display och all data man behöver. Pulsen, stegen och sömnen – allt på handleden.",
-            "name": "Eva M.",
-            "date": "3 apr 2026"
-          }
-        },
-        "review_Rb2fKx": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Skadad rygg – äntligen hjälp",
-            "review": "Skadad rygg har gjort det omöjligt att gymma. Pilatesstaven ger mig ett skonsamt men effektivt alternativ hemma. Min fysioterapeut är verkligen imponerad av resultaten.",
-            "name": "Cecilia L.",
-            "date": "31 mar 2026"
-          }
-        },
-        "review_Wg4nDp": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Snabb och pålitlig leverans",
-            "review": "Tredje gången jag beställer från Recoverlab och aldrig blivit besviken. Produkterna håller hög kvalitet och leveransen är alltid snabb. Bästa recovery-butiken i Sverige!",
-            "name": "Johan K.",
-            "date": "27 mar 2026"
-          }
-        },
-        "review_Yt6hFm": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Tränar triathlon – perfekt",
-            "review": "Tränar triathlon och armbandet ger mig all data jag behöver – pulszoner, sömnkvalitet och dagliga steg. Allt i en stilren och bekväm enhet. Rekommenderat till hela laget.",
-            "name": "Marcus B.",
-            "date": "24 mar 2026"
-          }
-        },
-        "review_Lc8wQn": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Kontorssmärta försvann",
-            "review": "Sitter mycket på jobbet och fick ont i nacke och axlar. Massagepistolen tar bort spänningarna på under 10 minuter. Har den på skrivbordet och använder den varje dag.",
-            "name": "Maja L.",
-            "date": "20 mar 2026"
-          }
-        },
-        "review_Eq1pTr": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Sömnen förbättrades direkt",
-            "review": "Min sömn har förbättrats dramatiskt. Tar på mig glasögonen 2 timmar innan läggdags och skillnaden är enorm. Dessutom riktigt snygga – bär dem på jobbet också.",
-            "name": "Johan K.",
-            "date": "17 mar 2026"
-          }
-        },
-        "review_Fv3kHo": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Bäst i test bland recovery-produkter",
-            "review": "Har testat massagepistolar från fyra olika märken. Recoverlabs är bäst i test – kraftfullast, tystast och med bäst batteritid. Priset är också helt rimligt för kvaliteten.",
-            "name": "Gustav A.",
-            "date": "14 mar 2026"
-          }
-        },
-        "review_Zd9yUi": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Perfekt resevänlig träning",
-            "review": "Reser mycket för jobbet och pilatesstaven med gummibanden är det perfekta resegymmet. Lätt att packa, enkel att använda på hotellrummet. Kan inte vara utan den nu.",
-            "name": "Anna P.",
-            "date": "10 mar 2026"
-          }
-        },
-        "review_Mx5bSj": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Morgonhuvudvärken försvann",
-            "review": "Jobbar 8+ timmar framför skärm varje dag. Sedan jag började använda blåljusglasögonen somnar jag snabbare och morgonhuvudvärken är helt borta. Värt varenda krona!",
-            "name": "Lina B.",
-            "date": "7 mar 2026"
-          }
-        },
-        "review_Oa7cWu": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Återhämtning på rekordtid",
-            "review": "Som elitidrottsman är återhämtning A och O. Massagepistolen har bokstavligen förändrat hur fort jag återhämtar mig mellan träningspassen. Kan varmt rekommendera till alla atleter.",
-            "name": "Erik S.",
-            "date": "3 mar 2026"
-          }
-        },
-        "review_Bp2nKe": {
-          "type": "review",
-          "settings": {
-            "stars": 5,
-            "title": "Fantastisk kundservice",
-            "review": "Hade en fråga om produkten och fick svar inom en timme. Supporten var hjälpsam och kunnig. Produkten i sig är fantastisk men servicen är det som verkligen skiljer Recoverlab från konkurrenterna.",
-            "name": "Sofia H.",
-            "date": "28 feb 2026"
-          }
-        }
-      },
-      "block_order": [
-        "review_cVCpTt",
-        "review_r8V3YF",
-        "review_AphPx4",
-        "review_TzKaPd",
-        "review_LKx38m",
-        "review_D8LBft",
-        "review_BDkyUe",
-        "review_Np7yNy",
-        "review_Ma2kPq",
-        "review_Xp9rLw",
-        "review_Qw3nBv",
-        "review_Hn5cZt",
-        "review_Jk7mVs",
-        "review_Rb2fKx",
-        "review_Wg4nDp",
-        "review_Yt6hFm",
-        "review_Lc8wQn",
-        "review_Eq1pTr",
-        "review_Fv3kHo",
-        "review_Zd9yUi",
-        "review_Mx5bSj",
-        "review_Oa7cWu",
-        "review_Bp2nKe"
-      ],
-      "name": "Trustpilot Carousel",
-      "settings": {
-        "business_unit_id": "",
-        "heading": "Recensioner från våra kunder",
-        "review_count": "1 247",
-        "auto_speed": 4000
       }
     },
     "pb_transformation": {
@@ -682,7 +380,6 @@
     "hero_banner_4DVheb",
     "pb_storytelling",
     "pb_why_us",
-    "trustpilot_carousel_rnJKEy",
     "pb_transformation",
     "pb_faq",
     "pb_email_capture"
