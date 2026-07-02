@@ -14,7 +14,7 @@
       "settings": {
         "eyebrow": "",
         "headline": "<p>Din kropp presterar på den nivå du <em>återhämtar dig</em>.</p>",
-        "subheadline": "Vetenskapligt framtagna produkter för optimal återhämtning, bättre sömn och högre prestation.",
+        "subheadline": "Noga utvalda produkter för återhämtning, bättre sömn och välmående.",
         "bg_video_desktop": "https://cdn.shopify.com/videos/c/o/v/7c7a128e33004266adc71f9bf1f60047.mp4",
         "bg_video_mobile": "https://cdn.shopify.com/videos/c/o/v/89f955fde8504af0aacf5c333437e2d1.mp4",
         "ov_bottom": "0.90",
@@ -54,7 +54,7 @@
           "settings": {
             "icon": "recovery",
             "title": "Bättre återhämtning",
-            "text": "Återhämta dig snabbare efter träning med vetenskapligt beprövade ingredienser."
+            "text": "Skapa en rutin som stödjer kroppen efter träning."
           }
         },
         "b2": {
@@ -78,7 +78,7 @@
           "settings": {
             "icon": "stress",
             "title": "Minskad stress",
-            "text": "Adaptogener som hjälper din kropp hantera stress och balansera kortisolnivåer."
+            "text": "Produkter som hjälper dig skapa utrymme för återhämtning och ro."
           }
         },
         "b5": {
@@ -86,7 +86,7 @@
           "settings": {
             "icon": "muscle",
             "title": "Snabbare muskelåterhämtning",
-            "text": "Minska muskelvärk och inflammation – kom tillbaka starkare till nästa pass."
+            "text": "Många upplever mjukare muskler och bättre rörlighet med regelbunden användning."
           }
         },
         "b6": {
@@ -119,7 +119,7 @@
         "image": "shopify://shop_images/PBbadafargerna.png",
         "overlay_opacity": 50,
         "title": "Recoverlab - Din väg till optimal återhämtning",
-        "subtitle": "Vetenskapligt beprövade recovery-produkter för svenska idrottare",
+        "subtitle": "Premium recovery-produkter för svenska idrottare",
         "btn_label": "Utforska produkter",
         "btn_url": "shopify://collections/all"
       }
@@ -127,43 +127,25 @@
     "pb_storytelling": {
       "type": "pb-storytelling",
       "blocks": {
-        "s1": {
-          "type": "stat",
-          "settings": {
-            "number": "40",
-            "suffix": "%",
-            "label": "bättre prestation"
-          }
-        },
-        "s2": {
-          "type": "stat",
-          "settings": {
-            "number": "87",
-            "suffix": "%",
-            "label": "bättre sömn"
-          }
-        },
         "s3": {
           "type": "stat",
           "settings": {
-            "number": "3",
-            "suffix": "x",
-            "label": "snabbare återhämtning"
+            "number": "",
+            "suffix": "",
+            "label": "Ett enkelt sätt att ta hand om kroppen"
           }
         }
       },
       "block_order": [
-        "s1",
-        "s2",
         "s3"
       ],
       "settings": {
         "label": "Vår filosofi",
         "title": "<p>Kroppen klarar <em>mer</em> när den återhämtar sig rätt.</p>",
-        "body": "I en värld av konstant stress, dålig sömn och överträning är återhämtning inte ett val – det är en nödvändighet. Vår forskning visar att de som prioriterar återhämtning presterar upp till 40% bättre på lång sikt. Vi har skapat produkter som gör det möjligt för alla att återhämta sig som proffs.",
+        "body": "I en värld av konstant stress, dålig sömn och överträning är återhämtning inte ett val – det är en nödvändighet. Vi har skapat produkter som gör det möjligt för alla att ta hand om sin kropp.",
         "image": "shopify://shop_images/Lume_2.0_Pbild_sovande.png",
-        "badge_stat": "87%",
-        "badge_text": "upplever bättre sömn inom 2 veckor",
+        "badge_stat": "",
+        "badge_text": "",
         "cta_label": "Läs mer",
         "cta_url": "shopify://products/lume-2-0-smart-fitness-armband-med-puls-steg-somnmatning"
       }
@@ -176,7 +158,7 @@
           "settings": {
             "icon": "science",
             "title": "Vetenskapliga produkter",
-            "text": "Alla produkter är baserade på klinisk forskning och välstuderad teknik."
+            "text": "Alla produkter är noggrant utvalda och testade för daglig användning."
           }
         },
         "w2": {

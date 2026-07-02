@@ -273,7 +273,7 @@
           "settings": {
             "label": "Fördelar",
             "heading": "Djupgående behandling som faktiskt fungerar",
-            "text": "<p>Vetenskapligt framtagen för att ge dig maximal återhämtning. Designad för svenska atleter som kräver resultat.</p>"
+            "text": "<p>Noggrant framtagen för att ge dig effektiv återhämtning. Designad för svenska atleter som kräver resultat.</p>"
           }
         },
         "story_2": {
@@ -281,7 +281,7 @@
           "settings": {
             "label": "Egenskaper",
             "heading": "Teknologi du kan lita på",
-            "text": "<ul><li>Kliniskt beprövad effekt</li><li>Anpassad för daglig användning</li><li>Inga konstgjorda tillsatser</li><li>Tillverkad enligt GMP-standard</li></ul>"
+            "text": "<ul><li>Testad och utvald för daglig användning</li><li>Anpassad för daglig användning</li><li>Inga konstgjorda tillsatser</li><li>Tillverkad enligt GMP-standard</li></ul>"
           }
         },
         "story_3": {
@@ -375,13 +375,13 @@
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "Minskar muskelvärk med upp till 60%"
+            "text": "Många upplever minskad muskelvärk med regelbunden användning"
           }
         },
         "sol2": {
           "type": "solution",
           "settings": {
-            "text": "Djupare REM-sömn varje natt"
+            "text": "Många upplever djupare och mer restorativ sömn"
           }
         },
         "sol3": {
@@ -407,42 +407,10 @@
     "pb_product_science": {
       "type": "pb-product-science",
       "blocks": {
-        "sc1": {
-          "type": "stat",
-          "settings": {
-            "number": "87",
-            "suffix": "%",
-            "label": "upplever förbättrad sömn"
-          }
-        },
-        "sc2": {
-          "type": "stat",
-          "settings": {
-            "number": "60",
-            "suffix": "%",
-            "label": "mindre muskelvärk"
-          }
-        },
-        "sc3": {
-          "type": "stat",
-          "settings": {
-            "number": "28",
-            "suffix": "%",
-            "label": "lägre kortisolnivåer"
-          }
-        },
-        "sc4": {
-          "type": "stat",
-          "settings": {
-            "number": "40",
-            "suffix": "%",
-            "label": "bättre återhämtning"
-          }
-        },
         "bd1": {
           "type": "badge",
           "settings": {
-            "text": "Kliniskt testad"
+            "text": "Noggrant testad"
           }
         },
         "bd2": {
@@ -465,10 +433,6 @@
         }
       },
       "block_order": [
-        "sc1",
-        "sc2",
-        "sc3",
-        "sc4",
         "bd1",
         "bd2",
         "bd3",
@@ -476,8 +440,8 @@
       ],
       "settings": {
         "label": "Vetenskapen bakom",
-        "title": "Grundad i Forskning",
-        "text": "Varje produkt är formulerad baserat på peer-reviewed forskning och kliniska studier."
+        "title": "Noggrant utvalt",
+        "text": "Varje produkt är noggrant utvald och testad för säker daglig användning."
       }
     },
     "pb_product_comparison": {
@@ -486,7 +450,7 @@
         "cr1": {
           "type": "row",
           "settings": {
-            "feature": "Kliniskt beprövade ingredienser",
+            "feature": "Noggrant testade egenskaper",
             "ours": "yes",
             "comp1": "no",
             "comp2": "no"

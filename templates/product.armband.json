@@ -59,7 +59,7 @@
             "image": "shopify://shop_images/Lume_2.0_Pbild_sovande.png",
             "label": "Fördelar",
             "heading": "Förstå din kropp på djupet — varje sekund, dygnet runt.",
-            "text": "<p>Lume 2.0 är inte bara ett smart armband — det är din personliga hälsocoach på handleden. Med medicinsk sensorteknologi följer du dina vitala värden i realtid och får insikter som hjälper dig att sova bättre, träna smartare och må bra på riktigt. <br/>Med Lume 2.0 slipper du gissa hur du mår. Du <strong>vet</strong>. Och när du vet, kan du fatta bättre beslut — varje dag.</p>"
+            "text": "<p>Lume 2.0 är inte bara ett smart armband — det är din personliga hälsocoach på handleden. Med avancerad sensorteknologi följer du dina vitala värden i realtid och får insikter som hjälper dig att sova bättre, träna smartare och må bra på riktigt. <br/>Med Lume 2.0 slipper du gissa hur du mår. Du <strong>vet</strong>. Och när du vet, kan du fatta bättre beslut — varje dag.</p>"
           }
         },
         "story_2": {
@@ -160,42 +160,10 @@
     "pb_product_science": {
       "type": "pb-product-science",
       "blocks": {
-        "sc1": {
-          "type": "stat",
-          "settings": {
-            "number": "28",
-            "suffix": "%",
-            "label": "kortare återhämtningstid"
-          }
-        },
-        "sc2": {
-          "type": "stat",
-          "settings": {
-            "number": "34",
-            "suffix": "%",
-            "label": "bättre sömnkvalitet"
-          }
-        },
-        "sc3": {
-          "type": "stat",
-          "settings": {
-            "number": "22",
-            "suffix": "%",
-            "label": "lägre genomsnittlig vilopuls"
-          }
-        },
-        "sc4": {
-          "type": "stat",
-          "settings": {
-            "number": "41",
-            "suffix": "%",
-            "label": "minskad upplevd stressnivå"
-          }
-        },
         "bd1": {
           "type": "badge",
           "settings": {
-            "text": "Kliniskt testad"
+            "text": "Noggrant testad"
           }
         },
         "bd2": {
@@ -212,18 +180,14 @@
         }
       },
       "block_order": [
-        "sc1",
-        "sc2",
-        "sc3",
-        "sc4",
         "bd1",
         "bd2",
         "bd3"
       ],
       "settings": {
         "label": "Vetenskapen bakom",
-        "title": "Siffrorna som visar varför Lume 2.0 fungerar",
-        "text": "Lume 2.0:s effekt har dokumenterats genom användarstudier där deltagare följts under 90 dagar. Så här genomfördes mätningen: Resultaten baseras på självrapporterade enkäter och anonymiserad data från över 5 000 användare som bar Lume 2.0 dygnet runt under en 90-dagars period. Baseline-mätningar gjordes första veckan och jämfördes sedan med data från vecka 8 och vecka 12. Studien omfattade deltagare i åldrarna 22–64 år med varierande aktivitetsnivå.\n\nNotera: Lume 2.0 är inte en medicinsk produkt och ska inte ersätta professionell vård."
+        "title": "Vad användare berättar",
+        "text": "Baserat på feedback från kunder sedan lanseringen. Lume 2.0 är inte en medicinsk produkt och ska inte ersätta professionell vård."
       }
     },
     "pb_product_comparison": {
@@ -232,7 +196,7 @@
         "cr1": {
           "type": "row",
           "settings": {
-            "feature": "Kliniskt beprövade ingredienser",
+            "feature": "Noggrant testade komponenter",
             "ours": "yes",
             "comp1": "no",
             "comp2": "no"

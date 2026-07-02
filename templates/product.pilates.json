@@ -123,7 +123,7 @@
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "Resistensbandsträning som bygger riktig styrka utan belastning — Studier på kvinnor över 50 visar att resistensträning förbättrar balans, gånghastighet och rörlighet på bara 4 veckor."
+            "text": "Resistensträning bygger styrka utan stötbelastning — anpassad för din kropp och din dagsform."
           }
         },
         "sol2": {
@@ -161,42 +161,10 @@
     "pb_product_science": {
       "type": "pb-product-science",
       "blocks": {
-        "sc1": {
-          "type": "stat",
-          "settings": {
-            "number": "73",
-            "suffix": "%",
-            "label": "förbättrad muskelstyrka"
-          }
-        },
-        "sc2": {
-          "type": "stat",
-          "settings": {
-            "number": "67",
-            "suffix": "%",
-            "label": "förbättrad rörlighet"
-          }
-        },
-        "sc3": {
-          "type": "stat",
-          "settings": {
-            "number": "58",
-            "suffix": "%",
-            "label": "minskning av upplevd ledvärk"
-          }
-        },
-        "sc4": {
-          "type": "stat",
-          "settings": {
-            "number": "81",
-            "suffix": "%",
-            "label": "högre energinivå i vardagen"
-          }
-        },
         "bd1": {
           "type": "badge",
           "settings": {
-            "text": "Kliniskt testad"
+            "text": "Noggrant testad"
           }
         },
         "bd2": {
@@ -213,18 +181,14 @@
         }
       },
       "block_order": [
-        "sc1",
-        "sc2",
-        "sc3",
-        "sc4",
         "bd1",
         "bd2",
         "bd3"
       ],
       "settings": {
         "label": "",
-        "title": "Siffrorna som bevisar varför Flexora fungerar",
-        "text": "Effekterna av resistensbandsträning och pilatesövningar — både sittande och stående — är väldokumenterade inom rehabilitering, äldrehälsa och kvinnors hälsa. Vi har dessutom genomfört en användarstudie på över 1 800 kvinnor som använt Flexora minst 3 gånger i veckan i 30 dagar.\n\nSå här genomfördes mätningen: Resultaten baseras på självrapporterade enkäter och fysiska tester (rörlighetsmätning, styrketest och smärtskattning enligt VAS-skalan) hos 1 847 användare i åldrarna 38–74 år. Deltagarna tränade med Flexora minst 3 gånger i veckan under en 6-veckorsperiod, med en blandning av sittande och stående pass. Baseline-mätningar gjordes före studiens start och jämfördes med data efter 4 respektive 6 veckors användning.\n\nNotera: Flexora är inte en medicinsk produkt och ersätter inte professionell vård vid skada eller sjukdom. Kontakta alltid läkare eller fysioterapeut innan du påbörjar nya träningsprogram vid kronisk värk, efter operation eller vid kronisk sjukdom."
+        "title": "Vad användare berättar",
+        "text": "Baserat på feedback från kunder sedan lanseringen. Flexora är inte en medicinsk produkt och ersätter inte professionell vård vid skada eller sjukdom."
       }
     },
     "pb_product_comparison": {
@@ -233,7 +197,7 @@
         "cr1": {
           "type": "row",
           "settings": {
-            "feature": "Kliniskt beprövade ingredienser",
+            "feature": "Noggrant testade egenskaper",
             "ours": "yes",
             "comp1": "no",
             "comp2": "no"

@@ -15,7 +15,7 @@
         "feat1": {
           "type": "feature",
           "settings": {
-            "text": "Snabbare muskelåterhämtning"
+            "text": "Stödjer kroppens återhämtning efter träning"
           }
         },
         "feat2": {
@@ -33,7 +33,7 @@
         "feat4": {
           "type": "feature",
           "settings": {
-            "text": "Naturlig smärtlindring utan tabletter"
+            "text": "Daglig muskelbehandling hemma"
           }
         },
         "feature_ATQmb7": {
@@ -130,7 +130,7 @@
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "Djupgående muskelbehandling med upp till 3 000 RPM — Når djupare än traditionell massage och löser upp även de hårdaste spänningarna och triggerpunkterna."
+            "text": "Djupgående muskelbehandling med upp till 3 000 RPM — Kraftfull perkussionsmassage som når djupare muskelskikt."
           }
         },
         "sol2": {
@@ -162,48 +162,16 @@
         "problem_text": "Över hälften av alla vuxna i Sverige lever med någon form av muskel- eller ledvärk i vardagen. Många hinner aldrig boka tid hos en massör eller sjukgymnast — och även när man gör det räcker effekten sällan mer än några dagar. Resultatet? Du går runt med spänningar, dålig sömn och nedsatt prestation utan att veta hur du ska bryta cykeln.",
         "solution_label": "Med Neuro Gun",
         "solution_title": "Neuro Gun — Din personliga muskelterapeut, alltid redo",
-        "solution_text": "Neuro Gun löser dessa problem genom att ge dig professionell muskelbehandling när du vill, var du vill — utan tidsbokning, väntetid eller höga kostnader. Genom kraftfull perkussionsmassage får du effekter som matchar det en sjukgymnast kan erbjuda — i ett format som följer med dig överallt."
+        "solution_text": "Neuro Gun löser dessa problem genom att ge dig bekväm muskelbehandling i ditt eget hem — när du vill, var du vill — utan tidsbokning, väntetid eller höga kostnader. Kompakt och kraftfull perkussionsmassage i ett format som följer med dig överallt."
       }
     },
     "pb_product_science": {
       "type": "pb-product-science",
       "blocks": {
-        "sc1": {
-          "type": "stat",
-          "settings": {
-            "number": "72",
-            "suffix": "%",
-            "label": "snabbare återhämtning"
-          }
-        },
-        "sc2": {
-          "type": "stat",
-          "settings": {
-            "number": "68",
-            "suffix": "%",
-            "label": "minskning av upplevd muskelvärk"
-          }
-        },
-        "sc3": {
-          "type": "stat",
-          "settings": {
-            "number": "54",
-            "suffix": "%",
-            "label": "bättre sömnkvalitet"
-          }
-        },
-        "sc4": {
-          "type": "stat",
-          "settings": {
-            "number": "81",
-            "suffix": "%",
-            "label": "förbättrad rörlighet"
-          }
-        },
         "bd1": {
           "type": "badge",
           "settings": {
-            "text": "Kliniskt testad"
+            "text": "Noggrant testad"
           }
         },
         "bd2": {
@@ -220,18 +188,14 @@
         }
       },
       "block_order": [
-        "sc1",
-        "sc2",
-        "sc3",
-        "sc4",
         "bd1",
         "bd2",
         "bd3"
       ],
       "settings": {
         "label": "Vetenskapen bakom",
-        "title": "Siffrorna som bevisar varför Neuro Gun fungerar",
-        "text": "Effekterna av perkussionsmassage är väldokumenterade inom idrottsmedicin och rehabilitering. Vi har dessutom genomfört en användarstudie på över 1 200 svenska kunder som använt Neuro Gun dagligen i minst 6 veckor. \n\nSå här genomfördes mätningen: Resultaten baseras på en kombination av självrapporterade enkäter och fysiska tester (rörlighetsmätning och smärtskattning enligt VAS-skalan) hos 1 247 användare i åldrarna 22–67 år. Deltagarna använde Neuro Gun minst 4 gånger i veckan under en 6-veckorsperiod. Baseline-mätningar gjordes före studiens start och jämfördes med data efter 6 veckors användning. Resultaten är publicerade som genomsnittliga förbättringar.\nNotera: Neuro Gun är inte en medicinsk produkt och ersätter inte professionell vård vid skada eller sjukdom. Vid kronisk värk eller skada, kontakta alltid läkare eller sjukgymnast."
+        "title": "Vad användare berättar",
+        "text": "Baserat på feedback från kunder sedan lanseringen. Neuro Gun är inte en medicinsk produkt och ersätter inte professionell vård vid skada eller sjukdom."
       }
     },
     "pb_product_comparison": {
@@ -240,7 +204,7 @@
         "cr1": {
           "type": "row",
           "settings": {
-            "feature": "Kliniskt beprövade ingredienser",
+            "feature": "Noggrant testade egenskaper",
             "ours": "yes",
             "comp1": "no",
             "comp2": "no"

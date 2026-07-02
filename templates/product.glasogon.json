@@ -15,7 +15,7 @@
         "feat1": {
           "type": "feature",
           "settings": {
-            "text": "Snabbare insomning och djupare sömn"
+            "text": "Stödjer din naturliga sömnrytm"
           }
         },
         "feat2": {
@@ -33,7 +33,7 @@
         "feat4": {
           "type": "feature",
           "settings": {
-            "text": "Naturligt alternativ till sömnmedicin"
+            "text": "Del av en hälsosam kvällsrutin"
           }
         }
       },
@@ -123,13 +123,13 @@
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "Återställd melatoninproduktion — Din hjärna börjar producera sömnhormonet melatonin naturligt igen, vilket gör att du somnar snabbare och sover djupare."
+            "text": "Stöd för din naturliga sömnrytm — Mindre blått ljus på kvällen hjälper kroppen att varva ner naturligt."
           }
         },
         "sol2": {
           "type": "solution",
           "settings": {
-            "text": "Lugnare nervsystem på kvällen — Mindre blått ljus innebär lägre kortisol och en mer avslappnad känsla — perfekt för en lugn kväll."
+            "text": "Lugnare nervsystem på kvällen — Mindre blått ljus hjälper kroppen att varva ner och slappna av."
           }
         },
         "sol3": {
@@ -155,48 +155,16 @@
         "problem_text": "Var tredje vuxen svensk lider av sömnproblem. Och med dagens skärmtid — i snitt 7+ timmar om dagen — blir det bara värre. Det blå ljuset från mobil, dator, TV och LED-lampor lurar din hjärna att tro att det fortfarande är dag. Resultatet? Din kropp slutar producera melatonin — sömnhormonet — och du ligger där och stirrar i taket medan timmarna tickar förbi.",
         "solution_label": "Med Lunéra",
         "solution_title": "Lunéra — Din kropps väg tillbaka till naturlig sömn",
-        "solution_text": "Lunéra löser dessa problem genom att återställa din kropps naturliga dygnsrytm. Genom att blockera 99,78 % av det blå ljuset från dina skärmar och lampor får din hjärna signalen att det är kväll — och börjar producera melatonin precis som den ska. Inga tabletter. Inga biverkningar. Bara naturlig, djup sömn."
+        "solution_text": "Lunéra löser dessa problem genom att stödja din kropps naturliga dygnsrytm. Genom att blockera 99,78 % av det blå ljuset från dina skärmar och lampor får din hjärna signalen att det är kväll — och kan börja varva ner naturligt. Inga tabletter. En enkel del av kvällsrutinen."
       }
     },
     "pb_product_science": {
       "type": "pb-product-science",
       "blocks": {
-        "sc1": {
-          "type": "stat",
-          "settings": {
-            "number": "76",
-            "suffix": "%",
-            "label": "förbättrad sömnkvalitet"
-          }
-        },
-        "sc2": {
-          "type": "stat",
-          "settings": {
-            "number": "58",
-            "suffix": "%",
-            "label": "kortare insomningstid"
-          }
-        },
-        "sc3": {
-          "type": "stat",
-          "settings": {
-            "number": "71",
-            "suffix": "%",
-            "label": "minskning av ögontrötthet"
-          }
-        },
-        "sc4": {
-          "type": "stat",
-          "settings": {
-            "number": "64",
-            "suffix": "%",
-            "label": "lägre upplevd stressnivå"
-          }
-        },
         "bd1": {
           "type": "badge",
           "settings": {
-            "text": "Kliniskt testad"
+            "text": "Noggrant testad"
           }
         },
         "bd2": {
@@ -213,18 +181,14 @@
         }
       },
       "block_order": [
-        "sc1",
-        "sc2",
-        "sc3",
-        "sc4",
         "bd1",
         "bd2",
         "bd3"
       ],
       "settings": {
         "label": "Vetenskapen bakom",
-        "title": "Siffrorna som bevisar varför Lunéra fungerar",
-        "text": "Effekterna av att blockera blått ljus på kvällen är väldokumenterade i flera vetenskapliga studier inom kronobiologi och sömnforskning. Vi har dessutom genomfört en användarstudie på över 1 500 svenska kunder som använt Lunéra varje kväll i minst 4 veckor.\n\nSå här genomfördes mätningen: Resultaten baseras på självrapporterade enkäter och sömndagböcker från 1 547 användare i åldrarna 22–68 år. Deltagarna använde Lunéra 2–3 timmar före läggdags varje kväll under en 4-veckorsperiod. Baseline-mätningar gjordes första veckan och jämfördes sedan med data från vecka 4. Mätningarna omfattade insomningstid, antal nattliga uppvaknanden, upplevd sömnkvalitet (skala 1–10), ögontrötthet och kvällsstress."
+        "title": "Vad användare berättar",
+        "text": "Baserat på feedback från kunder sedan lanseringen. Lunéra är inte en medicinsk produkt och ersätter inte professionell sömnutredning."
       }
     },
     "pb_product_comparison": {
@@ -233,7 +197,7 @@
         "cr1": {
           "type": "row",
           "settings": {
-            "feature": "Kliniskt beprövade ingredienser",
+            "feature": "Noggrant testade egenskaper",
             "ours": "yes",
             "comp1": "no",
             "comp2": "no"

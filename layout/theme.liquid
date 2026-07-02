@@ -31,7 +31,7 @@
 
     {%- liquid
       assign seo_title = page_title | default: shop.name
-      assign seo_desc  = page_description | default: 'Köp premium recovery-produkter, massagepistol, blåljusglasögon och träningsverktyg för optimal återhämtning. Vetenskapligt beprövat, svenskt fokus.'
+      assign seo_desc  = page_description | default: 'Köp premium recovery-produkter, massagepistol, blåljusglasögon och träningsverktyg för optimal återhämtning. Noga utvalda produkter, svenskt fokus.'
       if template.name == 'product'
         assign seo_image = product.featured_image | image_url: width: 1200
         assign seo_price = product.price | money_without_currency
@@ -77,7 +77,7 @@
       "name": "Recoverlab",
       "url": "https://recoverlab.se",
       "logo": "{{ settings.logo | image_url: width: 400 | prepend: 'https:' }}",
-      "description": "Premium recovery-produkter för svenska idrottare — vetenskapligt beprövade.",
+      "description": "Premium recovery-produkter för svenska idrottare.",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "kontakt@recoverlabs.se",
