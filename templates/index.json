@@ -147,7 +147,7 @@
         "badge_stat": "",
         "badge_text": "",
         "cta_label": "Läs mer",
-        "cta_url": "shopify://products/lume-2-0-smart-fitness-armband-med-puls-steg-somnmatning"
+        "cta_url": "shopify://products/lume-2-0-smart-fitness-armband"
       }
     },
     "pb_why_us": {
@@ -350,7 +350,7 @@
       "settings": {
         "offer": "Bli din bästa version",
         "title": "Gå Med i Recovery Movement",
-        "subtitle": "Prenumerera och få exklusiva erbjudanden, tips om återhämtning och tidig tillgång till nya produkter.",
+        "subtitle": "Prenumerera och få exklusiva erbjudanden, tips om återhämtning, kost, träning och tidig tillgång till nya produkter.",
         "placeholder": "Din e-postadress",
         "button": "Prenumerera",
         "disclaimer": "Vi skickar aldrig spam. Avsluta prenumerationen när som helst."

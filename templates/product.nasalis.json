@@ -15,25 +15,25 @@
         "feat1": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 1]"
+            "text": "Lyfter näsvingarna mekaniskt för mer utrymme i näsgångarna"
           }
         },
         "feat2": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 2]"
+            "text": "Extra stark vidhäftning som sitter kvar hela natten"
           }
         },
         "feat3": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 3]"
+            "text": "Fungerar lika bra under träning som på natten"
           }
         },
         "feat4": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 4]"
+            "text": "30 st per förpackning"
           }
         }
       },
@@ -57,33 +57,37 @@
         "story_1": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 1 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Namnlosdesign_5.png",
+            "label": "Nasalis",
+            "heading": "Nasalis – Näsplåster för öppnare näsgångar",
+            "text": "<p><br/>Nasalis är diskreta näsplåster som lyfter näsvingarna mekaniskt och ger mer utrymme i näsgångarna. Formen följer näsans naturliga kontur, så att plåstret sitter stadigt utan att kännas.</p>"
           }
         },
         "story_2": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 2 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_mc555umc555umc55.png",
+            "label": "Egenskaper",
+            "heading": "Därför Nasalis",
+            "text": "<ul><li>Lyfter näsvingarna mekaniskt för mer utrymme i näsgångarna</li><li>Extra stark vidhäftning som sitter kvar hela natten</li><li>Hudvänligt, hypoallergent material</li><li>Enkla att sätta på och ta av — inget klistrigt efter sig</li><li>Fungerar lika bra under träning som på natten</li><li>30 st per förpackning</li></ul>"
           }
         },
         "story_3": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 3 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_m6iaepm6iaepm6ia.png",
+            "label": "Hur det fungerar",
+            "heading": "Andas genom näsan, dag som natt",
+            "text": "<p><br/>Många andas genom munnen utan att tänka på det — vid hårda pass, eller när näsan känns trång på kvällen. Nasalis öppnar upp näsgångarna rent fysiskt, så att näsandning blir enklare när du behöver det.<br/><br/></p>"
           }
         },
         "story_4": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 4 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_kqw59bkqw59bkqw5.png",
+            "label": "Resultat",
+            "heading": "Märk skillnaden redan från dag ett",
+            "text": "<p>Nasalis är gjorda för vardagen — natten, träningspasset eller stunden när näsan känns som mest trång. Enkla att sätta på, enkla att lita på.</p>"
           }
         }
       },
@@ -101,37 +105,37 @@
         "prob1": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 1]"
+            "text": "Du andas genom munnen utan att tänka på det — särskilt vid hårda pass eller sen kväll."
           }
         },
         "prob2": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 2]"
+            "text": "Näsan känns trång och blockerad precis när du ska sova eller prestera som bäst."
           }
         },
         "prob3": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 3]"
+            "text": "Billigare näsplåster sitter löst eller lossnar redan efter någon timme."
           }
         },
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 1]"
+            "text": "Lyfter näsvingarna mekaniskt — ger direkt mer utrymme i näsgångarna."
           }
         },
         "sol2": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 2]"
+            "text": "Extra stark vidhäftning som sitter kvar hela natten eller hela passet."
           }
         },
         "sol3": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 3]"
+            "text": "Formen följer näsans naturliga kontur — diskret, skonsam och knappt märkbar."
           }
         }
       },
@@ -146,12 +150,12 @@
       "settings": {
         "label": "Problemet & lösningen",
         "title": "Vi Förstår Problemet",
-        "problem_label": "Utan [Produkt]",
-        "problem_title": "[Fyll i problemrubrik]",
-        "problem_text": "[Fyll i problemtext för denna produkt.]",
-        "solution_label": "Med [Produkt]",
-        "solution_title": "[Fyll i lösningsrubrik]",
-        "solution_text": "[Fyll i lösningstext för denna produkt.]"
+        "problem_label": "Utan Nasalis",
+        "problem_title": "Näsan känns trång precis när du behöver den som mest",
+        "problem_text": "Många andas omedvetet genom munnen under hårda träningspass eller när näsan känns trång på kvällen. Vanliga näsplåster ger inte tillräckligt med utrymme, sitter löst eller lossnar redan efter någon timme — och du är tillbaka på ruta ett.",
+        "solution_label": "Med Nasalis",
+        "solution_title": "Nasalis — mer utrymme i näsgångarna, hela natten",
+        "solution_text": "Nasalis lyfter näsvingarna mekaniskt och formar sig efter näsans naturliga kontur. Den extra starka vidhäftningen sitter kvar genom hela passet eller natten, så att näsandningen kan kännas fri precis när du behöver den som mest."
       }
     },
     "pb_product_science": {
@@ -238,29 +242,29 @@
         "pf1": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 1]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Hur länge sitter en remsa på?",
+            "answer": "<p>Nasalis är gjorda för att sitta kvar en hel natt eller ett helt träningspass. Se till att näsan är ren och torr innan du sätter på plåstret — hudkräm eller svett minskar vidhäftningen.</p>"
           }
         },
         "pf2": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 2]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Kan jag använda dem under träning?",
+            "answer": "<p>Ja. Nasalis fungerar lika bra vid fysisk aktivitet som under sömn. Många använder dem vid löpning eller andra pass där man vill hålla näsandningen igång.</p>"
           }
         },
         "pf3": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 3]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Går de att använda om jag har känslig hud?",
+            "answer": "<p>Materialet är hypoallergent och framtaget för att vara skonsamt mot huden. Ta av plåstret försiktigt genom att lossa det från kanterna. Om du får hudirritation, sluta använda produkten.</p>"
           }
         },
         "pf4": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 4]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Hur många remsor ingår i en förpackning?",
+            "answer": "<p>Varje förpackning innehåller 30 remsor, vilket räcker för dagligt bruk i ungefär en månad.</p>"
           }
         }
       },

@@ -17,12 +17,12 @@
         {%- endif -%}
         <div class="pb-storytelling__media-badge">
           <div class="pb-storytelling__badge-stat">{{ section.settings.badge_stat | default: '87%' }}</div>
-          <div class="pb-storytelling__badge-text">{{ section.settings.badge_text | default: 'upplever bÃ¤ttre sÃ¶mn inom 2 veckor' }}</div>
+          <div class="pb-storytelling__badge-text">{{ section.settings.badge_text | default: 'upplever bättre sömn inom 2 veckor' }}</div>
         </div>
       </div>
       <div class="pb-storytelling__content">
-        <p class="pb-label pb-label--white pb-fade-in">{{ section.settings.label | default: 'VÃ¥r historia' }}</p>
-        <h2 class="pb-storytelling__title pb-fade-in pb-fade-in--d1">{{ section.settings.title | default: 'Kroppen klarar <em>mer</em> nÃ¤r den Ã¥terhÃ¤mtar sig rÃ¤tt.' }}</h2>
+        <p class="pb-label pb-label--white pb-fade-in">{{ section.settings.label | default: 'Vår historia' }}</p>
+        <h2 class="pb-storytelling__title pb-fade-in pb-fade-in--d1">{{ section.settings.title | default: 'Kroppen klarar <em>mer</em> när den återhämtar sig rätt.' }}</h2>
         <p class="pb-storytelling__body pb-fade-in pb-fade-in--d2">{{ section.settings.body }}</p>
         <div class="pb-storytelling__stats pb-fade-in pb-fade-in--d3">
           {%- for block in section.blocks -%}
@@ -51,16 +51,16 @@
 
 {% schema %}
 {
-  "name": "PB â€” Storytelling",
+  "name": "PB — Storytelling",
   "tag": "section",
   "settings": [
-    { "type": "text", "id": "label", "label": "Label", "default": "VÃ¥r historia" },
-    { "type": "richtext", "id": "title", "label": "Title", "default": "<p>Kroppen klarar <em>mer</em> nÃ¤r den Ã¥terhÃ¤mtar sig rÃ¤tt.</p>" },
-    { "type": "textarea", "id": "body", "label": "Body text", "default": "I en vÃ¤rld av konstant stress, dÃ¥lig sÃ¶mn och Ã¶vertrÃ¤ning Ã¤r Ã¥terhÃ¤mtning inte ett val â€“ det Ã¤r en nÃ¶dvÃ¤ndighet. VÃ¥r forskning visar att de som prioriterar Ã¥terhÃ¤mtning presterar upp till 40% bÃ¤ttre pÃ¥ lÃ¥ng sikt. Vi har skapat produkter som gÃ¶r det mÃ¶jligt fÃ¶r alla att Ã¥terhÃ¤mta sig som proffs." },
+    { "type": "text", "id": "label", "label": "Label", "default": "Vår historia" },
+    { "type": "richtext", "id": "title", "label": "Title", "default": "<p>Kroppen klarar <em>mer</em> när den återhämtar sig rätt.</p>" },
+    { "type": "textarea", "id": "body", "label": "Body text", "default": "I en värld av konstant stress, dålig sömn och överträning är återhämtning inte ett val – det är en nödvändighet. Vår forskning visar att de som prioriterar återhämtning presterar upp till 40% bättre på lång sikt. Vi har skapat produkter som gör det möjligt för alla att återhämta sig som proffs." },
     { "type": "image_picker", "id": "image", "label": "Image" },
     { "type": "text", "id": "badge_stat", "label": "Badge statistic", "default": "87%" },
-    { "type": "text", "id": "badge_text", "label": "Badge text", "default": "upplever bÃ¤ttre sÃ¶mn inom 2 veckor" },
-    { "type": "text", "id": "cta_label", "label": "CTA label", "default": "LÃ¤s mer om oss" },
+    { "type": "text", "id": "badge_text", "label": "Badge text", "default": "upplever bättre sömn inom 2 veckor" },
+    { "type": "text", "id": "cta_label", "label": "CTA label", "default": "Läs mer om oss" },
     { "type": "url", "id": "cta_url", "label": "CTA URL" }
   ],
   "blocks": [
@@ -70,17 +70,17 @@
       "settings": [
         { "type": "text", "id": "number", "label": "Number", "default": "40" },
         { "type": "text", "id": "suffix", "label": "Suffix", "default": "%" },
-        { "type": "text", "id": "label", "label": "Label", "default": "bÃ¤ttre prestation" }
+        { "type": "text", "id": "label", "label": "Label", "default": "bättre prestation" }
       ]
     }
   ],
   "presets": [{
-    "name": "PB â€” Storytelling",
+    "name": "PB — Storytelling",
     "blocks": [
-      { "type": "stat", "settings": { "number": "40", "suffix": "%", "label": "bÃ¤ttre prestation" } },
-      { "type": "stat", "settings": { "number": "87", "suffix": "%", "label": "bÃ¤ttre sÃ¶mn" } },
-      { "type": "stat", "settings": { "number": "3", "suffix": "x", "label": "snabbare Ã¥terhÃ¤mtning" } },
-      { "type": "stat", "settings": { "number": "10000", "suffix": "+", "label": "nÃ¶jda atleter" } }
+      { "type": "stat", "settings": { "number": "40", "suffix": "%", "label": "bättre prestation" } },
+      { "type": "stat", "settings": { "number": "87", "suffix": "%", "label": "bättre sömn" } },
+      { "type": "stat", "settings": { "number": "3", "suffix": "x", "label": "snabbare återhämtning" } },
+      { "type": "stat", "settings": { "number": "10000", "suffix": "+", "label": "nöjda atleter" } }
     ]
   }]
 }

@@ -15,25 +15,37 @@
         "feat1": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 1]"
+            "text": "Ergonomisk 3D-design — inget tryck mot ögonen"
           }
         },
         "feat2": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 2]"
+            "text": "Mjuk vadderad insida som formar sig efter ansiktet"
           }
         },
         "feat3": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 3]"
+            "text": "Tätt material som blockerar ljus effektivt"
           }
         },
         "feat4": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 4]"
+            "text": "Justerbart resårband, anpassas efter huvudets storlek"
+          }
+        },
+        "feat5": {
+          "type": "feature",
+          "settings": {
+            "text": "Fullt utrymme att blunda och röra ögonen naturligt"
+          }
+        },
+        "feat6": {
+          "type": "feature",
+          "settings": {
+            "text": "Kompakt och lätt — tar liten plats i väskan"
           }
         }
       },
@@ -41,12 +53,14 @@
         "feat1",
         "feat2",
         "feat3",
-        "feat4"
+        "feat4",
+        "feat5",
+        "feat6"
       ],
       "settings": {
         "review_count_num": 70,
         "show_klarna": true,
-        "atc_label": "Lägg till i varukorg",
+        "atc_label": "Köp nu",
         "return_text": "30 dagars returrätt",
         "delivery_text": ""
       }
@@ -57,33 +71,37 @@
         "story_1": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 1 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_whxnp1whxnp1whxn.png",
+            "label": "Solace",
+            "heading": "Solace — stäng ute ljuset, var du än är",
+            "text": "<p>Kalendern är full, dagarna är långa, och sömnen är ofta det första som får ge vika när allt annat ska hinnas med. Miljön går sällan att kontrollera — ett hotellrum med gardiner som inte täcker, ett flygplan med ljus som aldrig riktigt släcks, eller en tupplur mitt på dagen när solen står som högst.</p>"
           }
         },
         "story_2": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 2 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Namnlosdesign_2_3c7e41bd-a66d-4aa7-a86f-468f0cabc883.png",
+            "label": "Egenskaper",
+            "heading": "Därför Solace",
+            "text": "<ul><li>Ergonomisk 3D-design — inget tryck mot ögonen</li><li>Mjuk vadderad insida som formar sig efter ansiktet</li><li>Tätt material som blockerar ljus effektivt</li><li>Justerbart resårband, anpassas efter huvudets storlek</li><li>Fullt utrymme att blunda och röra ögonen naturligt</li><li>Kompakt och lätt — tar liten plats i väskan</li></ul>"
           }
         },
         "story_3": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 3 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_qah74pqah74pqah7.png",
+            "label": "Hur det fungerar",
+            "heading": "Mörker skapat av formen, inte av tryck",
+            "text": "<p>Solace är gjord för de situationerna. Den 3D-formade designen vilar skonsamt mot ansiktet och lämnar utrymme för ögonen att röra sig och blinka fritt, medan det täta materialet blockerar ljuset runt om.</p>"
           }
         },
         "story_4": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 4 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_7mdynv7mdynv7mdy.png",
+            "label": "Använd den",
+            "heading": "Hemma, på resan eller mitt på dagen",
+            "text": "<p>Oavsett om det handlar om en kort paus på yogamattan, en flygresa eller en natt i en säng som inte är din egen — Solace följer med och gör mörkret till en konstant, även när omgivningen inte är det.</p>"
           }
         }
       },
@@ -101,37 +119,37 @@
         "prob1": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 1]"
+            "text": "Ljus läcker in från sidorna av vanliga sovmasker"
           }
         },
         "prob2": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 2]"
+            "text": "Masken pressar mot ögonlocken vid rörelse"
           }
         },
         "prob3": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 3]"
+            "text": "Resårbandet glider eller sitter löst under natten"
           }
         },
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 1]"
+            "text": "3D-formad design tätar runt ögonpartiet och minskar ljusläckage"
           }
         },
         "sol2": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 2]"
+            "text": "Utrymme att blunda och blinka fritt utan tryck"
           }
         },
         "sol3": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 3]"
+            "text": "Justerbart resårband som sitter kvar stabilt, oavsett rörelse"
           }
         }
       },
@@ -146,12 +164,12 @@
       "settings": {
         "label": "Problemet & lösningen",
         "title": "Vi Förstår Problemet",
-        "problem_label": "Utan [Produkt]",
-        "problem_title": "[Fyll i problemrubrik]",
-        "problem_text": "[Fyll i problemtext för denna produkt.]",
-        "solution_label": "Med [Produkt]",
-        "solution_title": "[Fyll i lösningsrubrik]",
-        "solution_text": "[Fyll i lösningstext för denna produkt.]"
+        "problem_label": "Utan Solace",
+        "problem_title": "Ljuset stör precis när du behöver mörker som mest",
+        "problem_text": "Vanliga sovmasker läcker ljus vid kanterna, pressar mot ögonlocken eller glider av under natten — vilket gör dem obekväma att faktiskt bära.",
+        "solution_label": "Med Solace",
+        "solution_title": "Solace — mörker som sitter kvar, utan tryck",
+        "solution_text": "Solace är 3D-formad för att täta runt ögonpartiet utan att pressa mot ögonlocken, med ett justerbart resårband som sitter stabilt oavsett rörelse."
       }
     },
     "pb_product_science": {
@@ -160,19 +178,19 @@
         "bd1": {
           "type": "badge",
           "settings": {
-            "text": "Noggrant testad"
+            "text": "3D-formad design"
           }
         },
         "bd2": {
           "type": "badge",
           "settings": {
-            "text": "Tredjepartstestad"
+            "text": "Justerbart resårband"
           }
         },
         "bd3": {
           "type": "badge",
           "settings": {
-            "text": "GMP-certifierad"
+            "text": "Andningsbart material"
           }
         }
       },
@@ -182,9 +200,9 @@
         "bd3"
       ],
       "settings": {
-        "label": "Vetenskapen bakom",
-        "title": "Noggrant utvalt",
-        "text": "Varje produkt är noggrant utvald och testad för säker daglig användning."
+        "label": "Så fungerar det",
+        "title": "Mörker genom form, inte tryck",
+        "text": "En sovmask fungerar genom att fysiskt blockera ljusvägen till ögonen. Ljus som annars läcker in vid kanterna — särskilt vid näsrot och tinningar — når ögonen om passformen inte tätar ordentligt mot ansiktet. Solace är 3D-formad snarare än platt, vilket skapar ett hålrum över ögonpartiet: materialet vilar inte direkt mot ögonlocken, samtidigt som kanterna runt hålrummet tätar mot huden och minskar ljusläckage. Den vadderade insidan bidrar till att jämna ut trycket mot ansiktet så att masken sitter stabilt utan punkttryck."
       }
     },
     "pb_product_comparison": {
@@ -193,43 +211,63 @@
         "cr1": {
           "type": "row",
           "settings": {
-            "feature": "Noggrant testade egenskaper",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "no"
+            "feature": "Design",
+            "ours": "3D-formad, hålrum över ögonen",
+            "comp1": "Platt, ligger direkt mot ögonlocken",
+            "comp2": ""
           }
         },
         "cr2": {
           "type": "row",
           "settings": {
-            "feature": "Tredjepartstestad",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "yes"
+            "feature": "Material",
+            "ours": "Tätt, blockerar ljus effektivt",
+            "comp1": "Tunt eller genomsläppligt material",
+            "comp2": ""
+          }
+        },
+        "cr3": {
+          "type": "row",
+          "settings": {
+            "feature": "Insida",
+            "ours": "Mjuk vadderad insida",
+            "comp1": "Sträv eller onaturlig kant mot huden",
+            "comp2": ""
           }
         },
         "cr4": {
           "type": "row",
           "settings": {
-            "feature": "30 dagars garanti",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "yes"
+            "feature": "Resårband",
+            "ours": "Justerbart, sitter kvar stabilt",
+            "comp1": "Fast resår, glider eller sitter löst",
+            "comp2": ""
+          }
+        },
+        "cr5": {
+          "type": "row",
+          "settings": {
+            "feature": "Användning",
+            "ours": "Fungerar liggande, sittande och i rörelse",
+            "comp1": "Ofta begränsad till stillaliggande sömn",
+            "comp2": ""
           }
         }
       },
       "block_order": [
         "cr1",
         "cr2",
-        "cr4"
+        "cr3",
+        "cr4",
+        "cr5"
       ],
       "settings": {
         "label": "Jämförelse",
-        "title": "Varför Vi Är Bäst",
+        "title": "Varför Solace",
         "subtitle": "",
-        "our_name": "Vår Produkt",
-        "comp1_name": "Konkurrent A",
-        "comp2_name": "Konkurrent B"
+        "our_name": "Solace",
+        "comp1_name": "Typiskt billigt alternativ",
+        "comp2_name": ""
       }
     },
     "pb_product_faq": {
@@ -238,29 +276,36 @@
         "pf1": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 1]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Trycker masken mot ögonen?",
+            "answer": "<p>Nej, den 3D-formade designen skapar ett hålrum över ögonpartiet så att du kan blunda och blinka fritt utan tryck.</p>"
           }
         },
         "pf2": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 2]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Passar Solace för resor och flyg?",
+            "answer": "<p>Ja, den kompakta och lätta konstruktionen gör den enkel att ha med i handbagage och använda på flyget eller under resan.</p>"
           }
         },
         "pf3": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 3]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Glider masken av under natten?",
+            "answer": "<p>Det justerbara resårbandet anpassas efter huvudets storlek och är gjort för att sitta kvar utan att glida.</p>"
           }
         },
         "pf4": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 4]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Går masken att tvätta?",
+            "answer": "<p>Vi rekommenderar handtvätt i kallt vatten för att bevara materialets kvalitet. Undvik torktumling.</p>"
+          }
+        },
+        "pf5": {
+          "type": "item",
+          "settings": {
+            "question": "Kan Solace ersätta behandling vid sömnbesvär?",
+            "answer": "<p>Nej. Vid ihållande sömnbesvär eller andra kraftiga besvär bör du kontakta vårdgivare — Solace ersätter inte medicinsk rådgivning eller behandling.</p>"
           }
         }
       },
@@ -268,7 +313,8 @@
         "pf1",
         "pf2",
         "pf3",
-        "pf4"
+        "pf4",
+        "pf5"
       ],
       "settings": {
         "label": "Produktfrågor",

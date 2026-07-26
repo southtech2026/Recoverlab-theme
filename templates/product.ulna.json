@@ -15,25 +15,37 @@
         "feat1": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 1]"
+            "text": "Riktad tryck kudde som koncentrerar trycket där det behövs"
           }
         },
         "feat2": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 2]"
+            "text": "Justerbar rem som anpassas efter armens omfång"
           }
         },
         "feat3": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 3]"
+            "text": "Andningsbart neopren som inte blir varmt vid längre användning"
           }
         },
         "feat4": {
           "type": "feature",
           "settings": {
-            "text": "[Fyll i produktfördel 4]"
+            "text": "Diskret profil som fungerar under tröjan"
+          }
+        },
+        "feat5": {
+          "type": "feature",
+          "settings": {
+            "text": "Passar både höger och vänster arm"
+          }
+        },
+        "feat6": {
+          "type": "feature",
+          "settings": {
+            "text": "Enkel att sätta på och ta av med en hand"
           }
         }
       },
@@ -41,12 +53,14 @@
         "feat1",
         "feat2",
         "feat3",
-        "feat4"
+        "feat4",
+        "feat5",
+        "feat6"
       ],
       "settings": {
         "review_count_num": 70,
         "show_klarna": true,
-        "atc_label": "Lägg till i varukorg",
+        "atc_label": "Köp nu",
         "return_text": "30 dagars returrätt",
         "delivery_text": ""
       }
@@ -57,33 +71,37 @@
         "story_1": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 1 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_sk8ldtsk8ldtsk8l.png",
+            "label": "Ulna",
+            "heading": "Ulna — justerbart armbågsstöd med riktad tryckkudde",
+            "text": "<p>Tunga lyft, hårda smashar eller samma rörelse om och om igen — underarmens muskelfäste vid armbågen är en av de punkter som får ta emot mest belastning, oavsett om du tränar styrka, spelar racketsport eller jobbar med repetitiva rörelser i vardagen. Det är sällan ett enskilt tillfälle som gör skillnad, utan summan av alla pass.</p>"
           }
         },
         "story_2": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 2 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_3dlmnm3dlmnm3dlm.png",
+            "label": "Egenskaper",
+            "heading": "Därför Ulna",
+            "text": "<ul><li>Riktad Tryckkudde som koncentrerar trycket där det behövs</li><li>Justerbar rem som anpassas efter armens omfång</li><li>Andningsbart neopren som inte blir varmt vid längre användning</li><li>Diskret profil som fungerar under tröjan</li><li>Passar både höger och vänster arm</li><li>Enkel att sätta på och ta av med en hand</li></ul>"
           }
         },
         "story_3": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 3 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Avlastarsenfastetvidtungagrepp.png",
+            "label": "Hur det fungerar",
+            "heading": "Stöd där belastningen sitter",
+            "text": "<p>Ulna är byggt kring den punkten. Stödet sitter strax nedanför armbågsleden och placerar en tryck kudde direkt mot muskeln, med en justerbar rem som håller allt på plats genom hela passet — utan att kännas klumpigt eller synas under kläderna.</p>"
           }
         },
         "story_4": {
           "type": "story",
           "settings": {
-            "label": "[Etikett]",
-            "heading": "[Rubrik 4 — fyll i unik text för denna produkt]",
-            "text": "<p>[Fyll i unik brödtext för denna produkt innan publicering.]</p>"
+            "image": "shopify://shop_images/Gemini_Generated_Image_w3aw87w3aw87w3aw.png",
+            "label": "Använd den",
+            "heading": "Sätt på innan, ta av efteråt",
+            "text": "<p>Sätt på Ulna innan du sätter igång, oavsett om det är gymmet, banan eller ett arbetspass som väntar, och ta av det när du är klar.</p>"
           }
         }
       },
@@ -101,37 +119,37 @@
         "prob1": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 1]"
+            "text": "Belastningen koncentreras på samma punkt vid varje repetition"
           }
         },
         "prob2": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 2]"
+            "text": "Vanliga stöd glider eller sitter löst under aktivitet"
           }
         },
         "prob3": {
           "type": "problem",
           "settings": {
-            "text": "[Problempunkt 3]"
+            "text": "Klumpiga material syns och känns varma under kläder"
           }
         },
         "sol1": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 1]"
+            "text": "Tryck kudden koncentrerar trycket exakt där det behövs"
           }
         },
         "sol2": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 2]"
+            "text": "Justerbar rem som sitter kvar under rörelse"
           }
         },
         "sol3": {
           "type": "solution",
           "settings": {
-            "text": "[Lösningspunkt 3]"
+            "text": "Andningsbart neopren i en diskret profil under kläder"
           }
         }
       },
@@ -146,12 +164,12 @@
       "settings": {
         "label": "Problemet & lösningen",
         "title": "Vi Förstår Problemet",
-        "problem_label": "Utan [Produkt]",
-        "problem_title": "[Fyll i problemrubrik]",
-        "problem_text": "[Fyll i problemtext för denna produkt.]",
-        "solution_label": "Med [Produkt]",
-        "solution_title": "[Fyll i lösningsrubrik]",
-        "solution_text": "[Fyll i lösningstext för denna produkt.]"
+        "problem_label": "Utan Ulna",
+        "problem_title": "Belastningen samlas på en och samma punkt",
+        "problem_text": "Tunga grepp, racketsporter och repetitiva rörelser lägger stor belastning på underarmens muskelfäste vid armbågen, utan att trycket fördelas eller stödet sitter kvar genom rörelsen.",
+        "solution_label": "Med Ulna",
+        "solution_title": "Stöd där belastningen faktiskt sitter",
+        "solution_text": "Ulna placerar en riktad tryck kudde direkt mot muskelfästet och håller den på plats med en justerbar rem, i ett material som är tunt nog att bära diskret."
       }
     },
     "pb_product_science": {
@@ -160,19 +178,19 @@
         "bd1": {
           "type": "badge",
           "settings": {
-            "text": "Noggrant testad"
+            "text": "Riktad tryck kudde"
           }
         },
         "bd2": {
           "type": "badge",
           "settings": {
-            "text": "Tredjepartstestad"
+            "text": "Justerbar rem"
           }
         },
         "bd3": {
           "type": "badge",
           "settings": {
-            "text": "GMP-certifierad"
+            "text": "Andningsbart neopren"
           }
         }
       },
@@ -182,9 +200,9 @@
         "bd3"
       ],
       "settings": {
-        "label": "Vetenskapen bakom",
-        "title": "Noggrant utvalt",
-        "text": "Varje produkt är noggrant utvald och testad för säker daglig användning."
+        "label": "Så fungerar det",
+        "title": "Mekanisk tryckfördelning",
+        "text": "Ulna fungerar genom mekanisk tryckfördelning. Tryck kudden är placerad direkt mot underarmens muskelfäste, strax nedanför armbågsleden, och koncentrerar trycket mot en riktad yta istället för att låta belastningen spridas fritt över hela underarmen vid grepp och rörelse. Den justerbara remmen håller kudden i rätt position genom hela rörelsen, vilket gör att placeringen inte förskjuts vid upprepade repetitioner. Neoprenmaterialet ligger tätt mot huden utan att bli tungt eller varmt, vilket gör att stödet kan bäras under längre pass eller under kläder utan att synas."
       }
     },
     "pb_product_comparison": {
@@ -193,43 +211,63 @@
         "cr1": {
           "type": "row",
           "settings": {
-            "feature": "Noggrant testade egenskaper",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "no"
+            "feature": "Tryckfördelning",
+            "ours": "Riktad tryck kudde mot muskelfästet",
+            "comp1": "Jämnt, ospecifikt tryck över hela ytan",
+            "comp2": ""
           }
         },
         "cr2": {
           "type": "row",
           "settings": {
-            "feature": "Tredjepartstestad",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "yes"
+            "feature": "Fastsättning",
+            "ours": "Justerbar rem, sitter kvar under rörelse",
+            "comp1": "Fast resår, glider vid intensiv aktivitet",
+            "comp2": ""
+          }
+        },
+        "cr3": {
+          "type": "row",
+          "settings": {
+            "feature": "Material",
+            "ours": "Andningsbart neopren",
+            "comp1": "Tätt material som blir varmt vid längre bruk",
+            "comp2": ""
           }
         },
         "cr4": {
           "type": "row",
           "settings": {
-            "feature": "30 dagars garanti",
-            "ours": "yes",
-            "comp1": "no",
-            "comp2": "yes"
+            "feature": "Profil",
+            "ours": "Diskret, går att bära under kläder",
+            "comp1": "Skrymmande, syns tydligt under tröjan",
+            "comp2": ""
+          }
+        },
+        "cr5": {
+          "type": "row",
+          "settings": {
+            "feature": "Passform",
+            "ours": "Passar både höger och vänster arm",
+            "comp1": "Ofta sidospecifik utformning",
+            "comp2": ""
           }
         }
       },
       "block_order": [
         "cr1",
         "cr2",
-        "cr4"
+        "cr3",
+        "cr4",
+        "cr5"
       ],
       "settings": {
         "label": "Jämförelse",
-        "title": "Varför Vi Är Bäst",
+        "title": "Varför Ulna",
         "subtitle": "",
-        "our_name": "Vår Produkt",
-        "comp1_name": "Konkurrent A",
-        "comp2_name": "Konkurrent B"
+        "our_name": "Ulna",
+        "comp1_name": "Typiskt enkelt armbågsstöd",
+        "comp2_name": ""
       }
     },
     "pb_product_faq": {
@@ -238,29 +276,36 @@
         "pf1": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 1]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Passar Ulna både höger och vänster arm?",
+            "answer": "<p>Ja, stödet är utformat för att fungera på båda armarna.</p>"
           }
         },
         "pf2": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 2]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Går det att bära under kläder?",
+            "answer": "<p>Ja, den diskreta profilen gör att Ulna fungerar bra under en tröja eller jacka utan att synas tydligt.</p>"
           }
         },
         "pf3": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 3]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Blir det varmt att bära under längre pass?",
+            "answer": "<p>Materialet är andningsbart neopren, vilket är valt för att minska värmeansamling jämfört med tätare material.</p>"
           }
         },
         "pf4": {
           "type": "item",
           "settings": {
-            "question": "[Fråga 4]",
-            "answer": "<p>[Fyll i svar för denna produkt.]</p>"
+            "question": "Hur sätter jag på stödet?",
+            "answer": "<p>Ulna är gjort för att sättas på och tas av med en hand, tack vare den justerbara remmen.</p>"
+          }
+        },
+        "pf5": {
+          "type": "item",
+          "settings": {
+            "question": "Vad gör jag om jag har ihållande eller kraftig smärta i armbågen?",
+            "answer": "<p>Det är värt att prata med en fysioterapeut eller läkare — Ulna ersätter inte en utredning eller behandling.</p>"
           }
         }
       },
@@ -268,7 +313,8 @@
         "pf1",
         "pf2",
         "pf3",
-        "pf4"
+        "pf4",
+        "pf5"
       ],
       "settings": {
         "label": "Produktfrågor",
