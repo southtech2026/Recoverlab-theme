@@ -1,0 +1,699 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pb_product_hero": {
+      "type": "pb-product-hero",
+      "blocks": {
+        "feat1": {
+          "type": "feature",
+          "settings": {
+            "text": "Sex oberoende luftkammare som blåses upp och töms i cykler"
+          }
+        },
+        "feat2": {
+          "type": "feature",
+          "settings": {
+            "text": "Sekventiell klämkontaktmassage som rör sig från fot till lår"
+          }
+        },
+        "feat3": {
+          "type": "feature",
+          "settings": {
+            "text": "Flera justerbara lufttrycksnivåer, från mjuk till fast klämkontakt"
+          }
+        },
+        "feat4": {
+          "type": "feature",
+          "settings": {
+            "text": "Förlängd ärmdesign som omsluter hela benet utan glipor"
+          }
+        },
+        "feat5": {
+          "type": "feature",
+          "settings": {
+            "text": "Lätt, hopfällbart material för enkel förvaring och transport"
+          }
+        },
+        "feat6": {
+          "type": "feature",
+          "settings": {
+            "text": "Kontrollpanel med tydliga knappar för start, stopp och trycknivå"
+          }
+        }
+      },
+      "block_order": [
+        "feat1",
+        "feat2",
+        "feat3",
+        "feat4",
+        "feat5",
+        "feat6"
+      ],
+      "settings": {
+        "review_count_num": 70,
+        "show_klarna": true,
+        "atc_label": "Lägg till i varukorg",
+        "return_text": "30 dagars returrätt",
+        "delivery_text": ""
+      }
+    },
+    "product_story": {
+      "type": "product-story",
+      "blocks": {
+        "story_1": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/watermarked_img_12213446916971330175.jpg",
+            "label": "Situationen",
+            "heading": "Högt tempo, lite tid för dig själv",
+            "text": "<p>Många i 24–40-årsåldern lever i högt tempo — träningspass, långa arbetsdagar och lite tid över för sig själva. Benen är ofta det som får bära mest, oavsett om dagen har inneburit stillasittande vid skrivbordet eller ett hårt träningspass.</p>"
+          }
+        },
+        "story_2": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/eaee26dc-c6bb-4206-9c1d-179d38baccb2.jpg",
+            "label": "Användning",
+            "heading": "Sex luftkammare, en cykel i taget",
+            "text": "<p>Pulsa är en boot du trär på benen hemma. De sex luftkamrarna blåses upp och töms i tur och ordning, från fot till lår, så att trycket rör sig genom hela benet i stället för att verka på ett ställe i taget. Du väljer själv trycknivå via kontrollpanelen och sitter kvar medan cyklerna går.</p>"
+          }
+        },
+        "story_3": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/31ff3945-d860-4d80-a876-5c25d4c0c547.jpg",
+            "label": "Praktiskt",
+            "heading": "Lätt att plocka fram, lätt att lägga undan",
+            "text": "<p>Eftersom materialet är lätt och hopfällbart får boots plats i en väska eller garderob mellan användningarna — praktiskt för den som vill kunna använda produkten hemma utan att den tar plats permanent.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "story_1",
+        "story_2",
+        "story_3"
+      ],
+      "settings": {}
+    },
+    "pb_problem_solution": {
+      "type": "pb-product-problem-solution",
+      "blocks": {
+        "prob1": {
+          "type": "problem",
+          "settings": {
+            "text": "Benen får ingen fysisk avlastning efter en dag av stillasittande eller stående."
+          }
+        },
+        "prob2": {
+          "type": "problem",
+          "settings": {
+            "text": "Massage av vader och lår kräver antingen egna händer eller besök hos någon annan."
+          }
+        },
+        "prob3": {
+          "type": "problem",
+          "settings": {
+            "text": "Samma tryck och kontakt är svårt att återskapa konsekvent på egen hand."
+          }
+        },
+        "prob4": {
+          "type": "problem",
+          "settings": {
+            "text": "Massageredskap som är otympliga blir sällan använda i vardagen."
+          }
+        },
+        "sol1": {
+          "type": "solution",
+          "settings": {
+            "text": "Sex luftkammare komprimerar benet i sekventiella cykler, från fot till lår."
+          }
+        },
+        "sol2": {
+          "type": "solution",
+          "settings": {
+            "text": "Ärmen omsluter hela benet och ger kontakt runt om, utan att du behöver göra något aktivt."
+          }
+        },
+        "sol3": {
+          "type": "solution",
+          "settings": {
+            "text": "Justerbara lufttrycksnivåer gör att du kan välja mjukare eller fastare klämkontakt vid varje tillfälle."
+          }
+        },
+        "sol4": {
+          "type": "solution",
+          "settings": {
+            "text": "Lätt, hopfällbart material gör att boots är enkla att plocka fram, använda och lägga undan igen."
+          }
+        }
+      },
+      "block_order": [
+        "prob1",
+        "prob2",
+        "prob3",
+        "prob4",
+        "sol1",
+        "sol2",
+        "sol3",
+        "sol4"
+      ],
+      "settings": {
+        "label": "Problemet & lösningen",
+        "title": "Vi förstår problemet",
+        "problem_label": "Utan Pulsa",
+        "problem_title": "Benen får sällan fysisk avlastning i vardagen",
+        "problem_text": "Många tillbringar dagen stillasittande eller stående utan någon fysisk avlastning för benen. Att återskapa jämnt tryck och kontakt på egen hand är svårt, och otympliga massageredskap blir sällan använda i praktiken.",
+        "solution_label": "Med Pulsa",
+        "solution_title": "Sex luftkammare ger sekventiell kompression från fot till lår",
+        "solution_text": "Pulsa omsluter benet med sex separata luftkammare som blåses upp och töms i cykler. Trycknivån är justerbar, och det lätta, hopfällbara materialet gör produkten enkel att använda och förvara."
+      }
+    },
+    "pb_product_science": {
+      "type": "pb-product-science",
+      "settings": {
+        "label": "Så fungerar det",
+        "title": "Sekventiell luftkompression, kammare för kammare",
+        "text": "Pulsa är uppbyggd av sex separata luftkammare placerade utmed benet, från fot till lår. En intern pump fyller kamrarna med luft i tur och ordning i stället för samtidigt, vilket skapar en klämkontakt som förflyttar sig längs benet i cykler. När en cykel är klar töms kamrarna igen innan nästa cykel startar. Kontrollpanelen låter dig ställa in hur hårt trycket ska vara."
+      }
+    },
+    "pb_product_comparison": {
+      "type": "pb-product-comparison",
+      "blocks": {
+        "cr1": {
+          "type": "row",
+          "settings": {
+            "feature": "Antal luftkammare",
+            "ours": "6 separata kammare",
+            "comp1": "Varierar",
+            "comp2": "Ingen luftkompression"
+          }
+        },
+        "cr2": {
+          "type": "row",
+          "settings": {
+            "feature": "Kompressionsmönster",
+            "ours": "Sekventiellt, fot till lår",
+            "comp1": "Varierar",
+            "comp2": "Manuellt tryck"
+          }
+        },
+        "cr3": {
+          "type": "row",
+          "settings": {
+            "feature": "Justerbara trycknivåer",
+            "ours": "yes",
+            "comp1": "Varierar",
+            "comp2": "no"
+          }
+        },
+        "cr4": {
+          "type": "row",
+          "settings": {
+            "feature": "Förvaring",
+            "ours": "Lätt, hopfällbart material",
+            "comp1": "Varierar",
+            "comp2": "Ej tillämpligt"
+          }
+        }
+      },
+      "block_order": [
+        "cr1",
+        "cr2",
+        "cr3",
+        "cr4"
+      ],
+      "settings": {
+        "label": "Jämförelse",
+        "title": "Fysiska egenskaper",
+        "subtitle": "",
+        "our_name": "Pulsa",
+        "comp1_name": "Andra kompressionsprodukter",
+        "comp2_name": "Manuell massage"
+      }
+    },
+    "pb_product_faq": {
+      "type": "pb-product-faq",
+      "blocks": {
+        "pf1": {
+          "type": "item",
+          "settings": {
+            "question": "Hur fungerar Pulsa rent tekniskt?",
+            "answer": "<p>Ärmen har sex separata luftkammare som blåses upp i tur och ordning från fot till lår. Det skapar en klämkontakt som förflyttar sig längs benet i cykler, styrd av en intern pump.</p>"
+          }
+        },
+        "pf2": {
+          "type": "item",
+          "settings": {
+            "question": "Passar Pulsa alla benstorlekar?",
+            "answer": "<p>Ärmen är utformad för att anpassa sig efter benets form och omsluta det tätt runt om. Om du är osäker på passform utifrån dina mått, kontakta oss gärna innan köp.</p>"
+          }
+        },
+        "pf3": {
+          "type": "item",
+          "settings": {
+            "question": "Hur förvarar jag Pulsa mellan användningarna?",
+            "answer": "<p>Materialet är lätt och hopfällbart, vilket gör att boots enkelt kan vikas ihop och läggas i en väska, låda eller garderob.</p>"
+          }
+        },
+        "pf4": {
+          "type": "item",
+          "settings": {
+            "question": "Kan Pulsa ersätta vård vid besvär i benen?",
+            "answer": "<p>Nej. Pulsa är en massageprodukt för hemmabruk och ersätter inte vård vid ihållande eller kraftiga besvär i ben eller fötter. Kontakta vården vid sådana symtom.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pf1",
+        "pf2",
+        "pf3",
+        "pf4"
+      ],
+      "settings": {
+        "label": "Produktfrågor",
+        "title": "Produktspecifika Frågor"
+      }
+    },
+    "product_recommendations_pulsa1": {
+      "type": "product-recommendations",
+      "blocks": {
+        "text_cbcgyb": {
+          "type": "text",
+          "name": "t:names.header",
+          "settings": {
+            "text": "<h3>Du kanske också gillar</h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 8,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_DNizbJ": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_M7MJkb": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_gLWgA6": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_DNizbJ",
+            "product_title_M7MJkb",
+            "price_gLWgA6"
+          ]
+        }
+      },
+      "block_order": [
+        "text_cbcgyb"
+      ],
+      "name": "t:names.product_recommendations",
+      "settings": {
+        "product": "{{ closest.product }}",
+        "recommendation_type": "related",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 12,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "none",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "price_tVjtKg"
+              ]
+            },
+            "divider_VJhene": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": false,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "divider_VJhene",
+            "variant_picker_R3rGDr",
+            "buy_buttons_eYQEYi",
+            "text_aEtTtq"
+          ]
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "enable_sticky_add_to_cart": true,
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "pb_product_hero",
+    "product_story",
+    "pb_problem_solution",
+    "pb_product_science",
+    "pb_product_comparison",
+    "pb_product_faq",
+    "product_recommendations_pulsa1",
+    "main"
+  ]
+}
