@@ -11,6 +11,25 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
+    "pb_footer": {
+      "type": "pb-footer",
+      "blocks": {
+        "col1_link_1": {
+          "type": "col1_link",
+          "settings": { "label": "Alla produkter", "url": "/collections/all" }
+        },
+        "col2_link_1": {
+          "type": "col2_link",
+          "settings": { "label": "Om oss", "url": "/pages/om-oss" }
+        },
+        "col2_link_2": {
+          "type": "col2_link",
+          "settings": { "label": "Kontakt", "url": "/pages/kontakt" }
+        }
+      },
+      "block_order": ["col1_link_1", "col2_link_1", "col2_link_2"],
+      "settings": {}
+    },
     "footer_utilities_jLGE8U": {
       "type": "footer-utilities",
       "blocks": {
@@ -68,6 +87,7 @@
     }
   },
   "order": [
+    "pb_footer",
     "footer_utilities_jLGE8U"
   ]
 }

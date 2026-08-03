@@ -294,6 +294,15 @@
         "title": "Produktspecifika Frågor"
       }
     },
+    "pb_reviews": {
+      "type": "pb-reviews",
+      "settings": {
+        "title": "Vad våra kunder säger",
+        "empty_text": "Vi är en nystartad butik och samlar just nu våra första omdömen. Har du handlat hos oss? Vi blir glada för din ärliga feedback.",
+        "cta_label": "Kontakta oss",
+        "cta_url": "/pages/kontakt"
+      }
+    },
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
@@ -705,6 +714,7 @@
     "pb_product_science",
     "pb_product_comparison",
     "pb_product_faq",
+    "pb_reviews",
     "product_recommendations_qggXJq",
     "main"
   ]

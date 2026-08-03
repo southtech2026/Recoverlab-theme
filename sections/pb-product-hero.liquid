@@ -377,6 +377,7 @@
               <div
                 class="pb-product-gallery__thumb{% if forloop.first %} is-active{% endif %}"
                 data-src="{{ image | image_url: width: 900 }}"
+                data-srcset="{{ image | image_url: width: 450 }} 450w, {{ image | image_url: width: 900 }} 900w, {{ image | image_url: width: 1200 }} 1200w"
                 data-alt="{{ image.alt | default: product.title | escape }}"
                 role="button"
                 tabindex="0"
@@ -465,6 +466,7 @@
                     data-image-alt="{{ matched_variant.featured_image.alt | escape }}"
                   {%- elsif product.featured_image != blank -%}
                     data-image="{{ product.featured_image | image_url: width: 900 }}"
+                    data-image-srcset="{{ product.featured_image | image_url: width: 400 }} 400w, {{ product.featured_image | image_url: width: 900 }} 900w"
                     data-image-alt="{{ product.featured_image.alt | escape }}"
                   {%- endif -%}
                 >{{ value }}</button>
@@ -529,9 +531,14 @@
           </div>
 
           {%- assign variants_json = product.variants | json -%}
+          {%- if product.has_only_default_variant -%}
+            {%- assign options_json = '[]' -%}
+          {%- else -%}
+            {%- assign options_json = product.options_with_values | json -%}
+          {%- endif -%}
           <script>
             window.pbProductVariants = {{ variants_json }};
-            window.pbProductOptions  = {{ product.options_with_values | json }};
+            window.pbProductOptions  = {{ options_json }};
           </script>
 
         {%- else -%}
@@ -604,12 +611,17 @@
   /* ── Thumbnail gallery — all images ── */
   var mainImg = document.getElementById('pb-gallery-main-img');
 
-  function swapMainImage(src, alt) {
+  function swapMainImage(src, alt, srcset) {
     if (!mainImg) return;
     mainImg.style.opacity = '0';
     mainImg.style.transition = 'opacity 0.18s ease';
     setTimeout(function () {
       mainImg.src = src;
+      if (srcset) {
+        mainImg.srcset = srcset;
+      } else {
+        mainImg.removeAttribute('srcset');
+      }
       if (alt) mainImg.alt = alt;
       mainImg.style.opacity = '1';
     }, 140);
@@ -621,7 +633,7 @@
         t.classList.remove('is-active');
       });
       thumb.classList.add('is-active');
-      if (thumb.dataset.src) swapMainImage(thumb.dataset.src, thumb.dataset.alt);
+      if (thumb.dataset.src) swapMainImage(thumb.dataset.src, thumb.dataset.alt, thumb.dataset.srcset);
     }
     thumb.addEventListener('click', activate);
     thumb.addEventListener('keydown', function (e) {
@@ -649,7 +661,11 @@
         mainImg.style.transition = 'opacity 0.2s ease';
         setTimeout(function () {
           mainImg.src = btn.dataset.image;
-          if (btn.dataset.imageSrcset) mainImg.srcset = btn.dataset.imageSrcset;
+          if (btn.dataset.imageSrcset) {
+            mainImg.srcset = btn.dataset.imageSrcset;
+          } else {
+            mainImg.removeAttribute('srcset');
+          }
           if (btn.dataset.imageAlt)    mainImg.alt    = btn.dataset.imageAlt;
           mainImg.style.opacity = '1';
         }, 150);

@@ -27,20 +27,6 @@
     });
   }
 
-  // Product gallery thumbnails
-  function initGallery() {
-    const gallery = document.querySelector('.pb-product-gallery');
-    if (!gallery) return;
-    const mainImg = gallery.querySelector('.pb-product-gallery__main img');
-    gallery.querySelectorAll('.pb-product-gallery__thumb').forEach((thumb) => {
-      thumb.addEventListener('click', () => {
-        gallery.querySelectorAll('.pb-product-gallery__thumb').forEach((t) => t.classList.remove('is-active'));
-        thumb.classList.add('is-active');
-        if (mainImg && thumb.dataset.src) mainImg.src = thumb.dataset.src;
-      });
-    });
-  }
-
   // Animated counters
   function animateCounter(el) {
     const target = parseFloat(el.dataset.target || el.textContent.replace(/[^0-9.]/g, ''));
@@ -130,7 +116,6 @@
   function init() {
     initScrollAnimations();
     initFAQ();
-    initGallery();
     initCounters();
     initStickyATC();
     initQuantity();
