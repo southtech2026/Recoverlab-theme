@@ -1,0 +1,713 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pb_product_hero": {
+      "type": "pb-product-hero",
+      "blocks": {
+        "feat1": {
+          "type": "feature",
+          "settings": {
+            "text": "Vibrerande djupmassage lugnar spända muskler"
+          }
+        },
+        "feat2": {
+          "type": "feature",
+          "settings": {
+            "text": "Jordnötsformad design för triggerpunkter"
+          }
+        },
+        "feat3": {
+          "type": "feature",
+          "settings": {
+            "text": "Extra stor storlek – når svåråtkomliga områden"
+          }
+        },
+        "feat4": {
+          "type": "feature",
+          "settings": {
+            "text": "Slitstarkt ABS & TPR-material med säkert grepp"
+          }
+        }
+      },
+      "block_order": [
+        "feat1",
+        "feat2",
+        "feat3",
+        "feat4"
+      ],
+      "settings": {
+        "show_klarna": true,
+        "atc_label": "Lägg till i varukorg",
+        "return_text": "30 dagars returrätt",
+        "delivery_text": ""
+      }
+    },
+    "product_story": {
+      "type": "product-story",
+      "blocks": {
+        "story_1": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/Namnlosdesign.jpg",
+            "label": "Fördelar",
+            "heading": "Sluta leva med spända muskler — så förändrar RecoverX din vardag",
+            "text": "<p><br/>RecoverX är ingen vanlig massageboll. Den unika jordnötsformen är framtagen för djupgående vävnadsmassage och triggerpunktsbehandling — perfekt för muskelåterhämtning och myofasciell frigöring. Formen gör att bollen ligger stilla på plats längs ryggraden eller andra svåråtkomliga områden, samtidigt som vibrationsfunktionen arbetar sig ner i muskeln.<br/><br/></p>"
+          }
+        },
+        "story_2": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/copywriterSkrivenSEO-optimeradproduktbeskrivningforennyprodukt_enligtvarstandardmallmedsexsektioner.Bytutinnehalletmotdenharproduktens._Produkten-Typvibrerandemassagebo.jpg",
+            "label": "Egenskaper",
+            "heading": "Stor kraft i en smart form — teknik som möter dina behov",
+            "text": "<p>🎯 <strong>Jordnötsformad dubbel-bollstruktur</strong> — Ger större kontaktyta mot muskeln och djupare, jämnare tryck än en vanlig rund boll.</p><p>⚡ <strong>Vibrerande funktion</strong> — Aktiverar blodcirkulationen i det behandlade området och gör det lättare att arbeta djupare i muskeln.</p><p>✋ <strong>Extra stor storlek</strong> — Ligger bekvämt i handen och når svåråtkomliga områden som ryggen och axlarna med gott stöd.</p><p>🛡️ <strong>ABS & TPR-material</strong> — Slitstarkt, halkfritt grepp och fritt från högfarliga kemikalier.</p><p>📦 <strong>Kompakt förpackning</strong> — Levereras i en smidig box på 30 x 10 x 10 cm, endast 0,650 kg.</p>"
+          }
+        },
+        "story_3": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_rcoemmrcoemmrcoe.png",
+            "label": "Hur det fungerar",
+            "heading": "Från uppackning till första behandlingen — på under 5 minuter",
+            "text": "<p>RecoverX är designad för att vara enkel att använda direkt ur förpackningen — utan tidigare erfarenhet eller komplicerade inställningar. Så här gör du: </p><p><strong>Steg 1 — Hitta det ömma området.</strong> Känn efter var spänningen eller triggerpunkten sitter, till exempel nacke, rygg, axlar eller vader.</p><p><strong>Steg 2 — Placera RecoverX mot muskeln.</strong> Den jordnötsformade dubbel-bollen läggs enkelt an mot ryggraden eller runt en muskelgrupp och ligger stilla på plats.</p><p><strong>Steg 3 — Starta vibrationen.</strong> Aktivera vibrationsfunktionen och låt bollen arbeta i det ömma området utan att du behöver pressa hårt själv.</p><p><strong>Steg 4 — Rulla eller håll still i 1–2 minuter per område.</strong> Rör dig långsamt över muskeln eller håll bollen still direkt på triggerpunkten. Upprepa dagligen för bästa resultat.</p>"
+          }
+        },
+        "story_4": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_lsxma7lsxma7lsxm.png",
+            "label": "Resultat",
+            "heading": "Så har RecoverX blivit en del av vardagen för många svenskar",
+            "text": "<p>Bakom varje upplevelse finns en person med sin egen vardag. Här är exempel på hur RecoverX kan användas i praktiken:</p><p><strong>Kontorsarbetaren:</strong> Efter en lång dag vid skrivbordet placeras RecoverX mot nacke och övre rygg för att arbeta bort dagens spänningar innan kvällen.</p><p><strong>Löparen:</strong> Efter träningspasset rullas bollen längs vaderna och låren för att mjuka upp musklerna inför nästa pass.</p><p><strong>Den småbarnsförälder:</strong> Efter att ha burit och lyft hela dagen ger några minuter med RecoverX på ryggen en välbehövlig stunds avslappning.</p><p><strong>Yogautövaren:</strong> Före och efter träningspasset används RecoverX för att förbereda och sedan varva ner musklerna kring axlar och rygg.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "story_1",
+        "story_2",
+        "story_3",
+        "story_4"
+      ],
+      "settings": {}
+    },
+    "pb_problem_solution": {
+      "type": "pb-product-problem-solution",
+      "blocks": {
+        "prob1": {
+          "type": "problem",
+          "settings": {
+            "text": "Ihållande spänningar i nacke, rygg och axlar — Ofta orsakade av stillasittande arbete eller ensidig belastning."
+          }
+        },
+        "prob2": {
+          "type": "problem",
+          "settings": {
+            "text": "Svåråtkomliga triggerpunkter — Vanliga rullar och bollar kommer sällan åt djupt liggande spänningar ordentligt."
+          }
+        },
+        "prob3": {
+          "type": "problem",
+          "settings": {
+            "text": "Höga kostnader för massage och sjukgymnastik — Återkommande besök blir dyrt i längden, ofta utan bestående effekt."
+          }
+        },
+        "sol1": {
+          "type": "solution",
+          "settings": {
+            "text": "Vibrerande djupmassage riktad mot triggerpunkter — Den jordnötsformade designen möter muskeln från två håll samtidigt."
+          }
+        },
+        "sol2": {
+          "type": "solution",
+          "settings": {
+            "text": "Extra stor dubbel-bollstruktur för större yta — Ger djupare, jämnare tryck och bättre kontakt mot muskeln."
+          }
+        },
+        "sol3": {
+          "type": "solution",
+          "settings": {
+            "text": "Tillgänglig hemma, när du vill — Den kompakta förpackningen gör RecoverX enkel att alltid ha nära till hands."
+          }
+        }
+      },
+      "block_order": [
+        "prob1",
+        "prob2",
+        "prob3",
+        "sol1",
+        "sol2",
+        "sol3"
+      ],
+      "settings": {
+        "label": "Problemet & lösningen",
+        "title": "Vi förstår problemet",
+        "problem_label": "Utan RecoverX",
+        "problem_title": "Spända muskler och svåråtkomliga triggerpunkter — du är inte ensam",
+        "problem_text": "Stillasittande arbete, träning och vardagsstress skapar spänningar som fastnar i nacke, rygg och axlar. Vanliga massageredskap är ofta för runda eller för små för att verkligen komma åt de djupare musklerna, och regelbundna besök hos massör eller sjukgymnast blir snabbt både dyrt och svårt att få tiden till.",
+        "solution_label": "Med RecoverX",
+        "solution_title": "RecoverX — din personliga triggerpunktsbehandling, alltid redo",
+        "solution_text": "RecoverX kombinerar en jordnötsformad dubbel-bollsdesign med en vibrerande funktion, så att du kan ge dig själv riktad djupmassage hemma — när du vill, utan tidsbokning eller extra kostnad. Den extra stora storleken gör att den ligger stabilt på plats och når även de mest svåråtkomliga områdena."
+      }
+    },
+    "pb_product_science": {
+      "type": "pb-product-science",
+      "blocks": {
+        "bd1": {
+          "type": "badge",
+          "settings": {
+            "text": "Slitstarkt material"
+          }
+        },
+        "bd2": {
+          "type": "badge",
+          "settings": {
+            "text": "Fri från högfarliga kemikalier"
+          }
+        },
+        "bd3": {
+          "type": "badge",
+          "settings": {
+            "text": "Säkert grepp"
+          }
+        }
+      },
+      "block_order": [
+        "bd1",
+        "bd2",
+        "bd3"
+      ],
+      "settings": {
+        "label": "Materialet bakom",
+        "title": "Byggd för säker, daglig användning",
+        "text": "RecoverX tillverkas av ABS & TPR-material — slitstarkt, med säkert grepp och fritt från högfarliga kemikalier. RecoverX är inte en medicinsk produkt och ersätter inte professionell vård vid skada eller sjukdom."
+      }
+    },
+    "pb_product_comparison": {
+      "type": "pb-product-comparison",
+      "blocks": {
+        "cr1": {
+          "type": "row",
+          "settings": {
+            "feature": "Vibrerande djupmassage",
+            "ours": "yes",
+            "comp1": "no",
+            "comp2": "no"
+          }
+        },
+        "cr2": {
+          "type": "row",
+          "settings": {
+            "feature": "Jordnötsformad dubbel-bollsdesign",
+            "ours": "yes",
+            "comp1": "no",
+            "comp2": "yes"
+          }
+        },
+        "cr3": {
+          "type": "row",
+          "settings": {
+            "feature": "30 dagars ångerrätt",
+            "ours": "yes",
+            "comp1": "no",
+            "comp2": "yes"
+          }
+        }
+      },
+      "block_order": [
+        "cr1",
+        "cr2",
+        "cr3"
+      ],
+      "settings": {
+        "label": "Jämförelse",
+        "title": "Varför Vi Är Bäst",
+        "subtitle": "",
+        "our_name": "RecoverX",
+        "comp1_name": "Konkurrent A",
+        "comp2_name": "Konkurrent B"
+      }
+    },
+    "pb_product_faq": {
+      "type": "pb-product-faq",
+      "blocks": {
+        "pf1": {
+          "type": "item",
+          "settings": {
+            "question": "Vad gör RecoverX unik jämfört med andra massagebollar?",
+            "answer": "<p><br/>RecoverX kombinerar en jordnötsformad dubbel-bollsdesign med en vibrerande funktion för djupgående triggerpunktsbehandling. Den extra stora storleken gör att den täcker en större yta och når svåråtkomliga områden bättre än en vanlig rund massageboll, samtidigt som ABS & TPR-materialet ger ett säkert och slitstarkt grepp.<br/><br/></p>"
+          }
+        },
+        "pf2": {
+          "type": "item",
+          "settings": {
+            "question": "Vilka färger finns RecoverX i?",
+            "answer": "<p>RecoverX finns i två färger — blått och rosa. Båda varianterna har exakt samma funktion och kvalitet, valet handlar helt om personlig smak.</p>"
+          }
+        },
+        "pf3": {
+          "type": "item",
+          "settings": {
+            "question": "Är RecoverX säker att använda dagligen?",
+            "answer": "<p>Ja. RecoverX är tillverkad av ABS & TPR-material som är slitstarkt, halkfritt och fritt från högfarliga kemikalier. Den är avsedd för daglig muskelvård hemma.</p>"
+          }
+        },
+        "pf4": {
+          "type": "item",
+          "settings": {
+            "question": "Hur stor är RecoverX och hur levereras den?",
+            "answer": "<p>RecoverX levereras 1 styck per förpackning, i en kompakt box på 30 x 10 x 10 cm med en vikt på 0,650 kg — enkel att förvara och skicka.</p>"
+          }
+        },
+        "pf5": {
+          "type": "item",
+          "settings": {
+            "question": "Hur använder jag RecoverX för bästa resultat?",
+            "answer": "<p>Placera den jordnötsformade dubbel-bollen mot det spända området, till exempel längs ryggraden, nacken eller vaderna. Aktivera vibrationsfunktionen och rulla långsamt över muskeln eller håll still direkt på en triggerpunkt i 1–2 minuter. Upprepa dagligen för bästa effekt.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pf1",
+        "pf2",
+        "pf3",
+        "pf4",
+        "pf5"
+      ],
+      "settings": {
+        "label": "Produktfrågor",
+        "title": "Produktspecifika Frågor"
+      }
+    },
+    "pb_reviews": {
+      "type": "pb-reviews",
+      "settings": {
+        "title": "Vad våra kunder säger",
+        "empty_text": "Vi är en nystartad butik och samlar just nu våra första omdömen. Har du handlat hos oss? Vi blir glada för din ärliga feedback.",
+        "cta_label": "Kontakta oss",
+        "cta_url": "/pages/kontakt"
+      }
+    },
+    "product_recommendations_qggXJq": {
+      "type": "product-recommendations",
+      "blocks": {
+        "text_cbcgyb": {
+          "type": "text",
+          "name": "t:names.header",
+          "settings": {
+            "text": "<h3>Du kanske också gillar</h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 8,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_DNizbJ": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_M7MJkb": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_gLWgA6": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_DNizbJ",
+            "product_title_M7MJkb",
+            "price_gLWgA6"
+          ]
+        }
+      },
+      "block_order": [
+        "text_cbcgyb"
+      ],
+      "name": "t:names.product_recommendations",
+      "settings": {
+        "product": "{{ closest.product }}",
+        "recommendation_type": "related",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 12,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "none",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "price_tVjtKg"
+              ]
+            },
+            "divider_VJhene": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": false,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "divider_VJhene",
+            "variant_picker_R3rGDr",
+            "buy_buttons_eYQEYi",
+            "text_aEtTtq"
+          ]
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "enable_sticky_add_to_cart": true,
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    }
+  },
+  "order": [
+    "pb_product_hero",
+    "product_story",
+    "pb_problem_solution",
+    "pb_product_science",
+    "pb_product_comparison",
+    "pb_product_faq",
+    "pb_reviews",
+    "product_recommendations_qggXJq",
+    "main"
+  ]
+}
